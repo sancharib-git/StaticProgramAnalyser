@@ -1,0 +1,785 @@
+1 - Follows (p, a, prog_line)
+procedure p; assign a; prog_line pl;
+Select p such that Follows(a, pl)
+Flat, C, thenC, elseC, whileC
+5000
+2 - Follows (p, prog_line, pn)
+procedure p; prog_line pl; print pn;
+Select p such that Follows(pl, pn)
+Flat, C, thenC, elseC, whileC
+5000
+3 - Follows (s, ifs, prog_line)
+stmt s; if ifs; prog_line pl;
+Select s such that Follows(ifs, pl)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+4 - Follows (s, prog_line, pn)
+stmt s; prog_line pl; print pn;
+Select s such that Follows(pl, pn)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+5 - Follows (rd, pn, prog_line)
+read rd; print pn; prog_line pl;
+Select rd such that Follows(pn, pl)
+1, 11, 20, 32, 43, 45, 47, 49
+5000
+6 - Follows (rd, prog_line, c)
+read rd; prog_line pl; call c;
+Select rd such that Follows(pl, c)
+1, 11, 20, 32, 43, 45, 47, 49
+5000
+7 - Follows (pn, prog_line, prog_line)
+print pn; prog_line pl;
+Select pn such that Follows(pl, pl)
+none
+5000
+8 - Follows (a, prog_line, ifs)
+assign a; prog_line pl; if ifs;
+Select a such that Follows(pl, ifs)
+4, 5, 6, 7, 8, 9, 14, 15, 16, 17, 18, 19, 23, 24, 25, 26, 27, 28, 29, 30, 35, 36, 37, 38, 39, 40, 41, 42, 44, 46, 48, 50
+5000
+9 - Follows (a, w, prog_line)
+assign a; while w; prog_line pl;
+Select a such that Follows(w, pl)
+4, 5, 6, 7, 8, 9, 14, 15, 16, 17, 18, 19, 23, 24, 25, 26, 27, 28, 29, 30, 35, 36, 37, 38, 39, 40, 41, 42, 44, 46, 48, 50
+5000
+10 - Follows (c, c, prog_line)
+call c; prog_line pl;
+Select c such that Follows(c, pl)
+3, 13, 22, 34
+5000
+11 - Follows (c, prog_line, w)
+call c; prog_line pl; while w;
+Select c such that Follows(pl, w)
+3, 13, 22, 34
+5000
+12 - Follows (w, prog_line, constValue)
+while w; prog_line pl;
+Select w such that Follows(pl, 48)
+31
+5000
+13 - Follows (w, rd, prog_line)
+while w; read rd; prog_line pl;
+Select w such that Follows(rd, pl)
+31
+5000
+14 - Follows (ifs, _, prog_line)
+if ifs; prog_line pl;
+Select ifs such that Follows(_, pl)
+10
+5000
+15 - Follows (ifs, prog_line, a)
+if ifs; prog_line pl; assign a;
+Select ifs such that Follows(pl, a)
+10
+5000
+16 - Follows (v, prog_line, _)
+variable v; prog_line pl;
+Select v such that Follows(pl, _)
+A, B, C, a, b, c, D, E, F, d, e, f, thenA, thenB, thenC, thena, thenb, thenc, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elseC, elsea, elseb, elsec, elseD, elseE, elseF, elsed, elsee, elsef, whileA, whileB, whileC, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, g, h
+5000
+17 - Follows (v, s, prog_line)
+variable v; stmt s; prog_line pl;
+Select v such that Follows(s, pl)
+A, B, C, a, b, c, D, E, F, d, e, f, thenA, thenB, thenC, thena, thenb, thenc, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elseC, elsea, elseb, elsec, elseD, elseE, elseF, elsed, elsee, elsef, whileA, whileB, whileC, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, g, h
+5000
+18 - Follows (const, prog_line, s)
+constant const; prog_line pl; stmt s;
+Select const such that Follows(pl, s)
+211, 1, 2, 3, 4, 5, 6
+5000
+19 - Follows (const, s, prog_line)
+constant const; stmt s; prog_line pl;
+Select const such that Follows(s, pl)
+211, 1, 2, 3, 4, 5, 6
+5000
+20 - Follows (prog_line, _, pn)
+prog_line pl; print pn;
+Select pl such that Follows(_, pn)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+21 - Follows (prog_line, a, constValue)
+prog_line pl; assign a;
+Select pl such that Follows(a, 43)
+none
+5000
+22 - Follows (prog_line, c, _)
+prog_line pl; call c;
+Select pl such that Follows(c, _)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+23 - Follows (prog_line, constValue, prog_line)
+prog_line pl;
+Select pl such that Follows(31, pl)
+41
+5000
+24 - Follows (prog_line, ifs, w)
+prog_line pl; if ifs; while w;
+Select pl such that Follows(ifs, w)
+none
+5000
+25 - Follows (prog_line, pn, s)
+prog_line pl; print pn; stmt s;
+Select pl such that Follows(pn, s)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+26 - Follows (prog_line, prog_line, rd)
+prog_line pl; read rd;
+Select pl such that Follows(pl, rd)
+none
+5000
+27 - Follows (prog_line, rd, a)
+prog_line pl; read rd; assign a;
+Select pl such that Follows(rd, a)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+28 - Follows (prog_line, s, c)
+prog_line pl; stmt s; call c;
+Select pl such that Follows(s, c)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+29 - Follows (prog_line, w, ifs)
+prog_line pl; while w; if ifs;
+Select pl such that Follows(w, ifs)
+none
+5000
+30 - Follows* (p, a, prog_line)
+procedure p; assign a; prog_line pl;
+Select p such that Follows*(a, pl)
+Flat, C, thenC, elseC, whileC
+5000
+31 - Follows* (p, prog_line, pn)
+procedure p; prog_line pl; print pn;
+Select p such that Follows*(pl, pn)
+Flat, C, thenC, elseC, whileC
+5000
+32 - Follows* (s, ifs, prog_line)
+stmt s; if ifs; prog_line pl;
+Select s such that Follows*(ifs, pl)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+33 - Follows* (s, prog_line, pn)
+stmt s; prog_line pl; print pn;
+Select s such that Follows*(pl, pn)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+34 - Follows* (rd, pn, prog_line)
+read rd; print pn; prog_line pl;
+Select rd such that Follows*(pn, pl)
+1, 11, 20, 32, 43, 45, 47, 49
+5000
+35 - Follows* (rd, prog_line, c)
+read rd; prog_line pl; call c;
+Select rd such that Follows*(pl, c)
+1, 11, 20, 32, 43, 45, 47, 49
+5000
+36 - Follows* (pn, prog_line, prog_line)
+print pn; prog_line pl;
+Select pn such that Follows*(pl, pl)
+none
+5000
+37 - Follows* (a, prog_line, ifs)
+assign a; prog_line pl; if ifs;
+Select a such that Follows*(pl, ifs)
+4, 5, 6, 7, 8, 9, 14, 15, 16, 17, 18, 19, 23, 24, 25, 26, 27, 28, 29, 30, 35, 36, 37, 38, 39, 40, 41, 42, 44, 46, 48, 50
+5000
+38 - Follows* (a, w, prog_line)
+assign a; while w; prog_line pl;
+Select a such that Follows*(w, pl)
+4, 5, 6, 7, 8, 9, 14, 15, 16, 17, 18, 19, 23, 24, 25, 26, 27, 28, 29, 30, 35, 36, 37, 38, 39, 40, 41, 42, 44, 46, 48, 50
+5000
+39 - Follows* (c, c, prog_line)
+call c; prog_line pl;
+Select c such that Follows*(c, pl)
+3, 13, 22, 34
+5000
+40 - Follows* (c, prog_line, w)
+call c; prog_line pl; while w;
+Select c such that Follows*(pl, w)
+3, 13, 22, 34
+5000
+41 - Follows* (w, prog_line, constValue)
+while w; prog_line pl;
+Select w such that Follows*(pl, 49)
+none
+5000
+42 - Follows* (w, rd, prog_line)
+while w; read rd; prog_line pl;
+Select w such that Follows*(rd, pl)
+31
+5000
+43 - Follows* (ifs, _, prog_line)
+if ifs; prog_line pl;
+Select ifs such that Follows*(_, pl)
+10
+5000
+44 - Follows* (ifs, prog_line, a)
+if ifs; prog_line pl; assign a;
+Select ifs such that Follows*(pl, a)
+10
+5000
+45 - Follows* (v, prog_line, _)
+variable v; prog_line pl;
+Select v such that Follows*(pl, _)
+A, B, C, a, b, c, D, E, F, d, e, f, thenA, thenB, thenC, thena, thenb, thenc, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elseC, elsea, elseb, elsec, elseD, elseE, elseF, elsed, elsee, elsef, whileA, whileB, whileC, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, g, h
+5000
+46 - Follows* (v, s, prog_line)
+variable v; stmt s; prog_line pl;
+Select v such that Follows*(s, pl)
+A, B, C, a, b, c, D, E, F, d, e, f, thenA, thenB, thenC, thena, thenb, thenc, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elseC, elsea, elseb, elsec, elseD, elseE, elseF, elsed, elsee, elsef, whileA, whileB, whileC, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, g, h
+5000
+47 - Follows* (const, prog_line, s)
+constant const; prog_line pl; stmt s;
+Select const such that Follows*(pl, s)
+211, 1, 2, 3, 4, 5, 6
+5000
+48 - Follows* (const, s, prog_line)
+constant const; stmt s; prog_line pl;
+Select const such that Follows*(s, pl)
+211, 1, 2, 3, 4, 5, 6
+5000
+49 - Follows* (prog_line, _, pn)
+prog_line pl; print pn;
+Select pl such that Follows*(_, pn)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+50 - Follows* (prog_line, a, constValue)
+prog_line pl; assign a;
+Select pl such that Follows*(a, 33)
+none
+5000
+51 - Follows* (prog_line, c, _)
+prog_line pl; call c;
+Select pl such that Follows*(c, _)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+52 - Follows* (prog_line, constValue, prog_line)
+prog_line pl;
+Select pl such that Follows*(31, pl)
+41, 42
+5000
+53 - Follows* (prog_line, ifs, w)
+prog_line pl; if ifs; while w;
+Select pl such that Follows*(ifs, w)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+54 - Follows* (prog_line, pn, s)
+prog_line pl; print pn; stmt s;
+Select pl such that Follows*(pn, s)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+55 - Follows* (prog_line, prog_line, rd)
+prog_line pl; read rd;
+Select pl such that Follows*(pl, rd)
+none
+5000
+56 - Follows* (prog_line, rd, a)
+prog_line pl; read rd; assign a;
+Select pl such that Follows*(rd, a)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+57 - Follows* (prog_line, s, c)
+prog_line pl; stmt s; call c;
+Select pl such that Follows*(s, c)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+58 - Follows* (prog_line, w, ifs)
+prog_line pl; while w; if ifs;
+Select pl such that Follows*(w, ifs)
+none
+5000
+59 - Parent (p, constValue, prog_line)
+procedure p; prog_line pl;
+Select p such that Parent(10, pl)
+Flat, C, thenC, elseC, whileC
+5000
+60 - Parent (p, prog_line, pn)
+procedure p; prog_line pl; print pn;
+Select p such that Parent(pl, pn)
+Flat, C, thenC, elseC, whileC
+5000
+61 - Parent (s, prog_line, prog_line)
+stmt s; prog_line pl;
+Select s such that Parent(pl, pl)
+none
+5000
+62 - Parent (rd, _, prog_line)
+read rd; prog_line pl;
+Select rd such that Parent(_, pl)
+1, 11, 20, 32, 43, 45, 47, 49
+5000
+63 - Parent (rd, prog_line, constValue)
+read rd; prog_line pl;
+Select rd such that Parent(pl, 7)
+none
+5000
+64 - Parent (pn, prog_line, ifs)
+print pn; prog_line pl; if ifs;
+Select pn such that Parent(pl, ifs)
+none
+5000
+65 - Parent (pn, w, prog_line)
+print pn; while w; prog_line pl;
+Select pn such that Parent(w, pl)
+2, 12, 21, 33
+5000
+66 - Parent (a, constValue, prog_line)
+assign a; prog_line pl;
+Select a such that Parent(10, pl)
+4, 5, 6, 7, 8, 9, 14, 15, 16, 17, 18, 19, 23, 24, 25, 26, 27, 28, 29, 30, 35, 36, 37, 38, 39, 40, 41, 42, 44, 46, 48, 50
+5000
+67 - Parent (a, prog_line, c)
+assign a; prog_line pl; call c;
+Select a such that Parent(pl, c)
+4, 5, 6, 7, 8, 9, 14, 15, 16, 17, 18, 19, 23, 24, 25, 26, 27, 28, 29, 30, 35, 36, 37, 38, 39, 40, 41, 42, 44, 46, 48, 50
+5000
+68 - Parent (c, _, prog_line)
+call c; prog_line pl;
+Select c such that Parent(_, pl)
+3, 13, 22, 34
+5000
+69 - Parent (c, prog_line, s)
+call c; prog_line pl; stmt s;
+Select c such that Parent(pl, s)
+3, 13, 22, 34
+5000
+70 - Parent (w, constValue, prog_line)
+while w; prog_line pl;
+Select w such that Parent(31, pl)
+31
+5000
+71 - Parent (w, prog_line, rd)
+while w; prog_line pl; read rd;
+Select w such that Parent(pl, rd)
+31
+5000
+72 - Parent (ifs, ifs, prog_line)
+if ifs; prog_line pl;
+Select ifs such that Parent(ifs, pl)
+10
+5000
+73 - Parent (ifs, prog_line, a)
+if ifs; prog_line pl; assign a;
+Select ifs such that Parent(pl, a)
+10
+5000
+74 - Parent (v, prog_line, _)
+variable v; prog_line pl;
+Select v such that Parent(pl, _)
+A, B, C, a, b, c, D, E, F, d, e, f, thenA, thenB, thenC, thena, thenb, thenc, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elseC, elsea, elseb, elsec, elseD, elseE, elseF, elsed, elsee, elsef, whileA, whileB, whileC, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, g, h
+5000
+75 - Parent (v, s, prog_line)
+variable v; stmt s; prog_line pl;
+Select v such that Parent(s, pl)
+A, B, C, a, b, c, D, E, F, d, e, f, thenA, thenB, thenC, thena, thenb, thenc, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elseC, elsea, elseb, elsec, elseD, elseE, elseF, elsed, elsee, elsef, whileA, whileB, whileC, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, g, h
+5000
+76 - Parent (const, constValue, prog_line)
+constant const; prog_line pl;
+Select const such that Parent(9, pl)
+none
+5000
+77 - Parent (const, prog_line, w)
+constant const; prog_line pl; while w;
+Select const such that Parent(pl, w)
+none
+5000
+78 - Parent (prog_line, _, ifs)
+prog_line pl; if ifs;
+Select pl such that Parent(_, ifs)
+none
+5000
+79 - Parent (prog_line, constValue, _)
+prog_line pl;
+Select pl such that Parent(10, _)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+80 - Parent (prog_line, constValue, a)
+prog_line pl; assign a;
+Select pl such that Parent(31, a)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+81 - Parent (prog_line, constValue, c)
+prog_line pl; call c;
+Select pl such that Parent(10, c)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+82 - Parent (prog_line, constValue, s)
+prog_line pl; stmt s;
+Select pl such that Parent(30, s)
+none
+5000
+83 - Parent (prog_line, constValue, w)
+prog_line pl; while w;
+Select pl such that Parent(31, w)
+none
+5000
+84 - Parent (prog_line, ifs, constValue)
+prog_line pl; if ifs;
+Select pl such that Parent(ifs, 28)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+85 - Parent (prog_line, prog_line, prog_line)
+prog_line pl;
+Select pl such that Parent(pl, pl)
+none
+5000
+86 - Parent (prog_line, s, pn)
+prog_line pl; stmt s; print pn;
+Select pl such that Parent(s, pn)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+87 - Parent (prog_line, w, rd)
+prog_line pl; while w; read rd;
+Select pl such that Parent(w, rd)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+88 - Parent* (p, constValue, prog_line)
+procedure p; prog_line pl;
+Select p such that Parent*(31, pl)
+Flat, C, thenC, elseC, whileC
+5000
+89 - Parent* (p, prog_line, pn)
+procedure p; prog_line pl; print pn;
+Select p such that Parent*(pl, pn)
+Flat, C, thenC, elseC, whileC
+5000
+90 - Parent* (s, prog_line, prog_line)
+stmt s; prog_line pl;
+Select s such that Parent*(pl, pl)
+none
+5000
+91 - Parent* (rd, _, prog_line)
+read rd; prog_line pl;
+Select rd such that Parent*(_, pl)
+1, 11, 20, 32, 43, 45, 47, 49
+5000
+92 - Parent* (rd, prog_line, constValue)
+read rd; prog_line pl;
+Select rd such that Parent*(pl, 13)
+1, 11, 20, 32, 43, 45, 47, 49
+5000
+93 - Parent* (pn, prog_line, ifs)
+print pn; prog_line pl; if ifs;
+Select pn such that Parent*(pl, ifs)
+none
+5000
+94 - Parent* (pn, w, prog_line)
+print pn; while w; prog_line pl;
+Select pn such that Parent*(w, pl)
+2, 12, 21, 33
+5000
+95 - Parent* (a, constValue, prog_line)
+assign a; prog_line pl;
+Select a such that Parent*(41, pl)
+none
+5000
+96 - Parent* (a, prog_line, c)
+assign a; prog_line pl; call c;
+Select a such that Parent*(pl, c)
+4, 5, 6, 7, 8, 9, 14, 15, 16, 17, 18, 19, 23, 24, 25, 26, 27, 28, 29, 30, 35, 36, 37, 38, 39, 40, 41, 42, 44, 46, 48, 50
+5000
+97 - Parent* (c, _, prog_line)
+call c; prog_line pl;
+Select c such that Parent*(_, pl)
+3, 13, 22, 34
+5000
+98 - Parent* (c, prog_line, s)
+call c; prog_line pl; stmt s;
+Select c such that Parent*(pl, s)
+3, 13, 22, 34
+5000
+99 - Parent* (w, constValue, prog_line)
+while w; prog_line pl;
+Select w such that Parent*(20, pl)
+none
+5000
+100 - Parent* (w, prog_line, rd)
+while w; prog_line pl; read rd;
+Select w such that Parent*(pl, rd)
+31
+5000
+101 - Parent* (ifs, ifs, prog_line)
+if ifs; prog_line pl;
+Select ifs such that Parent*(ifs, pl)
+10
+5000
+102 - Parent* (ifs, prog_line, a)
+if ifs; prog_line pl; assign a;
+Select ifs such that Parent*(pl, a)
+10
+5000
+103 - Parent* (v, prog_line, _)
+variable v; prog_line pl;
+Select v such that Parent*(pl, _)
+A, B, C, a, b, c, D, E, F, d, e, f, thenA, thenB, thenC, thena, thenb, thenc, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elseC, elsea, elseb, elsec, elseD, elseE, elseF, elsed, elsee, elsef, whileA, whileB, whileC, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, g, h
+5000
+104 - Parent* (v, s, prog_line)
+variable v; stmt s; prog_line pl;
+Select v such that Parent*(s, pl)
+A, B, C, a, b, c, D, E, F, d, e, f, thenA, thenB, thenC, thena, thenb, thenc, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elseC, elsea, elseb, elsec, elseD, elseE, elseF, elsed, elsee, elsef, whileA, whileB, whileC, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, g, h
+5000
+105 - Parent* (const, constValue, prog_line)
+constant const; prog_line pl;
+Select const such that Parent*(10, pl)
+211, 1, 2, 3, 4, 5, 6
+5000
+106 - Parent* (const, prog_line, w)
+constant const; prog_line pl; while w;
+Select const such that Parent*(pl, w)
+none
+5000
+107 - Parent* (prog_line, _, ifs)
+prog_line pl; if ifs;
+Select pl such that Parent*(_, ifs)
+none
+5000
+108 - Parent* (prog_line, constValue, _)
+prog_line pl;
+Select pl such that Parent*(19, _)
+none
+5000
+109 - Parent* (prog_line, constValue, a)
+prog_line pl; assign a;
+Select pl such that Parent*(31, a)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+110 - Parent* (prog_line, constValue, c)
+prog_line pl; call c;
+Select pl such that Parent*(10, c)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+111 - Parent* (prog_line, constValue, s)
+prog_line pl; stmt s;
+Select pl such that Parent*(31, s)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+112 - Parent* (prog_line, constValue, w)
+prog_line pl; while w;
+Select pl such that Parent*(31, w)
+none
+5000
+113 - Parent* (prog_line, ifs, constValue)
+prog_line pl; if ifs;
+Select pl such that Parent*(ifs, 20)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+114 - Parent* (prog_line, prog_line, prog_line)
+prog_line pl;
+Select pl such that Parent*(pl, pl)
+none
+5000
+115 - Parent* (prog_line, s, pn)
+prog_line pl; stmt s; print pn;
+Select pl such that Parent*(s, pn)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+116 - Parent* (prog_line, w, rd)
+prog_line pl; while w; read rd;
+Select pl such that Parent*(w, rd)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+117 - Uses (p, prog_line, _)
+procedure p; prog_line pl;
+Select p such that Uses(pl, _)
+Flat, C, thenC, elseC, whileC
+5000
+118 - Uses (s, prog_line, v)
+stmt s; prog_line pl; variable v;
+Select s such that Uses(pl, v)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+119 - Uses (rd, prog_line, v)
+read rd; prog_line pl; variable v;
+Select rd such that Uses(pl, v)
+1, 11, 20, 32, 43, 45, 47, 49
+5000
+120 - Uses (pn, prog_line, v)
+print pn; prog_line pl; variable v;
+Select pn such that Uses(pl, v)
+2, 12, 21, 33
+5000
+121 - Uses (a, prog_line, v)
+assign a; prog_line pl; variable v;
+Select a such that Uses(pl, v)
+4, 5, 6, 7, 8, 9, 14, 15, 16, 17, 18, 19, 23, 24, 25, 26, 27, 28, 29, 30, 35, 36, 37, 38, 39, 40, 41, 42, 44, 46, 48, 50
+5000
+122 - Uses (c, prog_line, v)
+call c; prog_line pl; variable v;
+Select c such that Uses(pl, v)
+3, 13, 22, 34
+5000
+123 - Uses (w, prog_line, v)
+while w; prog_line pl; variable v;
+Select w such that Uses(pl, v)
+31
+5000
+124 - Uses (ifs, prog_line, v)
+if ifs; prog_line pl; variable v;
+Select ifs such that Uses(pl, v)
+10
+5000
+125 - Uses (v, prog_line, v)
+variable v; prog_line pl;
+Select v such that Uses(pl, v)
+B, C, A, D, E, F, thenB, thenA, thenC, thenD, thenE, thenF, elseA, elseB, elseC, elseD, elseE, elseF, whileB, whileA, whileC, whileD, whileE, whileF, a, b, d, f, h
+5000
+126 - Uses (const, prog_line, v)
+constant const; prog_line pl; variable v;
+Select const such that Uses(pl, v)
+211, 1, 2, 3, 4, 5, 6
+5000
+127 - Uses (prog_line, a, v)
+prog_line pl; assign a; variable v;
+Select pl such that Uses(a, v)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+128 - Uses (prog_line, c, v)
+prog_line pl; call c; variable v;
+Select pl such that Uses(c, v)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+129 - Uses (prog_line, constValue, v)
+prog_line pl; variable v;
+Select pl such that Uses(34, v)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+130 - Uses (prog_line, ifs, v)
+prog_line pl; if ifs; variable v;
+Select pl such that Uses(ifs, v)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+131 - Uses (prog_line, p, v)
+prog_line pl; procedure p; variable v;
+Select pl such that Uses(p, v)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+132 - Uses (prog_line, pn, v)
+prog_line pl; print pn; variable v;
+Select pl such that Uses(pn, v)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+133 - Uses (prog_line, prog_line, string)
+prog_line pl;
+Select pl such that Uses(pl, "tom")
+none
+5000
+134 - Uses (prog_line, s, v)
+prog_line pl; stmt s; variable v;
+Select pl such that Uses(s, v)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+135 - Uses (prog_line, string, _)
+prog_line pl;
+Select pl such that Uses("C", _)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+136 - Uses (prog_line, w, v)
+prog_line pl; while w; variable v;
+Select pl such that Uses(w, v)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+137 - Modifies (p, prog_line, _)
+procedure p; prog_line pl;
+Select p such that Modifies(pl, _)
+Flat, C, thenC, elseC, whileC
+5000
+138 - Modifies (s, prog_line, v)
+stmt s; prog_line pl; variable v;
+Select s such that Modifies(pl, v)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+139 - Modifies (rd, prog_line, v)
+read rd; prog_line pl; variable v;
+Select rd such that Modifies(pl, v)
+1, 11, 20, 32, 43, 45, 47, 49
+5000
+140 - Modifies (a, prog_line, v)
+assign a; prog_line pl; variable v;
+Select a such that Modifies(pl, v)
+4, 5, 6, 7, 8, 9, 14, 15, 16, 17, 18, 19, 23, 24, 25, 26, 27, 28, 29, 30, 35, 36, 37, 38, 39, 40, 41, 42, 44, 46, 48, 50
+5000
+141 - Modifies (c, prog_line, v)
+call c; prog_line pl; variable v;
+Select c such that Modifies(pl, v)
+3, 13, 22, 34
+5000
+142 - Modifies (w, prog_line, v)
+while w; prog_line pl; variable v;
+Select w such that Modifies(pl, v)
+31
+5000
+143 - Modifies (ifs, prog_line, v)
+if ifs; prog_line pl; variable v;
+Select ifs such that Modifies(pl, v)
+10
+5000
+144 - Modifies (v, prog_line, v)
+variable v; prog_line pl;
+Select v such that Modifies(pl, v)
+A, a, b, c, d, e, f, thenA, thena, thenb, thenc, thend, thene, thenf, elseA, elsea, elseb, elsec, elsed, elsee, elsef, whileA, whilea, whileb, whilec, whiled, whilee, whilef, g, C, thenC, elseC, whileC
+5000
+145 - Modifies (const, prog_line, v)
+constant const; prog_line pl; variable v;
+Select const such that Modifies(pl, v)
+211, 1, 2, 3, 4, 5, 6
+5000
+146 - Modifies (prog_line, a, v)
+prog_line pl; assign a; variable v;
+Select pl such that Modifies(a, v)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+147 - Modifies (prog_line, c, v)
+prog_line pl; call c; variable v;
+Select pl such that Modifies(c, v)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+148 - Modifies (prog_line, constValue, v)
+prog_line pl; variable v;
+Select pl such that Modifies(34, v)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+149 - Modifies (prog_line, ifs, v)
+prog_line pl; if ifs; variable v;
+Select pl such that Modifies(ifs, v)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+150 - Modifies (prog_line, p, v)
+prog_line pl; procedure p; variable v;
+Select pl such that Modifies(p, v)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+151 - Modifies (prog_line, rd, v)
+prog_line pl; read rd; variable v;
+Select pl such that Modifies(rd, v)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+152 - Modifies (prog_line, prog_line, string)
+prog_line pl;
+Select pl such that Modifies(pl, "e")
+8, 10, 22, 29, 41, 48
+5000
+153 - Modifies (prog_line, s, v)
+prog_line pl; stmt s; variable v;
+Select pl such that Modifies(s, v)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+154 - Modifies (prog_line, string, _)
+prog_line pl;
+Select pl such that Modifies("ElseC", _)
+none
+5000
+155 - Modifies (prog_line, w, v)
+prog_line pl; while w; variable v;
+Select pl such that Modifies(w, v)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50
+5000
+1 - No Clause (Tuple 4 arg, rd, c.procName, rd.varName, c.stmt#)
+read rd; call c; prog_line pl;
+Select <rd, c.procName, rd.varName, c.stmt#>
+1 C A 3, 1 thenC A 13, 1 elseC A 22, 1 whileC A 34, 11 C thenA 3, 11 thenC thenA 13, 11 elseC thenA 22, 11 whileC thenA 34, 20 C elseA 3, 20 thenC elseA 13, 20 elseC elseA 22, 20 whileC elseA 34, 32 C whileA 3, 32 thenC whileA 13, 32 elseC whileA 22, 32 whileC whileA 34, 43 C C 3, 43 thenC C 13, 43 elseC C 22, 43 whileC C 34, 45 C thenC 3, 45 thenC thenC 13, 45 elseC thenC 22, 45 whileC thenC 34, 47 C elseC 3, 47 thenC elseC 13, 47 elseC elseC 22, 47 whileC elseC 34, 49 C whileC 3, 49 thenC whileC 13, 49 elseC whileC 22, 49 whileC whileC 34
+5000
+2 - No Clause (Tuple 5 arg, w.stmt#, pl, ifs, p.procName, p)
+while w; prog_line pl; if ifs; procedure p;
+Select <w.stmt#, pl, ifs, p.procName, p>
+31 1 10 Flat Flat, 31 1 10 C C, 31 1 10 thenC thenC, 31 1 10 elseC elseC, 31 1 10 whileC whileC, 31 2 10 Flat Flat, 31 2 10 C C, 31 2 10 thenC thenC, 31 2 10 elseC elseC, 31 2 10 whileC whileC, 31 3 10 Flat Flat, 31 3 10 C C, 31 3 10 thenC thenC, 31 3 10 elseC elseC, 31 3 10 whileC whileC, 31 4 10 Flat Flat, 31 4 10 C C, 31 4 10 thenC thenC, 31 4 10 elseC elseC, 31 4 10 whileC whileC, 31 5 10 Flat Flat, 31 5 10 C C, 31 5 10 thenC thenC, 31 5 10 elseC elseC, 31 5 10 whileC whileC, 31 6 10 Flat Flat, 31 6 10 C C, 31 6 10 thenC thenC, 31 6 10 elseC elseC, 31 6 10 whileC whileC, 31 7 10 Flat Flat, 31 7 10 C C, 31 7 10 thenC thenC, 31 7 10 elseC elseC, 31 7 10 whileC whileC, 31 8 10 Flat Flat, 31 8 10 C C, 31 8 10 thenC thenC, 31 8 10 elseC elseC, 31 8 10 whileC whileC, 31 9 10 Flat Flat, 31 9 10 C C, 31 9 10 thenC thenC, 31 9 10 elseC elseC, 31 9 10 whileC whileC, 31 10 10 Flat Flat, 31 10 10 C C, 31 10 10 thenC thenC, 31 10 10 elseC elseC, 31 10 10 whileC whileC, 31 11 10 Flat Flat, 31 11 10 C C, 31 11 10 thenC thenC, 31 11 10 elseC elseC, 31 11 10 whileC whileC, 31 12 10 Flat Flat, 31 12 10 C C, 31 12 10 thenC thenC, 31 12 10 elseC elseC, 31 12 10 whileC whileC, 31 13 10 Flat Flat, 31 13 10 C C, 31 13 10 thenC thenC, 31 13 10 elseC elseC, 31 13 10 whileC whileC, 31 14 10 Flat Flat, 31 14 10 C C, 31 14 10 thenC thenC, 31 14 10 elseC elseC, 31 14 10 whileC whileC, 31 15 10 Flat Flat, 31 15 10 C C, 31 15 10 thenC thenC, 31 15 10 elseC elseC, 31 15 10 whileC whileC, 31 16 10 Flat Flat, 31 16 10 C C, 31 16 10 thenC thenC, 31 16 10 elseC elseC, 31 16 10 whileC whileC, 31 17 10 Flat Flat, 31 17 10 C C, 31 17 10 thenC thenC, 31 17 10 elseC elseC, 31 17 10 whileC whileC, 31 18 10 Flat Flat, 31 18 10 C C, 31 18 10 thenC thenC, 31 18 10 elseC elseC, 31 18 10 whileC whileC, 31 19 10 Flat Flat, 31 19 10 C C, 31 19 10 thenC thenC, 31 19 10 elseC elseC, 31 19 10 whileC whileC, 31 20 10 Flat Flat, 31 20 10 C C, 31 20 10 thenC thenC, 31 20 10 elseC elseC, 31 20 10 whileC whileC, 31 21 10 Flat Flat, 31 21 10 C C, 31 21 10 thenC thenC, 31 21 10 elseC elseC, 31 21 10 whileC whileC, 31 22 10 Flat Flat, 31 22 10 C C, 31 22 10 thenC thenC, 31 22 10 elseC elseC, 31 22 10 whileC whileC, 31 23 10 Flat Flat, 31 23 10 C C, 31 23 10 thenC thenC, 31 23 10 elseC elseC, 31 23 10 whileC whileC, 31 24 10 Flat Flat, 31 24 10 C C, 31 24 10 thenC thenC, 31 24 10 elseC elseC, 31 24 10 whileC whileC, 31 25 10 Flat Flat, 31 25 10 C C, 31 25 10 thenC thenC, 31 25 10 elseC elseC, 31 25 10 whileC whileC, 31 26 10 Flat Flat, 31 26 10 C C, 31 26 10 thenC thenC, 31 26 10 elseC elseC, 31 26 10 whileC whileC, 31 27 10 Flat Flat, 31 27 10 C C, 31 27 10 thenC thenC, 31 27 10 elseC elseC, 31 27 10 whileC whileC, 31 28 10 Flat Flat, 31 28 10 C C, 31 28 10 thenC thenC, 31 28 10 elseC elseC, 31 28 10 whileC whileC, 31 29 10 Flat Flat, 31 29 10 C C, 31 29 10 thenC thenC, 31 29 10 elseC elseC, 31 29 10 whileC whileC, 31 30 10 Flat Flat, 31 30 10 C C, 31 30 10 thenC thenC, 31 30 10 elseC elseC, 31 30 10 whileC whileC, 31 31 10 Flat Flat, 31 31 10 C C, 31 31 10 thenC thenC, 31 31 10 elseC elseC, 31 31 10 whileC whileC, 31 32 10 Flat Flat, 31 32 10 C C, 31 32 10 thenC thenC, 31 32 10 elseC elseC, 31 32 10 whileC whileC, 31 33 10 Flat Flat, 31 33 10 C C, 31 33 10 thenC thenC, 31 33 10 elseC elseC, 31 33 10 whileC whileC, 31 34 10 Flat Flat, 31 34 10 C C, 31 34 10 thenC thenC, 31 34 10 elseC elseC, 31 34 10 whileC whileC, 31 35 10 Flat Flat, 31 35 10 C C, 31 35 10 thenC thenC, 31 35 10 elseC elseC, 31 35 10 whileC whileC, 31 36 10 Flat Flat, 31 36 10 C C, 31 36 10 thenC thenC, 31 36 10 elseC elseC, 31 36 10 whileC whileC, 31 37 10 Flat Flat, 31 37 10 C C, 31 37 10 thenC thenC, 31 37 10 elseC elseC, 31 37 10 whileC whileC, 31 38 10 Flat Flat, 31 38 10 C C, 31 38 10 thenC thenC, 31 38 10 elseC elseC, 31 38 10 whileC whileC, 31 39 10 Flat Flat, 31 39 10 C C, 31 39 10 thenC thenC, 31 39 10 elseC elseC, 31 39 10 whileC whileC, 31 40 10 Flat Flat, 31 40 10 C C, 31 40 10 thenC thenC, 31 40 10 elseC elseC, 31 40 10 whileC whileC, 31 41 10 Flat Flat, 31 41 10 C C, 31 41 10 thenC thenC, 31 41 10 elseC elseC, 31 41 10 whileC whileC, 31 42 10 Flat Flat, 31 42 10 C C, 31 42 10 thenC thenC, 31 42 10 elseC elseC, 31 42 10 whileC whileC, 31 43 10 Flat Flat, 31 43 10 C C, 31 43 10 thenC thenC, 31 43 10 elseC elseC, 31 43 10 whileC whileC, 31 44 10 Flat Flat, 31 44 10 C C, 31 44 10 thenC thenC, 31 44 10 elseC elseC, 31 44 10 whileC whileC, 31 45 10 Flat Flat, 31 45 10 C C, 31 45 10 thenC thenC, 31 45 10 elseC elseC, 31 45 10 whileC whileC, 31 46 10 Flat Flat, 31 46 10 C C, 31 46 10 thenC thenC, 31 46 10 elseC elseC, 31 46 10 whileC whileC, 31 47 10 Flat Flat, 31 47 10 C C, 31 47 10 thenC thenC, 31 47 10 elseC elseC, 31 47 10 whileC whileC, 31 48 10 Flat Flat, 31 48 10 C C, 31 48 10 thenC thenC, 31 48 10 elseC elseC, 31 48 10 whileC whileC, 31 49 10 Flat Flat, 31 49 10 C C, 31 49 10 thenC thenC, 31 49 10 elseC elseC, 31 49 10 whileC whileC, 31 50 10 Flat Flat, 31 50 10 C C, 31 50 10 thenC thenC, 31 50 10 elseC elseC, 31 50 10 whileC whileC
+5000

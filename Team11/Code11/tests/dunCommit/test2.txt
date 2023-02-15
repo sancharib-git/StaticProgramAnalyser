@@ -1,0 +1,37 @@
+procedure main {
+    print a;
+    while (a != 0) {
+        call procA;
+        a = a / c + 2 * a * b + c; }
+    c = a + b;
+    if (a < c) then {
+        while (c >= d) {
+            read c;
+            a = a * b + c / 26 + d;
+            if (c == 0) then {
+                call procA;
+            } else {
+                d = a + 8;
+                call procB; }}
+    } else {
+        print a;
+        d = e + a * b * c;}}
+
+procedure procA {
+    idx = 0;
+    min = 28;
+    while (idx <= min) {
+        a = c + d;
+        if ((a < 2) && (a > d)) then {
+            idx = idx + 15;
+            call procB;
+        } else {
+            ifx = a + d + 17; }
+        print a; }
+call procB; }
+
+procedure procB {
+    if (e < d) then {
+        e = 10 + 6 + 9;
+    } else {
+        c = d / 18;}}

@@ -1,0 +1,35 @@
+1 - AffectsBip same proc, true because Affects is true, energy
+
+Select BOOLEAN such that AffectsBip(60,61)
+TRUE
+5000
+2 - AffectsBip same proc, true because Affects is true
+
+Select BOOLEAN such that AffectsBip(21,11)
+TRUE
+5000
+3 - AffectsBip same proc, false because Affects is false
+
+Select BOOLEAN such that AffectsBip(44,54)
+FALSE
+5000
+4 - AffectsBip diff proc, tired
+
+Select BOOLEAN such that AffectsBip(46,77)
+TRUE
+5000
+5 - AffectsBip diff proc, energy
+
+Select BOOLEAN such that AffectsBip(39,79)
+TRUE
+5000
+6 - AffectsBip diff proc, energy
+
+Select BOOLEAN such that AffectsBip(68,79)
+TRUE
+5000
+7 - AffectsBip diff proc
+
+Select BOOLEAN such that AffectsBip(39,84)
+TRUE
+5000

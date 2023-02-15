@@ -1,0 +1,5 @@
+procedure invalidCondExpr {
+while(xxx&&yyy||!(xxx<=www+30*(54%wr)) || (xxx-1000*67-124+(133%(23+56/2)))) {
+x = 2;
+}
+}

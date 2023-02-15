@@ -1,0 +1,10 @@
+procedure Example {
+  x = a + b;
+  z = 3;
+  i = 5;
+  while (x < 10) {
+	a = 6;
+  }
+  read x;
+}
+

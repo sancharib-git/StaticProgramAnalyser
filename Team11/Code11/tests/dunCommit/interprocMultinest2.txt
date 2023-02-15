@@ -1,0 +1,334 @@
+  procedure Flat {
+   read A;
+   print B;
+   call C;
+   a = B;
+   b = 211;
+   c = A + B - C * D / E % F;
+   d = 1 + 2 - 3 * 4 / 5 % 6;
+   e = A + 2 - C * 4 / E % 6;
+   f = ((A + 2) - C) * (4 / E) % F;
+  if (((!(a == 1)) && (2 > b)) || (1 < 2)) then {
+    read thenA;
+    print thenB;
+    call thenC;
+    call TwoNesting;
+    thena = thenB;
+    thenb = 211;
+    thenc = thenA + thenB - thenC * thenD / thenE % thenF;
+    thend = 1 + 2 - 3 * 4 / 5 % 6;
+    thene = thenA + 2 - thenC * 4 / thenE % 6;
+    thenf = ((thenA + 2) - thenC) * (4 / thenE) % thenF;
+    } else {
+    read elseA;
+    print elseB;
+    call elseC;
+    elsea = elseB;
+    elseb = 211;
+    elsec = elseA + elseB - elseC * elseD / elseE % elseF;
+    elsed = 1 + 2 - 3 * 4 / 5 % 6;
+    elsee = elseA + 2 - elseC * 4 / elseE % 6;
+    elsef = ((elseA + 2) - elseC) * (4 / elseE) % elseF;
+    }
+  e = A + 2 - C * 4 / E % 6;
+  f = ((A + 2) - C) * (4 / E) % F;
+  while ((!(a != b)) && ((a <= b) || (a >= b))) {
+    read whileA;
+    print whileB;
+    call whileC;
+    whilea = whileB;
+    whileb = 211;
+    whilec = whileA + whileB - whileC * whileD / whileE % whileF;
+    whiled = 1 + 2 - 3 * 4 / 5 % 6;
+    whilee = whileA + 2 - whileC * 4 / whileE % 6;
+    whilef = ((whileA + 2) - whileC) * (4 / whileE) % whileF;
+    }
+  e = A + 2 - C * 4 / E % 6;
+  f = ((A + 2) - C) * (4 / E) % F;
+  }
+
+  procedure C {
+    read C;
+  }
+  procedure thenC {
+    read thenC;
+  }
+
+
+  procedure elseC {
+    read elseC;
+  }
+  procedure whileC {
+    read whileC;
+  }
+
+  procedure TwoNesting {
+    read A;
+    print B;
+    call C;
+    A = B % C;
+    if (((1 % A1) / 2 > 3) && (1 + B + 3 + D444 == 10)) then {
+      read ifA;
+      print ifB;
+      call ifC;
+      ifA = ((ifB % ifC));
+      if ((!((1 % A2) / 2 * 2 > 3 + 0)) && (!(1 + B + ((3 + D521)) == 10))) then {
+        read ifIfA;
+        print ifIfB;
+        call ifIfC;
+        ifIfA = ifIfB % ifIfC;
+      } else {
+        read ifElseA;
+        print ifElseB;
+        call ifElseC;
+        ifElseA = ifElseB % ifElseC;
+      }
+      print ifB2;
+      read ifA2;
+      call ifC2;
+      ifA2 = ((ifB2 % ifC2)) * 2;
+      while ((!((1 % A) / 2 * 2 > 3 + 0)) && (((!(1 + B32 + 3 + D24 == 10)) && (x <= 2)) || (!(!(!(3/4/2/1 != ((222) * 32))))))) {
+        read ifWhileA;
+        call ifWhileC;
+        print ifWhileB;
+        call ThreeNesting;
+        ifWhileA = ifWhileB % ifWhileC;
+      }
+      call ifC3;
+      print ifB3;
+      read ifA3;
+      ifA3 = ifB3 % ifC3;
+      if ((((!(!((1 % A) / 2 * 2 > 3 + 0))) && (!(!(1 % B + 3 - D == 10)))) || (!(!(3/4/2/1 != ((222) * 32))))) || (x == 2)) then {
+        read ifIfContainerStmt;
+      } else {
+        read ifElseContainerStmt;
+      }
+      while (x == 2 + 3 + 3 + 4) {
+        read ifWhileContainerStmt;
+      }
+      read ifA4;
+      print ifB4;
+      ifA4 = ifB4 % ifC4;
+      call ifC4;
+    } else {
+      read elseA;
+      elseA = elseB % elseC;
+      print elseB;
+      call elseC;
+    }
+    read A2;
+    call C2;
+    print B2;
+    A2 = B2 % C2;
+    while (x >2  + 3) {
+      read whileA;
+      print whileB;
+      call whileC;
+      whileA = whileB % whileC;
+      while (!(x == 2)) {
+        read whileWhileA;
+        print whileWhileB;
+        call whileWhileC;
+        whileWhileA = whileWhileB % whileWhileC;
+      }
+      print whileB2;
+      read whileA2;
+      call whileC2;
+      whileA2 = whileB2 % whileC2;
+      if ((a > b) && (c > d)) then {
+        read whileIfA;
+        print whileIfB;
+        call whileIfC;
+        whileIfA = whileIfB % whileIfC;
+      } else {
+        read whileElseA;
+        print whileElseB;
+        call whileElseC;
+        whileElseA = whileElseB % whileElseC;
+      }
+      call whileC3;
+      print whileB3;
+      read whileA3;
+      whileA3 = whileB3 % whileC3;
+      while (x == (((2)))) {
+        read whileWhileContainerStmt;
+      }
+      if ((((x))) <= (((((3)))))) then {
+        read whileIfContainerStmt;
+      } else {
+        read whileElseContainerStmt;
+      }
+      whileA4 = whileB4 % whileC4;
+      print whileB4;
+      call whileC4;
+      read whileA4;
+    }
+    read A3;
+    A3 = B3 % C3;
+    call C3;
+    print B3;
+    A4 = A4;
+  }
+
+  procedure ifC {
+    read ifC;
+  }
+  procedure ifIfC {
+    read ifIfC;
+  }
+
+  procedure ifElseC{
+    read ifElseC;
+  }
+  procedure ifC2 {
+    read ifC2;
+  }
+  procedure ifWhileC {
+    read ifWhileC;
+  }
+  procedure ifC3 {
+    read ifC3;
+  }
+  procedure ifC4 {
+    read ifC4;
+  }
+  procedure C2 {
+    read C2;
+  }
+  procedure whileWhileC {
+    read whileWhileC;
+  }
+  procedure whileC2 {
+    read whileC2;
+  }
+  procedure whileIfC {
+    read whileIfC;
+  }
+  procedure whileElseC {
+    read whileElseC;
+  }
+  procedure whileC3 {
+    read whileC3;
+  }
+  procedure whileC4 {
+    read whileC4;
+  }
+  procedure C3 {
+    read C3;
+  }
+
+procedure ThreeNesting {
+  if (x > 1) then {
+    if = if;
+    if (x >= y) then {
+      then = then;
+      if (x == x) then {
+        if3 = ((eight * ((8 + nine) / (9 % (ten - ((10)))))));
+      } else {
+        if = if;
+        call FourNesting;
+      }
+      while = while;
+      while (x != x) {
+        if2while = 10;
+      }
+      while = while;
+    } else {
+      else = else;
+    }
+    while (procedure <= while) {
+      if (if < 1) then {
+        ifwhileif = ((((nine9)))) + (ten10ten / (((((eleven11even))))));
+      } else {
+        if = if22;
+      }
+      while (print == 2) {
+        ifwhile2 = (((twelve12twelve / thirteen)));
+      }
+    }
+  } else {
+    else = else;
+  }
+  while (ThreeNesting > 2 * 3) {
+    while (if < 2 / 10) {
+      while (while >= 2 * 1) {
+        ThreeNesting = ThreeNesting;
+      }
+      if (then >= 2) then {
+        ThreeNesting = ThreeNesting + ThreeNesting / ThreeNesting;
+        call FiveNesting;
+      } else {
+        call = call;
+      }
+    }
+    if (else > 2) then {
+      while (call >= 3) {
+        ThreeNesting = ThreeNesting;
+      }
+      if (read < 2) then {
+        procedure = procedure;
+      } else {
+        print = print;
+      }
+    } else {
+      while = while;
+    }
+  }
+}
+
+
+procedure FourNesting {
+  if (FiveNesting
+  >=  2) then {
+    FourNesting = (((((1 % ((FiveNesting + Four4Nesting))) * pineapple)) / 1337 - 2) * pear2 + pear3 % (apple4));
+    while (FourNesting <
+    FiveNesting) {
+      if (
+        call > FiveNesting) then {
+        while (Flat != TwoNesting) {
+          call FiveNesting;
+        }
+      } else {
+        FiveNesting = FourNesting;
+      }
+    }
+    Four4Nesting = ((((( (( 1) ) % (( FiveNesting +  Four4Nesting))) *
+    pineapple)) / (1337-2+3*bahasa4) - 2)   / pear2 - pear3* (apple4));
+  } else {
+    while = else;
+  }
+}
+
+
+procedure FiveNesting {
+  if (Final <= FiveNesting) then {
+    if (call == call) then {
+      FiveNesting    = Final
+       ;
+    } else {
+        Final =     FiveNesting   ;
+    }
+  } else {
+    while (while == while) {
+      while ((while > while) && (while < while)) {
+        if (if == else) then {
+          if = else;
+          while ((while <= if) || (while >= else)) {
+            while = while;
+            if = if;
+            procedure = procedure;
+            call Final;
+          }
+        } else {
+          procedure = Final;
+        }
+      }
+    }
+  }
+}
+
+
+procedure Final {
+  Final = Final;
+  read Final;
+}

@@ -1,0 +1,9 @@
+procedure test {
+x = 5;
+y = 3;
+q = y + 9;
+read a;
+print b;
+read c;
+}
+

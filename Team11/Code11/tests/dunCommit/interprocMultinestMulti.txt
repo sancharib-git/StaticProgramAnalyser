@@ -1,0 +1,330 @@
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000

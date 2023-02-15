@@ -1,0 +1,26 @@
+procedure cyclicCalls {
+call a;
+}
+procedure a {
+call b;
+}
+procedure b {
+call c;
+}
+procedure c {
+call d;
+call e;
+}
+procedure d {
+call e;
+}
+procedure e {
+call f;
+call g;
+}
+procedure f {
+call g;
+}
+procedure g {
+call cyclicCalls;
+}

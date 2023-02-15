@@ -1,0 +1,155 @@
+1 - Meaningless query, should still return TRUE
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2;
+Select BOOLEAN with 12 = 12
+TRUE
+5000
+2 - Meaningless query - return false
+
+Select BOOLEAN with 12 = 13
+FALSE
+5000
+3 - Meaningless query - If statement 12 is an assignment statement, return true
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2;
+Select BOOLEAN with a.stmt# = 12
+FALSE
+5000
+4 - Meaningless query - is line 217 a call statement, does 217 follow 216
+call c;
+Select BOOLEAN with c.stmt# = 215 such that Follows(214, c) such that Uses(214, "ad")
+TRUE
+5000
+5 - Meaningless query - is 186 a child of 187
+
+Select BOOLEAN such that Parent(187,186) such that Uses(186, "Bhutan")
+FALSE
+5000
+6 - Next, select boolean for prog lines belonging to different procedures
+stmt s; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select BOOLEAN such that Next (1,11)
+FALSE
+5000
+7 - Next, select synonym for prog lines belonging to same procedure
+stmt s; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select BOOLEAN such that Next (1,2)
+TRUE
+5000
+8 - Return TRUE if there is an execution path from statement 71 to 70
+
+Select BOOLEAN such that Next* (71, 70)
+TRUE
+5000
+9 - Return TRUE if there an execution path from statement 13 to 12 that passes through 17
+
+Select BOOLEAN such that Next* (13, 12) and Next* (13, 17)
+TRUE
+5000
+10 - Return true if procedure c calls procedure d, e and f
+
+Select BOOLEAN such that Calls("c", "d") and Calls("c", "e") and Calls("c", "f")
+TRUE
+5000
+11 - Return true if procedure a indirectly calls procedure b
+
+Select BOOLEAN such that Calls*("a", "b")
+FALSE
+5000
+12 - return true if proc b is indirectly called by any proc and proc d calls any proc and if proc food is called by any proc
+procedure p;
+Select BOOLEAN such that Calls*(_,"b") and Calls("d", p) such that Calls(_, "food")
+TRUE
+5000
+13 - return true if there are cyclic calls
+procedure p;
+Select BOOLEAN such that Calls*(p,p)
+FALSE
+5000
+14 - return true if proc birds modifies a variable that food modifies
+variable v;
+Select BOOLEAN such that Modifies("birds", v) and Modifies("food", v)
+TRUE
+5000
+15 - return true if a while statement modifies a variable that an if statement modifies
+while w; if ifs; variable v;
+Select BOOLEAN such that Modifies(w, v) such that Modifies(ifs, v)
+TRUE
+5000
+16 - return true if while is nested in another while in procedure birds
+while w, w1;
+Select BOOLEAN such that Parent*(w, w1) and Next*(230, w)
+TRUE
+5000
+17 - return true if an if statement indirectly follows stmt number 43
+if ifs; stmt s;
+Select BOOLEAN such that Follows*(s, ifs) with s.stmt# = 43
+FALSE
+5000
+18 - return true if proc procedure uses a variable in proc while
+variable v;
+Select BOOLEAN such that Uses("procedure", v) and Uses("while", v)
+TRUE
+5000
+19 - syntactically invalid return none
+stmt s; variable v;
+Select BOOLEAN with s.stmtNum = v.varName
+none
+5000
+20 - semantically invalid query
+stmt s; constant c;
+Select BOOLEAN with s = c.value
+FALSE
+5000
+21 - valid query
+prog_line pl; constant c;
+Select BOOLEAN with c.value = pl
+TRUE
+5000
+22 - semantically invalid return false
+
+Select BOOLEAN such that Uses(_,"x")
+FALSE
+5000
+23 - semantically invalid return false
+
+Select BOOLEAN such that Modifies(_,"sparrow")
+FALSE
+5000
+24 - semantically invalid return false
+call c;
+Select BOOLEAN pattern c(_,_)
+FALSE
+5000
+25 - semantically invalid return false
+print pn; variable v;
+Select BOOLEAN pattern pn(v,_,_)
+FALSE
+5000
+26 - semantically invalid return false
+read r;
+Select BOOLEAN pattern r("w",_)
+FALSE
+5000
+27 - syntactically invalid return non
+read
+Select BOOLEAN
+none
+5000
+28 - syntax invalid return none
+read rd;
+Select BOOLEAN pattern rd.varName = "c"
+none
+5000
+29 - syntax invalid
+while w;
+Select BOOLEAN such that w.stmtNum = 3
+none
+5000
+30 - syntax invalid
+if ifs;
+Select BOOLEAN such that ifs.stmt# == 5
+none
+5000
+31 - query
+
+Select BOOLEAN such that Modifies(169, "shoes")
+FALSE
+5000

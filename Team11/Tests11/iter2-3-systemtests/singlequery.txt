@@ -1,0 +1,4 @@
+52 - Return TRUE if there an execution path from statement 13 to 12 that passes through 17
+Select BOOLEAN such that Next* (13, 12) and Next* (13, 17)
+TRUE
+5000

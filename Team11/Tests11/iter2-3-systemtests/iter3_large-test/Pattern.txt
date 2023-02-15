@@ -1,0 +1,170 @@
+1 - Assignment, select assignment statements that has subexpression 90 + 40
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; print pn;
+Select a pattern a(_,_"90+40"_)
+9
+5000
+2 - Assignment, select assignment statements that has subexpression (90 + 40)
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; print pn;
+Select a pattern a(_,_"(90+40)"_)
+9
+5000
+3 - Assignment, select assignment statements that has subexpression d*a/b
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; print pn;
+Select a pattern a(_,_"d*a/b"_)
+9
+5000
+4 - Assignment, select assignment statements that has subexpression f+d*a/b
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; print pn;
+Select a pattern a(_,_"f+d*a/b"_)
+none
+5000
+5 - Assignment, select assignment statements that has subexpression 200- 70 + 10 - a
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; print pn;
+Select a pattern a(_,_"200- 70 + 10 - a"_)
+90
+5000
+6 - Assignment, select assignment statements that has subexpression choco *3*3%3
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; print pn;
+Select a pattern a(_,_"choco *3*3%3"_)
+138
+5000
+7 - Assignment, select assignment statements that has subexpression (45%fg+gh-ad*bc)
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; print pn;
+Select a pattern a(_,_"(45%fg+gh-ad*bc)"_)
+208, 211, 212, 214, 217, 220, 221
+5000
+8 - If pattern, return statements that are if statement and use variable(s) in condition
+if ifs; while w;
+Select ifs pattern ifs(_,_,_)
+3, 14, 26, 41, 50, 77, 86, 97, 111, 123, 134, 151, 157, 172, 185, 191, 216, 230, 234, 243, 247, 259, 266, 281
+5000
+9 - While pattern, return statements that are while statement and use variable(s) in condition
+if ifs; while w;
+Select w pattern w(_,_)
+12, 13, 18, 38, 39, 40, 55, 59, 64, 70, 72, 84, 100, 108, 115, 133, 143, 145, 169, 192, 219, 222, 228, 238, 240, 245, 249, 252, 260, 262, 264, 267, 271, 278, 291, 292, 293
+5000
+10 - If pattern,return tuple of if statement with control variable and the control variable
+if ifs; while w; variable v;
+Select <ifs, v> pattern ifs(v,_,_)
+3 a, 3 b, 3 c, 14 a,14 b, 14 g, 26 a, 26 b, 26 g, 41 a, 41 c, 41 b, 50 d, 77 b, 77 c, 77 d, 86 a, 86 b, 97 m, 97 l, 97 p, 111 y, 123 else,123 if,123 while,134 banana,134 choco,151 appleSlices,151 cornCup,151 happyMeal,151 mcNuggets,157 a,157 b,172 j34nj3ggings,185 Ethiopia,185 Mongolia,191 Argentina,216 a,216 b,216 c,216 d,216 e,216 f,216 g,216 h,216 j,230 ostrich,230 sparrow,234 hen,234 rooster,243 duck,243 rooster,247 flamingo,247 swan,259 a,259 beta,266 left,281 colors,281 procedure
+5000
+11 - While pattern,return tuple of while statement with control variable and the control variable
+if ifs; while w; variable v;
+Select <w, v> pattern w(v,_)
+12 a, 12 c, 12 b, 12 j, 13 a, 13 b, 18 a, 18 b, 38 d,38 b, 38 e, 39 d, 39 e,39 f, 39 g, 39 c, 39 a, 39 b, 40 a, 40 b, 55 i, 59 a, 59 b, 64 d, 64 g, 64 f, 70 a, 70 x, 72 b, 84 f, 84 h, 84 d, 100 F, 100 c, 108 c, 108 x, 115 else,115 if,115 then,115 while,133 banana,133 choco,143 filetOfish,143 mcmuffin,143 mcspicy,145 doubleMcSpicy,145 mcspicy,169 intrend,169 jeggings,192 Argentina,219 a,219 b,219 c,219 d,219 e,219 f,219 g,219 h,219 i,219 q,219 x,219 y,222 a,222 abcdefg,222 ad,222 alba,222 b,222 bc,222 c,222 d,222 e,222 f,222 fg,222 gh,222 jane,222 rog,222 xo,228 ostrich,228 sparrow,238 rooster,240 hen,240 rooster,245 flamingo,245 swan,249 bluebird,249 kingfisher,252 bluebird,252 kingfisher,260 beta,262 tmp,264 x,267 right,271 c,278 pink,291 blue,291 read,292 call,292 red,293 print
+5000
+12 - Find all while statements with c as a control variable
+while w;
+Select w pattern w ("c", _)
+12, 39, 100, 108, 219,222,271
+5000
+13 - find all variables used by while
+while w; variable v;
+Select v pattern w(v,_)
+a,b,c,d, e, f,g,h,i,j,q,x,y, F, while, if, then, else, choco, banana, filetOfish, mcspicy, mcmuffin, doubleMcSpicy, jeggings, intrend, Argentina, abcdefg, fg, gh, ad, bc, alba, jane, xo, rog, sparrow, ostrich, rooster, hen, flamingo, swan, kingfisher, bluebird, beta, tmp, right, pink, read, blue, call, red, print
+5000
+14 - find all variables used by if
+if ifs; variable v;
+Select v pattern ifs(v, _,_)
+a,b,c,d,e,f, g,h,j,l,m,p,y,if,else,while, choco,banana,happyMeal, appleSlices,cornCup,mcNuggets,j34nj3ggings, Mongolia, Ethiopia, Argentina, sparrow, ostrich, hen, rooster, duck, flamingo, swan, beta, left, procedure, colors
+5000
+15 - find all control variables used by while and if
+while w; if ifs; variable v;
+Select v pattern w(v,_) pattern ifs(v,_,_)
+a,b,c,d,e,f,g,h,j,y,else, if, while, choco, banana, Argentina, sparrow, ostrich, hen, rooster, flamingo, swan, beta
+5000
+16 - return while stmts that use a specified variable
+while w;
+Select w pattern w("a",_)
+12,13,18,39,40,59,70,219,222
+5000
+17 - return while stmts that use a specified variable
+while w;
+Select w pattern w("q",_)
+219
+5000
+18 - return if stmts that use a certain variable
+if ifs;
+Select ifs pattern ifs("ad",_,_)
+none
+5000
+19 - return all the variables that while stmt 219 uses
+while w; variable v;
+Select v pattern w(v,_) with w.stmt#=219
+a,b,c,d,e,f,g,h,i,x,y,q
+5000
+20 - return all the variables if stmt 123 uses
+if ifs; variable v;
+Select v pattern ifs(v,_,_) with ifs.stmt#=123
+if,else,while
+5000
+21 - return all while statements that use while as a CV
+while while;
+Select while pattern while("while", _)
+115
+5000
+22 - return all assignments with specified subexpr
+assign a;
+Select a pattern a(_,_"100*(bc%tv+adbc-(df*2)+33)"_)
+208
+5000
+23 - return all assignments with specified subexpr
+assign a; variable v;
+Select a pattern a(v, _"(34%67+32-(a*b/d+e)+(99+45/32-65))"_)
+208
+5000
+24 - return all assignments with specified subexpr
+assign a; variable v;
+Select a pattern a(v, _"(a+b-20)%30/70"_)
+2,209, 218, 211
+5000
+25 - same as 23 without outer brackets
+assign a; variable v;
+Select a pattern a(v, _"34%67+32-(a*b/d+e)+(99+45/32-65)"_)
+208
+5000
+26 - select assignment with a small subexpr
+assign a;
+Select a pattern a(_,_"e%f"_)
+none
+5000
+27 - select assignment with a small subexpr
+assign a;
+Select a pattern a(_,_"c/d*e"_)
+208, 212, 217
+5000
+29 - select assignment with multiple subexpr
+assign a;
+Select a pattern a(_,_"673"_) and a(_,_"33098/67"_) pattern a(_,_"((alba-jane+xo)/(67*89-90)%rog)"_)
+213
+5000
+30 - select assignment with multiple subexpr
+assign alphabet; variable v;
+Select alphabet pattern alphabet(v, _"(alba-jane+xo)"_) and alphabet(_, _"30"_) pattern alphabet(v, _"45/32"_) and alphabet(v, _"a*b"_)
+209
+5000
+31 - invalid query assignment
+assign a;
+Select alphabet pattern a(_,_)
+none
+5000
+32 - invalid query if
+if ifs;
+Select ifs pattern ifs(_,_,_,_)
+none
+50000
+33 - invalid query while
+while w;
+Select w such that pattern w(_,_)
+none
+5000
+34 - invalid query while
+while w;
+Select w pattern w("","")
+none
+5000
+35 - invalid query assign
+assign a;
+Select a pattern a(23,"andme")
+none
+5000

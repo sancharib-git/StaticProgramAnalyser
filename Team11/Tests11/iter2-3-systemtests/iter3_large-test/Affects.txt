@@ -1,0 +1,175 @@
+1 - return true if Affects(_,_)
+
+Select BOOLEAN such that Affects(_,_)
+TRUE
+5000
+2 - return all procedures if Affects(23,28) is true
+procedure p;
+Select p such that Affects(23, 28)
+none
+5000
+3 - return all assignments that 117 affects
+assign a;
+Select a such that Affects(117, a)
+116, 117, 118, 126, 127
+5000
+4 - return all assignments that affect 241
+assign a;
+Select a such that Affects(a, 241)
+241
+5000
+5 - return all assignments that affect another assignment
+assign a;
+Select a such that Affects(a, _)
+1,2,7,17,19,22,23,27,58,61,62, 63,66,75,117, 118, 124, 125, 128,129,135,136, 137, 138, 139, 166, 167,190, 194, 196, 201, 202,207,208, 209, 211, 212, 213, 229, 231, 232, 239, 241, 242, 244, 248,250,258, 265,270, 272, 273, 285, 286
+5000
+6 - return all assignments affected by another assignment - might be a next bug
+assign a;
+Select a such that Affects(_, a)
+2,7,9,17,19,23,24,28,58,62,65,76,116,117,118,126,127,135,136,137,138,139,140,168,193,194,196,197,200,201,202,209,211,212,214,229,239,241,242,248,265,272,273,286,287
+5000
+7 - return all the assignments that 208 and 209 affects
+assign a;
+Select a such that Affects(208, a) and Affects(209, a)
+211,212,214
+5000
+8 - return all assignments that affects itself
+assign a;
+Select a such that Affects(a,a)
+17,19,58,117,135,194,229,241,242,248,265,272
+5000
+9 - return all tuples of assignments a,b where a affects b
+assign a,b;
+Select <a,b> such that Affects(a,b)
+1 2, 1 7, 1 9,2 7, 7 9, 19 17, 22 23, 22 24, 23 24, 27 28, 61 62, 63 62, 62 65,66 65, 75 76, 117 116, 117 118, 117 126, 117 127, 118 117, 124 126,125 126, 128 135, 128 137,128 139, 128 140, 129 135, 129 136, 129 139, 129 140, 135 137,135 139, 135 140,136 140,138 137,138 139, 138 135, 138 140, 139 140, 166 168, 167 168, 190 196, 194 193, 196 197, 201 200, 201 202, 202 201, 207 201, 208 209, 208 211, 208 212, 208 214, 209 211, 209 212, 209 214, 211 212, 212 214, 213 214, 231 229, 232 229, 239 242, 244 242,241 242, 241 239, 248 248,250 248, 258 272,265 273, 270 272, 273 265,17 17,19 19,58 58,117 117,135 135,137 138,194 194,229 229,241 241,242 242,265 265,272 272, 285 286,285 287, 286 287
+5000
+10 - return all variables affected by assignments
+assign a; variable v;
+Select v such that Affects(a,_) pattern a(v,_)
+a,c,h,l,m,n,b,g,f,while,then, else,if,banana, choco, strawberryShortcake, BLACKfore5t, dress,shirt,Argentina,Bhutan, d,e,sparrow,ostrich, hen,rooster,swan,x,read,print
+5000
+11- return true if Affects*(_,_)
+
+Select BOOLEAN such that Affects*(_,_)
+TRUE
+5000
+12 - return all assignments that affects another assign if 116 affect* 126
+assign a,b;
+Select a such that Affects(a,b) such that Affects*(116,126)
+none
+5000
+13 - select all assignments that 213 affects*
+assign a;
+Select a such that Affects*(213, a)
+214
+5000
+14 - Select all assignments that 140 is affects*ed by
+assign a;
+Select a such that Affects*(a, 140)
+128, 129, 135, 136, 137,138, 139
+5000
+15 - Select all assignments that affects* another assignment
+assign a;
+Select a such that Affects*(a,_)
+1, 2, 7, 17, 19, 22, 23, 27, 58, 61, 62, 63, 66, 75, 117, 118, 124, 125, 128, 129, 135, 136, 137, 138, 139, 166, 167, 190, 194, 196, 201, 202, 207, 208, 209, 211, 212, 213, 229, 231, 232, 239, 241, 242, 244, 248, 250,258, 265, 270, 272, 273, 285, 286
+5000
+16 - Select all assignments that are affects*ed by another assignment
+assign a;
+Select a such that Affects*(_,a)
+2,7,9,17,19,23,24,28,58,62,65,76,116,117,118,126,127,135,136,137,138,139,140,168,193,194,196,197,200,201,202,209,211,212,214,229,239,241,242,248,265,272,273,286,287
+5000
+17 - select tuples of assignments that affect* each other but does not affect each other
+assign a,b,c;
+Select <a,c> such that Affects(a,b) and Affects*(b,c)
+1 7, 1 9, 2 9, 17 17, 19 19, 19 17, 211 214, 22 24, 58 58, 61 65, 63 65, 117 117, 117 116, 118 117, 117 126,117 127,117 118, 118 118, 118 116, 118 126, 118 127,128 135, 128 137, 128 138, 128 139,128 140, 129 135, 129 137, 129 138, 129 139, 129 140,135 135, 137 137, 138 138, 135 137,135 138,135 139,135 140,138 135, 138 137, 137 135, 137 138, 137 139, 137 140, 138 139, 138 140, 190 197, 194 193, 194 194, 201 201, 201 202, 202 200, 202 201, 202 202, 207 200, 207 201, 207 202, 208 211, 208 212, 208 214, 209 212, 209 214, 229 229, 231 229, 232 229, 239 242, 241 239, 241 241, 241 242, 242 242, 244 242, 248 248, 250 248, 258 272, 265 265, 265 273, 270 272, 272 272, 273 265, 273 273, 285 287, 201 200
+5000
+18 - Select all variables affects*ed by 124
+assign a; variable v;
+Select v such that Affects*(124, _) pattern a(v,_) with a.stmt# = 124
+then
+5000
+19 - select assigments that affect* each other inside a while loop
+assign a,b; while w;
+Select <a,b> such that Affects*(a,b) such that Parent*(w,a) and Parent*(w,b) with w.stmt# = 228
+229 229, 241 239, 231 229, 232 229, 241 242, 239 242, 241 241, 242 242, 244 242,250 248, 248 248
+5000
+20 - return the variables modified in assignments that affects* 140
+assign a; variable v;
+Select v such that Affects*(_,140) such that Uses(a,v) with a.stmt#=140
+choco, banana, strawberryShortcake, BLACKfore5t, vanilla
+5000
+21 - return all assign that affect another assign if Affects(111,_) is true, 111 is while stmt
+assign a, b;
+Select a such that Affects(a,b) such that Affects(111,_)
+none
+5000
+22 - return all assign affected by another assign if Affects(_,168) is true
+assign a, b;
+Select a such that Affects(_,b) such that Affects(_,168)
+1, 2, 4, 7, 9, 10, 11, 17, 19, 22, 23, 24, 27, 28, 46, 47, 53, 58, 61, 62, 63, 65, 66, 67, 75, 76, 90, 92, 98, 99, 104, 105, 109, 112, 116,117,118,124,125,126,127,128,129,135,136,137,138,139,140,144,147,148,152,153,154,166,167,168,175,176,179,186,187,190,193,194,195,196,197,200,201,202,203,205,206,207,208,209,210,211,212,213,214,217,218,220,221,224,225,229,231,232,235,236,239,241,242,244,246,248,250,254,255,256,258,261,263,265,269,270,272,273,274,275,276,277,285,286,287,288,289,290,294,298,300
+5000
+23 - return all procs if Affects(_,93 ) is true , 93 is call
+procedure p;
+Select p such that Affects(_93)
+none
+5000
+24 - return all procs if Affects(_,118) is true
+procedure p;
+Select p such that Affects(_,118)
+a, b, c, d, e, f, g, h, i, j, while, cake, food, calls, cL0th3s, CountriesIWantToVisit, procedure, longAssignments, longCondExpr, birds, ABC, colors
+5000
+25 - return all assignments that affect another assignment
+assign a, a1; prog_line n, n1;
+Select a such that Affects(a, a1)
+1, 2, 7, 17, 19, 22, 23, 27, 58, 61, 62, 63, 66, 75, 117, 118, 124, 125, 128, 129, 135, 136, 137, 138, 139, 166, 167, 190, 194, 196, 201, 202, 207, 208, 209, 211, 212, 213, 229, 231, 232, 239, 241, 242, 244, 248,250, 258, 265, 270, 272, 273, 285, 286
+5000
+26 - return all statements that affects another assignment statement directly or indirectly
+assign a, a1;
+Select a such that Affects*(a,a1)
+1, 2, 7, 17, 19, 22, 23, 27, 58, 61, 62, 63, 66, 75, 117, 118, 124, 125, 128, 129, 135, 136, 137, 138, 139, 166, 167, 190, 194, 196, 201, 202, 207, 208, 209, 211, 212, 213, 229, 231, 232, 239, 241, 242, 244, 248,250, 258, 265, 270, 272, 273, 285, 286
+5000
+27 - return all result for transitive closure of Affects
+assign a, a1;
+Select <a,a1> such that Affects*(a,a1)
+1 2,1 7,1 9, 2 7, 2 9, 7 9, 17 17, 19 19, 117 116,117 117,117 118,117 126,117 127,118 117,118 118,124 126,125 126,128 135,128 137,128 138,128 139,128 140,129 135,129 136,129 139,129 140,135 135,135 137,135 138,135 139,135 140,136 140,137 135,137 137,137 138,137 139,137 140,138 135,138 137,138 138,138 139,138 140,139 140,166 168,167 168,19 17,190 196,190 197,194 193,194 194,196 197,201 200,201 201,201 202,202 201,202 202,207 201,207 202,208 209,208 211,208 212,208 214,209 211,209 212,209 214,211 212,211 214,212 214,213 214,22 23,22 24,229 229,23 24,231 229,232 229,239 242,241 239,241 241,241 242,242 242,244 242,248 248,250 248,258 272,265 265,265 273,27 28,270 272,272 272,273 265,273 273,285 286,285 287,286 287,58 58,61 62,61 65,62 65,63 62,66 65,75 76,118 116,118 126,118 127,129 137,129 138,202 200,207 200,63 65
+5000
+28 - queries if there are any transitive closure of Affects from statement 8, invalid query
+assign a, a1;
+Select BOOLEAN such that Affects*(8,_)
+FALSE
+5000
+29 - queries if there are any transitive closure of Affects from statement 7, wildcard
+assign a, a1;
+Select BOOLEAN such that Affects*(7,_)
+TRUE
+5000
+30 - queries if there are any transitive closure of Affects from statement 7, synonym
+assign a, a1;
+Select BOOLEAN such that Affects*(7,a)
+TRUE
+5000
+31 - queries if there are any assignment statements affected by another assignment statement, synonym
+assign a, a1;
+Select BOOLEAN such that Affects*(7,a)
+TRUE
+5000
+32 - queries if there are any assignment statements affected by another assignment statement, wildcard
+assign a, a1;
+Select BOOLEAN such that Affects*(7,_)
+TRUE
+5000
+33 - queries if there are any assignment statements affected by another assignment statement, wildcard
+assign a, a1;
+Select BOOLEAN such that Affects*(17,_)
+TRUE
+5000
+34 - queries if there are any assignment statements affected by statement 190, wildcard
+assign a, a1;
+Select BOOLEAN such that Affects*(190,_)
+TRUE
+5000
+35 - returns any assignment statements affected by statement 190, synonym
+assign a, a1;
+Select a such that Affects*(190,a)
+196,197
+5000

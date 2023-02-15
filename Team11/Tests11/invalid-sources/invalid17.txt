@@ -1,0 +1,11 @@
+procedure dupProcedure {
+x=0;
+}
+
+procedure dupProcedure {
+x=1;
+}
+
+procedure call {
+call dupProcedure;
+}

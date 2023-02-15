@@ -1,0 +1,21 @@
+procedure indIrEcTrecurSIVE {
+if (11111111111111111111111111111111 != d11111111) then {
+
+	call indIrEcTrecurSIVE2;
+} else  {
+	hi = hi;
+}
+}
+
+procedure indIrEcTrecurSIVE2 {
+	while (x == 2) {
+	while (222 == 222) {
+if (x > 2) then {
+	x = 2;
+} else {
+while (10 == 20d) {
+	call indIrEcTrecurSIVE; }
+} 
+}
+}
+}

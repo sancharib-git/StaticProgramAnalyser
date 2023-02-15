@@ -1,0 +1,13 @@
+# Ignore build folder
+/build_win
+/src/spa/src/QueryEvaluatorIter1.cpp
+/src/spa/src/QueryEvaluatorIter1.h
+/tests/large-test/SingleQuery.txt
+/tests/large-test/OptimiserTest.txt
+/tests/large-test/ManyQueries.txt
+/tests/iter2_tests/
+/tests/iter3_tests/
+/tests/stress-test/
+/tests/iter2-systemtests/large-test/AffectsBipShortSource.txt
+/tests/quicktest/
+/tests/large-test/

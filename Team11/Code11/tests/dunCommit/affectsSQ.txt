@@ -1,0 +1,245 @@
+1 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 7)
+1, 2, 3, 4, 5, 6
+5000
+2 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 6)
+1, 2, 3, 4, 5
+5000
+3 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 5)
+1, 2, 3, 4
+5000
+4 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 46)
+8, 34, 35, 37, 41, 45
+5000
+5 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 43)
+8, 34, 35, 41
+5000
+6 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(8, s)
+34, 35, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46
+5000
+7 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 82)
+47, 73, 74, 76, 78, 81, 79, 80
+5000
+8 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(77, s)
+none
+5000
+9 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 78)
+47, 73, 74, 76
+5000
+10 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(78, s)
+81, 82
+5000
+11 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 119)
+83, 109, 110, 112, 113, 115, 116, 117, 118, 89
+5000
+12 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 117)
+83, 109, 110, 112, 113, 115, 116
+5000
+13 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(109, s)
+110, 112, 113, 114, 115, 116, 117, 118, 119
+5000
+14 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 156)
+120, 146, 147, 149, 150, 151, 152, 153, 154, 155, 122, 123, 125, 126, 127
+5000
+15 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 152)
+120, 146, 147, 151, 153, 154, 122, 123
+5000
+16 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(150, s)
+149, 155, 156
+5000
+17 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 194)
+193, 192, 187, 189, 188, 190, 191, 184, 183, 157, 159, 160, 162, 164
+5000
+18 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(157, s)
+183, 184, 186, 187, 188, 189, 190, 191, 192, 193, 194
+5000
+19 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 226)
+195, 221, 222, 224, 225
+5000
+20 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 224)
+195, 221
+5000
+21 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 269)
+227, 253, 254, 256, 257, 259, 265, 261, 262, 263, 267, 268
+5000
+22 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(266, s)
+none
+5000
+23 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(265, s)
+266, 267, 268, 269
+5000
+24 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 314)
+270, 296, 297, 299, 300, 302, 303, 304, 305, 313, 276, 274, 277
+5000
+25 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 311)
+270, 296, 297, 306, 307, 308, 309, 310
+5000
+26 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 353)
+315, 341, 342, 344, 345, 347, 348, 349, 350, 351, 352, 320, 322, 323
+5000
+27 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(350, s)
+347, 348, 351, 352, 353
+5000
+28 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 396)
+354, 380, 381, 383, 384, 385, 387, 388, 389, 390, 391, 392, 393, 394, 395, 366, 358, 364, 362, 361, 357, 356, 363
+5000
+29 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(388, s)
+395, 396
+5000
+30 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 439)
+397, 423, 424, 426, 427, 428, 430, 431, 432, 433, 434, 435, 436, 437, 438, 402, 408, 407, 406, 400, 401, 399, 405, 409
+5000
+31 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(433, s)
+435, 426, 427, 432, 437, 431, 430, 428, 438, 439
+5000
+32 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 484)
+440, 466, 467, 469, 470, 472, 474, 475, 477, 478, 479, 480, 481, 482, 483, 445, 451, 450, 449, 443, 444, 442, 452, 447
+5000
+33 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(475, s)
+474, 472, 483, 484
+5000
+34 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 535)
+485, 511, 512, 525, 526, 527, 533, 534
+5000
+35 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(485, s)
+511, 512, 515, 516, 517, 519, 520, 521, 525, 526, 527, 528, 529, 530, 533, 534, 535
+5000
+36 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(528, s)
+529, 530
+5000
+37 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 580)
+536, 562, 563, 565, 566, 568, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 542, 547, 544, 541, 540, 539, 546, 549
+5000
+38 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(566, s)
+568, 578, 579, 580
+5000
+39 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 628)
+581, 607, 608, 609, 611, 612, 613, 616, 617, 622, 623, 624, 625, 626, 627
+5000
+40 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 622)
+none
+5000
+41 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 616)
+none
+5000
+42 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(616, s)
+617, 619, 620, 623, 624, 625, 626, 627, 628
+5000
+43 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 673)
+629, 655, 656, 657, 659, 660, 661, 665, 666, 668, 669, 670, 671, 672, 635, 636, 637
+5000
+44 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 663)
+629, 655, 656, 657
+5000
+45 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(663, s)
+none
+5000
+46 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 714)
+674, 700, 701, 702, 705, 706, 707, 709, 710, 711, 712, 713, 677, 678, 679, 680, 681, 682
+5000
+47 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(705, s)
+709, 710, 711, 712, 713, 714
+5000
+48 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(s, 759)
+715, 741, 742, 743, 746, 747, 748, 751, 752, 753, 754, 755, 756, 757, 758, 718, 719, 720
+5000
+49 - Affects* Control Flow
+stmt s;
+Select s such that Affects*(746, s)
+754, 755, 756, 757, 758, 759
+5000

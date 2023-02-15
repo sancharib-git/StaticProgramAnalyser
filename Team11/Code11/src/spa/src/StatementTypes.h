@@ -1,0 +1,8 @@
+//
+// Created by X ZZ on 13/9/21.
+//
+
+#ifndef AUTOTESTER_STATEMENTTYPES_H
+#define AUTOTESTER_STATEMENTTYPES_H
+enum StatementTypes { ASSIGNMENT = -2, CALL = -3, PRINT = -4, READ = -5, WHILE = -6, IF = -7, ELSE = -8, NO_TYPE = -9, ERROR=-10};
+#endif //AUTOTESTER_STATEMENTTYPES_H

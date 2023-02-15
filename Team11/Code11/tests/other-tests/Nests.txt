@@ -1,0 +1,14 @@
+procedure birds {
+    pigeon = 3;
+    seagull = pigeon + 57;
+    crow = 1;
+    while (crow > pigeon) {
+        seagull = seagull - 2;
+        if (crow != 4) then {
+            penguin = 8;
+            emu = 1;
+        }
+    }
+    read ostrich;
+    print duck;
+}

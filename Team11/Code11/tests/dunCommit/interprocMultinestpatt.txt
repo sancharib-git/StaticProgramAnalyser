@@ -1,0 +1,400 @@
+1 - Pattern w (variable)
+while w; variable v;
+Select w pattern w(v, _)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+2 - Pattern w (wildcard)
+while w;
+Select w pattern w(_, _)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+3 - Pattern w (wildcard)
+while w;
+Select w pattern w("a", _)
+32
+5000
+4 - Pattern w (procedure) Invalid left
+while w; procedure p;
+Select w pattern w(p, _)
+none
+5000
+5 - Pattern w (stmt) Invalid left
+while w; stmt s;
+Select w pattern w(s, _)
+none
+5000
+6 - Pattern w (read) Invalid left
+while w; read rd;
+Select w pattern w(rd, _)
+none
+5000
+7 - Pattern w (print) Invalid left
+while w; print pn;
+Select w pattern w(pn, _)
+none
+5000
+8 - Pattern w (call) Invalid left
+while w; call c;
+Select w pattern w(c, _)
+none
+5000
+9 - Pattern w (assign) Invalid left
+while w; assign a;
+Select w pattern w(a, _)
+none
+5000
+10 - Pattern w (while) Invalid left
+while w;
+Select w pattern w(w, _)
+none
+5000
+11 - Pattern w (if) Invalid left
+while w; if ifs;
+Select w pattern w(ifs, _)
+none
+5000
+12 - Pattern w (const) Invalid left
+while w; constant const;
+Select w pattern w(const, _)
+none
+5000
+13 - Pattern w (pl) Invalid left
+while w; prog_line pl;
+Select w pattern w(pl, _)
+none
+5000
+14 - Pattern w (constValue) Invalid left
+while w;
+Select w pattern w(1, _)
+none
+5000
+15 - Pattern w (BOOLEAN) Invalid left
+while w;
+Select w pattern w(BOOLEAN, _)
+none
+5000
+16 - Pattern w (Tuple) Invalid left
+while w;
+Select w pattern w(<w>, _)
+none
+5000
+17 - Pattern w (p.procName) Invalid left
+while w; procedure p;
+Select w pattern w(p.procName, _)
+none
+5000
+18 - Pattern w (c.procName) Invalid left
+while w; call c;
+Select w pattern w(c.procName, _)
+none
+5000
+19 - Pattern w (v.varName) Invalid left
+while w; variable v;
+Select w pattern w(v.varName, _)
+none
+5000
+20 - Pattern w (rd.varName) Invalid left
+while w; read rd;
+Select w pattern w(rd.varName, _)
+none
+5000
+21 - Pattern w (pn.varName) Invalid left
+while w; print pn;
+Select w pattern w(pn.varName, _)
+none
+5000
+22 - Pattern w (const.value) Invalid left
+while w; constant const;
+Select w pattern w(const.value, _)
+none
+5000
+23 - Pattern w (s.stmt#) Invalid left
+while w; stmt s;
+Select w pattern w(s.stmt#, _)
+none
+5000
+24 - Pattern w (rd.stmt#) Invalid left
+while w; read rd;
+Select w pattern w(rd.stmt#, _)
+none
+5000
+25 - Pattern w (pn.stmt#) Invalid left
+while w; print pn;
+Select w pattern w(pn.stmt#, _)
+none
+5000
+26 - Pattern w (c.stmt#) Invalid left
+while w; call c;
+Select w pattern w(c.stmt#, _)
+none
+5000
+27 - Pattern w (w.stmt#) Invalid left
+while w;
+Select w pattern w(w.stmt#, _)
+none
+5000
+28 - Pattern w (ifs.stmt#) Invalid left
+while w; if ifs;
+Select w pattern w(ifs.stmt#, _)
+none
+5000
+29 - Pattern w (a.stmt#) Invalid left
+while w; assign a;
+Select w pattern w(a.stmt#, _)
+none
+5000
+30 - Pattern w (procedure) Invalid right
+while w; procedure p;
+Select w pattern w(_, p)
+none
+5000
+31 - Pattern w (stmt) Invalid right
+while w; stmt s;
+Select w pattern w(_, s)
+none
+5000
+32 - Pattern w (read) Invalid right
+while w; read rd;
+Select w pattern w(_, rd)
+none
+5000
+33 - Pattern w (print) Invalid right
+while w; print pn;
+Select w pattern w(_, pn)
+none
+5000
+34 - Pattern w (call) Invalid right
+while w; call c;
+Select w pattern w(_, c)
+none
+5000
+35 - Pattern w (assign) Invalid right
+while w; assign a;
+Select w pattern w(_, a)
+none
+5000
+36 - Pattern w (while) Invalid right
+while w;
+Select w pattern w(_, w)
+none
+5000
+37 - Pattern w (if) Invalid right
+while w; if ifs;
+Select w pattern w(_, ifs)
+none
+5000
+38 - Pattern w (const) Invalid right
+while w; constant const;
+Select w pattern w(_, const)
+none
+5000
+39 - Pattern w (pl) Invalid right
+while w; prog_line pl;
+Select w pattern w(_, pl)
+none
+5000
+40 - Pattern w (p.procName) Invalid right
+while w; procedure p;
+Select w pattern w(_, p.procName)
+none
+5000
+41 - Pattern w (c.procName) Invalid right
+while w; call c;
+Select w pattern w(_, c.procName)
+none
+5000
+42 - Pattern w (v.varName) Invalid right
+while w; variable v;
+Select w pattern w(_, v.varName)
+none
+5000
+43 - Pattern w (rd.varName) Invalid right
+while w; read rd;
+Select w pattern w(_, rd.varName)
+none
+5000
+44 - Pattern w (pn.varName) Invalid right
+while w; print pn;
+Select w pattern w(_, pn.varName)
+none
+5000
+45 - Pattern w (const.value) Invalid right
+while w; constant const;
+Select w pattern w(_, const.value)
+none
+5000
+45 - Pattern w (s.stmt#) Invalid right
+while w; stmt s;
+Select w pattern w(_, s.stmt#)
+none
+5000
+46 - Pattern w (rd.stmt#) Invalid right
+while w; read rd;
+Select w pattern w(_, rd.stmt#)
+none
+5000
+47 - Pattern w (pn.stmt#) Invalid right
+while w; print pn;
+Select w pattern w(_, pn.stmt#)
+none
+5000
+48 - Pattern w (c.stmt#) Invalid right
+while w; call c;
+Select w pattern w(_, c.stmt#)
+none
+5000
+49 - Pattern w (w.stmt#) Invalid right
+while w;
+Select w pattern w(_, w.stmt#)
+none
+5000
+50 - Pattern w (ifs.stmt#) Invalid right
+while w; if ifs;
+Select w pattern w(_, ifs.stmt#)
+none
+5000
+51 - Pattern w (a.stmt#) Invalid right
+while w; assign a;
+Select w pattern w(_, a.stmt#)
+none
+5000
+52 - Pattern w (constValue) Invalid right
+while w;
+Select w pattern w(_, 1)
+none
+5000
+53 - Pattern w (string) Invalid right
+while w;
+Select w pattern w(_, "a")
+none
+5000
+54 - Pattern w (BOOLEAN) Invalid right
+while w;
+Select w pattern w(_, BOOLEAN)
+none
+5000
+55 - Pattern w (Tuple) Invalid right
+while w;
+Select w pattern w(_, <w>)
+none
+5000
+56 - Pattern ifs (variable) left
+if ifs; variable v;
+Select ifs pattern ifs(v, _, _)
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 198, 203
+5000
+57 - Pattern ifs (_) left
+if ifs;
+Select ifs pattern ifs(_, _, _)
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 198, 203
+5000
+58 - Pattern ifs (string) left
+if ifs;
+Select ifs pattern ifs("a", _, _)
+10, 111
+5000
+59 - Pattern ifs (constValue) Invalid left
+if ifs;
+Select ifs pattern ifs(1, _, _)
+none
+5000
+60 - Pattern ifs (BOOLEAN) Invalid left
+if ifs;
+Select ifs pattern ifs(BOOLEAN, _, _)
+none
+5000
+61 - Pattern ifs (Tuple) Invalid left
+if ifs;
+Select ifs pattern ifs(<ifs>, _, _)
+none
+5000
+62 - Pattern ifs (p.procName) Invalid left
+if ifs; procedure p;
+Select ifs pattern ifs(p.procName, _, _)
+none
+5000
+63 - Pattern ifs (c.procName) Invalid left
+if ifs; call c;
+Select ifs pattern ifs(c.procName, _, _)
+none
+5000
+64 - Pattern ifs (v.varName) Invalid left
+if ifs; variable v;
+Select ifs pattern ifs(v.varName, _, _)
+none
+5000
+65 - Pattern ifs (rd.varName) Invalid left
+if ifs; read rd;
+Select ifs pattern ifs(rd.varName, _, _)
+none
+5000
+66 - Pattern ifs (pn.varName) Invalid left
+if ifs; print pn;
+Select ifs pattern ifs(pn.varName, _, _)
+none
+5000
+67 - Pattern ifs (const.value) Invalid left
+if ifs; constant const;
+Select ifs pattern ifs(const.value, _, _)
+none
+5000
+68 - Pattern ifs (s.stmt#) Invalid left
+if ifs; stmt s;
+Select ifs pattern ifs(s.stmt#, _, _)
+none
+5000
+69 - Pattern ifs (rd.stmt#) Invalid left
+if ifs; read rd;
+Select ifs pattern ifs(rd.stmt#, _, _)
+none
+5000
+70 - Pattern ifs (pn.stmt#) Invalid left
+if ifs; print pn;
+Select ifs pattern ifs(pn.stmt#, _, _)
+none
+5000
+71 - Pattern ifs (c.stmt#) Invalid left
+if ifs; call c;
+Select ifs pattern ifs(c.stmt#, _, _)
+none
+5000
+72 - Pattern ifs (ifs.stmt#) Invalid left
+if ifs;
+Select ifs pattern ifs(ifs.stmt#, _, _)
+none
+5000
+73 - Pattern ifs (w.stmt#) Invalid left
+if ifs; while w;
+Select ifs pattern ifs(w.stmt#, _, _)
+none
+5000
+74 - Pattern ifs (a.stmt#) Invalid left
+if ifs; assign a;
+Select ifs pattern ifs(a.stmt#, _, _)
+none
+5000
+75 - Pattern ifs (v) Invalid middle
+if ifs; variable v;
+Select ifs pattern ifs(_, v, _)
+none
+5000
+76 - Pattern ifs (string) Invalid middle
+if ifs;
+Select ifs pattern ifs(_, "a", _)
+none
+5000
+77 - Pattern ifs (v) Invalid right
+if ifs; variable v;
+Select ifs pattern ifs(_, _, v)
+none
+5000
+78 - Pattern ifs (string) Invalid right
+if ifs;
+Select ifs pattern ifs(_, _, "a")
+none
+5000
+79 - Pattern ifs (string) Invalid syntax
+if ifs;
+Select ifs pattern ifs(_, _)
+none
+5000

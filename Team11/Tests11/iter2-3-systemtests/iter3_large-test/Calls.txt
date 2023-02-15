@@ -1,0 +1,140 @@
+1 - Calls, return TRUE if there is a procedure that calls other procedure
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2;
+Select BOOLEAN such that Calls (_,_)
+TRUE
+5000
+2 - query equivalent to select all call statements
+call c; procedure p;
+Select c such that Calls(_, p) with p.procName = c.procName
+25, 29, 34, 37, 42, 43, 44, 45, 48, 49, 51, 54, 56, 71, 73, 74, 78, 79, 80, 81, 82, 83, 85, 87, 91, 93, 94, 95, 96, 101, 110, 113, 114,132,146,155,156,158,159,160,161,162,163,164,165,174,215,233,237,279,280,282,297
+5000
+3 - return true if longCondExpr nad procedure calls a procedure
+
+Select BOOLEAN such that Calls("longCondExpr", _) and Calls("procedure", _)
+FALSE
+5000
+4 - Find procedures in the program that call another procedure
+procedure p, q;
+Select p.procName such that Calls (p, q)
+c, d, e, g, h, i, j, while, cake, food, calls, cL0th3s, longAssignments, birds, colors
+5000
+5 - Calls, select procedures that call procedure f
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; print pn;
+Select p such that Calls (p, "f")
+c, d, e, g, h, i, calls
+5000
+6 - Select all procedures that call another procedure
+procedure p;
+Select p such that Calls(p,_)
+c, d, e, g, h, i, j, while, cake, food, calls, cL0th3s, longAssignments, birds, colors
+5000
+7 - Select tuple of all procedures that call e and all call stmts that call e
+procedure p; call c;
+Select <p,c> such that Calls(p, "e") with c.procName = "e"
+c 29, c 44, c 81, d 29, d 44, d 81, g 29, g 44, g 81
+5000
+8 - Select all procedures that are called from inside a while loop
+procedure p; call c; while w;
+Select p such that Calls(_,p) with c.procName = p.procName such that Parent(w,c)
+a, b, d, e, f, i, ABC, calls, procedure
+5000
+9 - Select all call statements that call cL0th3s
+procedure p; call c;
+Select c such that Calls(_, "cL0th3s") with c.procName = p.procName and c.procName = "cL0th3s"
+237
+5000
+10 - Select all procedures that indirectly call other procedures
+procedure p, q;
+Select p such that Calls(p,q) and Calls*(q,_)
+c, d, g, i, j, cake, food, calls, cL0th3s, birds, colors
+5000
+11 - select procedures that are indirectly called
+procedure p, q;
+Select q such that Calls(_, p) and Calls*(p, q)
+a, b, c, d, e, f, h, i, j
+5000
+12 - Select all procedures indirectly called by h
+procedure p;
+Select p such that Calls*("h",p)
+a, b, f
+5000
+13 - Select all procedures if Calls*(_,_) is true
+procedure p;
+Select p such that Calls*(_,_)
+a, b, c, d, e, f, g, h, i, j, while, cake, food, calls, cL0th3s, CountriesIWantToVisit, procedure, longAssignments, longCondExpr, birds, ABC, colors
+5000
+14 - Calls*, select procedures that indirectly calls f
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; print pn;
+Select p such that Calls* (p, "f")
+c, d, e, g, h, i, j, calls, colors, birds,cL0th3s,cake,food
+5000
+15 - Calls*, return TRUE if procedure j indirectly calls b
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; print pn;
+Select BOOLEAN such that Calls* ("j", "b")
+TRUE
+5000
+16 - Calls*, return TRUE if procedure d indirectly calls g
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; print pn;
+Select BOOLEAN such that Calls* ("d", "g")
+FALSE
+5000
+17 - return tuple of call and if statements and procedures : someone pls double check this thanku
+procedure p; call c; if ifs;
+Select <p, c, ifs> such that Calls*("g", p) with p.procName = c.procName such that Parent(ifs, c)
+a 42 41, a 51 50, a 91 86, a 113 111, b 43 41, b 87 86, c 79 77, d 80 77, c 158 157, d 159 157, d 160 157, e 29 26, e 81 77, f 54 50, f 78 77
+5000
+18 - select all combi of read and print statements if procedure g calls procedure d
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; read r; if ifs; print pn;
+Select <ifs, pn> such that Calls ("g", "d")
+3 5, 3 16, 3 21, 3 31, 3 33, 3 36, 3 52, 3 69, 3 88, 3 103, 3 107, 14 5, 14 16, 14 21, 14 31, 14 33, 14 36, 14 52, 14 69, 14 88, 14 103, 14 107, 26 5, 26 16, 26 21, 26 31, 26 33, 26 36, 26 52, 26 69, 26 88, 26 103, 26 107, 41 5, 41 16, 41 21, 41 31, 41 33, 41 36, 41 52, 41 69, 41 88, 41 103, 41 107, 50 5, 50 16, 50 21, 50 31, 50 33, 50 36, 50 52, 50 69, 50 88, 50 103, 50 107, 77 5, 77 16, 77 21, 77 31, 77 33, 77 36, 77 52, 77 69, 77 88, 77 103, 77 107, 86 5, 86 16, 86 21, 86 31, 86 33, 86 36, 86 52, 86 69, 86 88, 86 103, 86 107, 97 5, 97 16, 97 21, 97 31, 97 33, 97 36, 97 52, 97 69, 97 88, 97 103, 97 107, 111 5, 111 16, 111 21, 111 31, 111 33, 111 36, 111 52, 111 69, 111 88, 111 103, 111 107, 111 120,111 121,111 131,111 142,111 150,111 171,111 173,111 177,111 178,111 180,111 184,111 189,111 227,111 253,111 268,111 296,123 103,123 107,123 120,123 121,123 131,123 142,123 150,123 16,123 171,123 173,123 177,123 178,123 180,123 184,123 189,123 21,123 227,123 253,123 268,123 296,123 31,123 33,123 36,123 5,123 52,123 69,123 88,134 103,134 107,134 120,134 121,134 131,134 142,134 150,134 16,134 171,134 173,134 177,134 178,134 180,134 184,134 189,134 21,134 227,134 253,134 268,134 296,134 31,134 33,134 36,134 5,134 52,134 69,134 88,14 120,14 121,14 131,14 142,14 150,14 171,14 173,14 177,14 178,14 180,14 184,14 189,14 227,14 253,14 268,14 296,151 103,151 107,151 120,151 121,151 131,151 142,151 150,151 16,151 171,151 173,151 177,151 178,151 180,151 184,151 189,151 21,151 227,151 253,151 268,151 296,151 31,151 33,151 36,151 5,151 52,151 69,151 88,157 103,157 107,157 120,157 121,157 131,157 142,157 150,157 16,157 171,157 173,157 177,157 178,157 180,157 184,157 189,157 21,157 227,157 253,157 268,157 296,157 31,157 33,157 36,157 5,157 52,157 69,157 88,172 103,172 107,172 120,172 121,172 131,172 142,172 150,172 16,172 171,172 173,172 177,172 178,172 180,172 184,172 189,172 21,172 227,172 253,172 268,172 296,172 31,172 33,172 36,172 5,172 52,172 69,172 88,185 103,185 107,185 120,185 121,185 131,185 142,185 150,185 16,185 171,185 173,185 177,185 178,185 180,185 184,185 189,185 21,185 227,185 253,185 268,185 296,185 31,185 33,185 36,185 5,185 52,185 69,185 88,191 103,191 107,191 120,191 121,191 131,191 142,191 150,191 16,191 171,191 173,191 177,191 178,191 180,191 184,191 189,191 21,191 227,191 253,191 268,191 296,191 31,191 33,191 36,191 5,191 52,191 69,191 88,199 103,199 107,199 120,199 121,199 131,199 142,199 150,199 16,199 171,199 173,199 177,199 178,199 180,199 184,199 189,199 21,199 227,199 253,199 268,199 296,199 31,199 33,199 36,199 5,199 52,199 69,199 88,204 103,204 107,204 120,204 121,204 131,204 142,204 150,204 16,204 171,204 173,204 177,204 178,204 180,204 184,204 189,204 21,204 227,204 253,204 268,204 296,204 31,204 33,204 36,204 5,204 52,204 69,204 88,216 103,216 107,216 120,216 121,216 131,216 142,216 150,216 16,216 171,216 173,216 177,216 178,216 180,216 184,216 189,216 21,216 227,216 253,216 268,216 296,216 31,216 33,216 36,216 5,216 52,216 69,216 88,230 103,230 107,230 120,230 121,230 131,230 142,230 150,230 16,230 171,230 173,230 177,230 178,230 180,230 184,230 189,230 21,230 227,230 253,230 268,230 296,230 31,230 33,230 36,230 5,230 52,230 69,230 88,234 103,234 107,234 120,234 121,234 131,234 142,234 150,234 16,234 171,234 173,234 177,234 178,234 180,234 184,234 189,234 21,234 227,234 253,234 268,234 296,234 31,234 33,234 36,234 5,234 52,234 69,234 88,243 103,243 107,243 120,243 121,243 131,243 142,243 150,243 16,243 171,243 173,243 177,243 178,243 180,243 184,243 189,243 21,243 227,243 253,243 268,243 296,243 31,243 33,243 36,243 5,243 52,243 69,243 88,247 103,247 107,247 120,247 121,247 131,247 142,247 150,247 16,247 171,247 173,247 177,247 178,247 180,247 184,247 189,247 21,247 227,247 253,247 268,247 296,247 31,247 33,247 36,247 5,247 52,247 69,247 88,259 103,259 107,259 120,259 121,259 131,259 142,259 150,259 16,259 171,259 173,259 177,259 178,259 180,259 184,259 189,259 21,259 227,259 253,259 268,259 296,259 31,259 33,259 36,259 5,259 52,259 69,259 88,26 120,26 121,26 131,26 142,26 150,26 171,26 173,26 177,26 178,26 180,26 184,26 189,26 227,26 253,26 268,26 296,266 103,266 107,266 120,266 121,266 131,266 142,266 150,266 16,266 171,266 173,266 177,266 178,266 180,266 184,266 189,266 21,266 227,266 253,266 268,266 296,266 31,266 33,266 36,266 5,266 52,266 69,266 88,281 103,281 107,281 120,281 121,281 131,281 142,281 150,281 16,281 171,281 173,281 177,281 178,281 180,281 184,281 189,281 21,281 227,281 253,281 268,281 296,281 31,281 33,281 36,281 5,281 52,281 69,281 88,299 103,299 107,299 120,299 121,299 131,299 142,299 150,299 16,299 171,299 173,299 177,299 178,299 180,299 184,299 189,299 21,299 227,299 253,299 268,299 296,299 31,299 33,299 36,299 5,299 52,299 69,299 88,3 120,3 121,3 131,3 142,3 150,3 171,3 173,3 177,3 178,3 180,3 184,3 189,3 227,3 253,3 268,3 296,41 120,41 121,41 131,41 142,41 150,41 171,41 173,41 177,41 178,41 180,41 184,41 189,41 227,41 253,41 268,41 296,50 120,50 121,50 131,50 142,50 150,50 171,50 173,50 177,50 178,50 180,50 184,50 189,50 227,50 253,50 268,50 296,77 120,77 121,77 131,77 142,77 150,77 171,77 173,77 177,77 178,77 180,77 184,77 189,77 227,77 253,77 268,77 296,86 120,86 121,86 131,86 142,86 150,86 171,86 173,86 177,86 178,86 180,86 184,86 189,86 227,86 253,86 268,86 296,97 120,97 121,97 131,97 142,97 150,97 171,97 173,97 177,97 178,97 180,97 184,97 189,97 227,97 253,97 268,97 296
+5000
+19 - return all procedures that call* d if proc colors call* a and proc cake call* b
+procedure p;
+Select p such that Calls*(p,"d") and Calls*("colors", "a") and Calls*("cake","b")
+c,g,i,j,calls,food,cake,cL0th3s,colors,birds
+5000
+20 - return porcedures indirectly called which calls procedures indirectly
+procedure p,q,r,s;
+Select p such that Calls(_,q) and Calls*(q,p) such that Calls(p,r) and Calls*(r,s)
+c,d,i,j
+5000
+21 - select call statements that call procs that have more than 1 call stmts
+procedure p,q,r; call c;
+Select c with c.procName = p.procName such that Calls(p,q) and Calls(p,r)
+79,95,158,25,80,96,110,159,160,165,29,44,81,163,132,146,161,162,174,297,233,237
+5000
+22 - select all procs that have 3 or more indirect calls
+procedure p,q,r,s,t;
+Select p such that Calls(p,q) and Calls(q,r) and Calls(r,s) and Calls*(s,t)
+g,i,cake,food,calls,cL0th3s,birds,colors
+5000
+23 - select all call stmts whose stmt num is a const
+call c; constant co;
+Select c with c.stmt# = co.value
+45, 80,56, 25, 34, 87
+5000
+24 - select all call stmts whose procname is a var
+call c; variable v;
+Select c with c.procName = v.varName
+25,29,34,37,42,43,44,45,48,49,51,54,56,71,73,74,78,79,80,81,82,83,85,87,91,93,94,95,96,101,110,113,114,132,146,155,156,158,159,160,161,162,163,164,165,174,280
+5000
+25 - semantically invalid , calls stmt call proc
+call c;
+Select c such that Calls(c, _)
+none
+5000
+26 - semantically invalid, call stmt call proc
+call c; procedure p;
+Select c such that Calls(c,p)
+none
+5000
+27 - semantically invalid
+call c;
+Select c such that Calls(c,"a")
+none
+5000
+28 - semantically invalid w boolean
+call c;
+Select BOOLEAN such that Calls(c,"a")
+FALSE
+5000

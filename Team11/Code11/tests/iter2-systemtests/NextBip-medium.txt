@@ -1,0 +1,90 @@
+1 - NextBip first stmt is call
+
+Select BOOLEAN such that NextBip(49,50)
+FALSE
+5000
+2 - NextBip first stmt is call
+
+Select BOOLEAN such that NextBip(72,73)
+FALSE
+5000
+3 - NextBip first stmt is call
+
+Select BOOLEAN such that NextBip(53,54)
+FALSE
+5000
+4 - NextBip first stmt is call
+
+Select BOOLEAN such that NextBip(57,58)
+FALSE
+5000
+5 - NextBip diff proc, n1 call p, n2 first stmt of p
+
+Select BOOLEAN such that NextBip(72,81)
+TRUE
+5000
+6 - NextBip diff proc, n1 call p, n2 first stmt of p
+prog_line n;
+Select n such that NextBip(n,74)
+49,53,57
+5000
+7 - NextBip diff proc, n1 last stmt of p, n2 stmt thats after call p
+prog_line n;
+Select n such that NextBip(77,n)
+41,50,54,58
+5000
+8 - NextBip diff proc, n1 last stmt of p, n2 stmt thats after call p
+prog_line n;
+Select n such that NextBip(80,n)
+41,50,54,58
+5000
+9 - NextBip same proc, true because Next relation true
+
+Select BOOLEAN such that NextBip(86,87)
+TRUE
+5000
+10 - NextBip same proc, true because Next relation true
+
+Select BOOLEAN such that NextBip(73,41)
+TRUE
+5000
+11 - NextBip same proc, true because Next relation true
+
+Select BOOLEAN such that NextBip(56,57)
+TRUE
+5000
+12 - NextBip same proc, true because Next relation true
+
+Select BOOLEAN such that NextBip(49,50)
+TRUE
+5000
+13 - NextBip same proc, true because Next relation true
+
+Select BOOLEAN such that NextBip(72,73)
+TRUE
+5000
+14 - NextBip*, n2 beyond last stmt in p
+
+Select BOOLEAN such that NextBip*(35,37)
+FALSE
+5000
+15 - NextBip*, no control flow path from n1 to n2
+
+Select BOOLEAN such that NextBip*(9,23)
+FALSE
+5000
+16 - NextBip*, theres control flow path from n1 to n2
+
+Select BOOLEAN such that NextBip*(57,80)
+TRUE
+5000
+17 - NextBip*, theres control flow path from n1 to n2
+
+Select BOOLEAN such that NextBip*(62,31)
+TRUE
+5000
+18 - NextBip*, theres control flow path from n1 to n2
+
+Select BOOLEAN such that NextBip*(83,73)
+TRUE
+5000

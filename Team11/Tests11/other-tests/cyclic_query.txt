@@ -1,0 +1,5 @@
+1 - query
+stmt s; variable v;
+Select s such that Uses(s, v)
+1
+5000

@@ -1,0 +1,169 @@
+<?xml-stylesheet type="text/xsl" href="analysis.xsl"?>
+<test_results>
+<info>
+<name>iter3_large-test</name><parsing_time_taken>226.069000</parsing_time_taken>
+</info>
+<queries>
+<query>
+<id ReturnBoolean="1" Parent="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="return true if parent(_,_) is true">1</id><querystr><![CDATA[ Select BOOLEAN such that Parent(_,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>1.026000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parent="1" SuchThat="1" CondNum="3" RelNum="1" comment="select assignment that is child of 26">2</id><querystr><![CDATA[stmt s; read r; print pn; while w; if ifs; assign a, a1; variable v; constant c; procedure p; Select a1 such that Parent(26, a1)]]></querystr>
+<stuans>28,27</stuans>
+<correct>27,28</correct>
+<time_taken>0.904000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parent="1" SuchThat="1" CondNum="3" RelNum="1" comment="select all if statemenets 251 is a child of">3</id><querystr><![CDATA[stmt s; read r; print pn; while w; if ifs; assign a, a1; variable v; constant c; procedure p; Select ifs such that Parent(ifs, 251)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>0.604000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parent="1" SuchThat="1" CondNum="3" RelNum="1" comment="select all print stmts that are child of while">4</id><querystr><![CDATA[stmt s; read r; print pn; while w; if ifs; assign a, a1; variable v; constant c; procedure p; Select pn such that Parent(w, pn)]]></querystr>
+<stuans>268,253,227,171,296,21</stuans>
+<correct>21,171,253,268,296,227</correct>
+<time_taken>1.214000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parent="1" SuchThat="1" CondNum="3" RelNum="1" comment="select all stmts that is a child of while">5</id><querystr><![CDATA[while w; stmt select; Select select such that Parent (w, select)]]></querystr>
+<stuans>297,279,85,82,44,293,240,223,39,40,110,13,72,266,230,146,243,247,134,280,86,77,41,111,14,199,296,253,227,74,268,171,226,119,118,21,262,68,101,295,60,251,57,294,76,270,172,75,269,71,265,67,261,45,239,229,272,225,221,220,145,242,292,195,144,241,147,194,193,20,117,19,116,263,302,66,224,63,56,250,62,109,73,170,65,61,246,252,58</stuans>
+<correct>302,292,293,294,295,296,297,279,280,272,268,269,270,265,266,261,262,263,252,253,250,251,246,247,241,242,243,239,240,229,230,223,224,225,226,227,220,221,199,193,194,195,170,171,172,144,145,146,147,134,116,117,119,118,109,110,111,101,85,86,71,72,73,74,75,76,77,82,60,61,62,63,65,66,67,68,56,57,58,39,40,41,44,45,13,14,19,20,21</correct>
+<time_taken>26.872000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parent="1" SuchThat="1" CondNum="3" RelNum="1" comment="valid query, select ifs that are parents of whiles">6</id><querystr><![CDATA[if if; while w; Select if such that Parent(if, w)]]></querystr>
+<stuans>299,259,266,243,266,259,14,234,247,191</stuans>
+<correct>14,191,234,247,259,266,299,243</correct>
+<time_taken>1.572000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parent="1" SuchThat="1" CondNum="3" RelNum="1" comment="select the while stmt that is the parent of 242">7</id><querystr><![CDATA[while w; Select w such that Parent (w, 242)]]></querystr>
+<stuans>240</stuans>
+<correct>240</correct>
+<time_taken>0.694000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parent="1" SuchThat="1" CondNum="3" RelNum="1" comment="return all print stmts if Parent(121,124) is true">8</id><querystr><![CDATA[print pn; Select pn such that Parent(121,124)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>0.471000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parent="2" SuchThat="1" CondNum="4" RelNum="2" comment="select parent of all if statements where the if statement is a parent of an assign">9</id><querystr><![CDATA[if ifs; assign a; stmt s; Select s such that Parent(s,ifs) and Parent(ifs, a)]]></querystr>
+<stuans>230,230,230,185,185,264,228,228,199,199,199,84,84,245,245,198,198,198,198,169,169,133,133,133,133,240,108,13</stuans>
+<correct>13,84,108,133,199,228,230,240,245,264,169,185,198</correct>
+<time_taken>7.259000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parent="1" SuchThat="1" With="1" CondNum="4" RelNum="1" comment="select parent of all print stmts where the variable printed is a procedure name">10</id><querystr><![CDATA[print pn; procedure p; stmt s; Select s such that Parent(s,pn) with pn.varName = p.procName]]></querystr>
+<stuans>18,86,3</stuans>
+<correct>3,18,86</correct>
+<time_taken>2.575000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnBoolean="1" Parentstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="return true if Parent*(_,_)">11</id><querystr><![CDATA[ Select BOOLEAN such that Parent*(_,_)]]></querystr>
+<stuans>TRUE</stuans>
+<correct>TRUE</correct>
+<time_taken>0.457000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parentstar="1" SuchThat="1" CondNum="3" RelNum="1" comment="select all whiles that are parent* of if">12</id><querystr><![CDATA[while w; if if; Select w such that Parent*(w, if)]]></querystr>
+<stuans>228,198,84,228,238,245,240,228,169,108,133,70,72,264,240,228,238,198,40,39,38,13,12</stuans>
+<correct>12,13,38,39,40,70,72,84,108,133,169,198,228,238,240,245,264</correct>
+<time_taken>2.339000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parentstar="1" SuchThat="1" CondNum="3" RelNum="1" comment="select all stmts if parent*(30,31) ia true">13</id><querystr><![CDATA[stmt s; Select s such that Parent* (30, 31)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>0.597000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parentstar="2" SuchThat="1" CondNum="4" RelNum="2" comment="Find three while loops nested one in another">14</id><querystr><![CDATA[while w1, w2, w3; Select <w1, w2, w3> such that Parent* (w1, w2) and Parent* (w2, w3)]]></querystr>
+<stuans>228 238 245,228 240 245,238 240 245,12 13 18,38 39 40,228 238 249,228 240 249,238 240 249,228 245 249,240 245 249,238 245 249,291 292 293,228 245 252,240 245 252,238 245 252,228 240 252,238 240 252,228 249 252,240 249 252,238 249 252,245 249 252,228 238 252,228 238 240</stuans>
+<correct>38 39 40,12 13 18,228 238 240,238 240 245,245 249 252,291 292 293,228 238 245,228 238 249,228 238 252,228 240 245,228 240 249,228 240 252,228 245 249,228 245 252,228 249 252,238 240 249,238 240 252,238 245 249,238 245 252,238 249 252,240 245 249,240 245 252,240 249 252</correct>
+<time_taken>3.242000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parentstar="1" SuchThat="1" CondNum="3" RelNum="1" comment="select all assign statements that are child* of 70">15</id><querystr><![CDATA[stmt s; read r; print pn; while w; if ifs; assign a, a1; variable v; constant c; procedure p; Select a1 such that Parent*(70, a1)]]></querystr>
+<stuans>75,76</stuans>
+<correct>75,76</correct>
+<time_taken>0.725000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parentstar="1" SuchThat="1" CondNum="3" RelNum="1" comment="select all print stmts that are child* of while">16</id><querystr><![CDATA[stmt s; read r; print pn; while w; if ifs; assign a, a1; variable v; constant c; procedure p; Select pn such that Parent*(w, pn)]]></querystr>
+<stuans>16,16,173,177,178,268,268,88,253,253,253,253,253,253,227,227,171,296,296,296,21,21,21</stuans>
+<correct>16,21,88,171,227,253,268,296,173,177,178</correct>
+<time_taken>2.235000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parentstar="1" SuchThat="1" CondNum="3" RelNum="1" comment="select all if stmts that 254 is a child* of">17</id><querystr><![CDATA[stmt s; read r; print pn; while w; if ifs; assign a, a1; variable v; constant c; procedure p; Select ifs such that Parent*(ifs, 254)]]></querystr>
+<stuans>230,234,243,247</stuans>
+<correct>247,243,234,230</correct>
+<time_taken>0.609000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parentstar="1" SuchThat="1" CondNum="3" RelNum="1" comment="valid query, select assignments which have if as parent*">18</id><querystr><![CDATA[if w; assign a; Select a such that Parent*(w, a)]]></querystr>
+<stuans>19,261,263,265,193,193,194,194,242,242,241,241,239,239,246,246,246,269,269,270,270,274,255,255,236,236,138,235,235,217,254,254,254,254,207,207,300,203,202,244,244,244,197,197,99,196,196,190,90,187,273,273,176,248,248,248,248,7,201,154,200,250,250,250,250,153,272,272,175,152,231,137,127,126,28,125,218,27,124,53,4,195,195,98,232,135,206,206,112,136,205,205,17,186,92</stuans>
+<correct>4,7,17,19,27,28,53,90,92,98,99,112,124,125,126,127,135,136,137,138,152,153,154,175,176,186,187,200,201,202,203,205,206,207,217,218,231,232,235,236,239,241,242,244,246,248,250,254,255,261,263,269,270,272,273,274,300,190,193,194,195,196,197,265</correct>
+<time_taken>14.232000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parentstar="1" SuchThat="1" CondNum="3" RelNum="1" comment="find all parent* of 18">19</id><querystr><![CDATA[stmt s; Select s such that Parent*(s,18)]]></querystr>
+<stuans>12,13,14</stuans>
+<correct>12,13,14</correct>
+<time_taken>1.156000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parentstar="1" SuchThat="1" CondNum="3" RelNum="1" comment="valid query with no results">20</id><querystr><![CDATA[call c; Select c such that Parent*(14, c)]]></querystr>
+<stuans></stuans>
+<correct></correct>
+<time_taken>0.621000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parentstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="select all read stmts that have a parent*">21</id><querystr><![CDATA[read r; Select r such that Parent*(_, r)]]></querystr>
+<stuans>60,295,226,251,20,89,57,68,8,284,188,119,302,170,32,283,30,15,6</stuans>
+<correct>6,8,15,20,30,32,57,60,89,119,170,188,226,251,283,284,295,302,68</correct>
+<time_taken>0.920000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parentstar="1" UnnamedVar="1" SuchThat="1" CondNum="4" RelNum="1" comment="select all if stmts that are a parent*">22</id><querystr><![CDATA[if ifs; Select ifs such that Parent*(ifs,_)]]></querystr>
+<stuans>14,26,41,86,247,77,123,243,266,172,151,281,234,191,50,97,3,185,230,299,111,134,204,157,216,259,199</stuans>
+<correct>3,14,26,41,50,77,86,97,111,123,134,151,157,172,185,191,199,204,216,230,234,243,247,259,266,281,299</correct>
+<time_taken>1.651000</time_taken>
+<passed/>
+</query>
+<query>
+<id ReturnTuple="1" Parent="1" Parentstar="1" UnnamedVar="1" SuchThat="1" CondNum="5" RelNum="2" comment="select all if stmts that have an indirect child">23</id><querystr><![CDATA[if ifs; stmt s; Select ifs such that Parent(ifs, s) and Parent*(s,_)]]></querystr>
+<stuans>230,199,259,185,299,259,266,243,266,14,191,234,247</stuans>
+<correct>14,185,191,199,230,234,243,247,259,266,299</correct>
+<time_taken>22.514000</time_taken>
+<passed/>
+</query>
+</queries>
+</test_results>

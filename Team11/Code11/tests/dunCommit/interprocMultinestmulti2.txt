@@ -1,0 +1,225 @@
+1 - Diff Categories (Follows, with, a)
+assign a; while w;
+Select a such that Follows(a, w) with a.stmt# = 31 pattern a(_, _"A"_)
+31
+5000
+2 - Diff Categories (Follows, with, w)
+assign a; while w;
+Select a such that Follows(a, w) with w.stmt# = 97 pattern w("x", _)
+96
+5000
+3 - Diff Categories (Follows, with, ifs)
+assign a; if ifs;
+Select a such that Follows(a, ifs) with ifs.stmt# = 80 pattern ifs("A", _, _)
+79
+5000
+4 - Diff Categories (Follows*, with, a)
+assign a; while w;
+Select a such that Follows*(a, w) with 9 = a.stmt# pattern a(_, _"A"_)
+9
+5000
+5 - Diff Categories (Follows*, with, w)
+if ifs; while w;
+Select ifs such that Follows*(ifs, w) with w.stmt# = 83 pattern w("x", _)
+57, 80
+5000
+6 - Diff Categories (Follows*, with, ifs)
+while w; prog_line pl; if ifs;
+Select w such that Follows*(w, ifs) with ifs.stmt# = pl pattern ifs("D", _, _)
+70
+5000
+7 - Diff Categories (Parent, with, a)
+assign a; while w;
+Select a such that Parent(w, a) with w.stmt# = 32 pattern a(_, _"whileA"_)
+38, 40, 41
+5000
+8 - Diff Categories (Parent, with, w)
+while w; while w1;
+Select w1 such that Parent(w1, w) with w.stmt# = 202 pattern w("while", _)
+201
+5000
+9 - Diff Categories (Parent, with, ifs)
+if ifs; call c;
+Select c.procName such that Parent(ifs, c) with 179 = c.stmt# pattern ifs("then", _, _)
+FiveNesting
+5000
+10 - Diff Categories (Parent*, with, a)
+if ifs; assign a;
+Select ifs such that Parent*(ifs, a) with ifs.stmt# = ifs.stmt# pattern a(_, _"ten10ten"_)
+153, 167
+5000
+11 - Diff Categories (Parent*, with, w)
+while w; while w1;
+Select <w1, w> such that Parent*(w, w1) with w.stmt# = 201 pattern w1("if", _)
+205 201
+5000
+12 - Diff Categories (Parent*, with, ifs)
+if ifs; call c;
+Select c.stmt# such that Parent*(ifs, c) with c.procName = "Final" pattern ifs("Final", _, _)
+209
+5000
+13 - Diff Categories (Uses, with, a)
+procedure p; assign a; variable v;
+Select <v.varName> such that Uses(p, "elseB") with "TwoNesting" = p.procName pattern a(v, _"elseB"_)
+elsea, elsec, elseA
+5000
+14 - Diff Categories (Uses, with, w)
+while w; variable v;
+Select <w, w> such that Uses(w, v) with "whileWhileC" = v.varName pattern w("x", _)
+97 97, 102 102
+5000
+15 - Diff Categories (Uses, with, ifs)
+if ifs; variable v;
+Select ifs.stmt# such that Uses(ifs, "elseB") with v.varName = "D444" pattern ifs(v, _, _)
+52
+5000
+16 - Diff Categories (Modifies, with, a)
+procedure p; variable v; assign a;
+Select a such that Modifies(p, v) with "elseA" = v.varName pattern a(_, _"((elseA + 2)) - elseC"_)
+29
+5000
+17 - Diff Categories (Modifies, with, w)
+while w;
+Select w.stmt# such that Modifies(w, _) with w.stmt# = w.stmt# pattern w("x", _)
+70, 83, 97, 102, 124, 162
+5000
+18 - Diff Categories (Modifies, with, ifs)
+if ifs; variable v;
+Select <ifs> such that Modifies(ifs, "while") with v.varName = "Final" pattern ifs("FiveNesting", _, _)
+188, 191, 197
+5000
+19 - Diff Categories (Next, with, a)
+stmt s; assign a;
+Select s such that Next(s, a) with 31 = 31 pattern a("while", _)
+158, 160, 162, 181, 188, 205
+5000
+20 - Diff Categories (Next, with, w)
+assign a; while w;
+Select w such that Next(a, w) with a.stmt# = 171 pattern w("print", _)
+170
+5000
+21 - Diff Categories (Next, with, ifs)
+if ifs; stmt s;
+Select <s.stmt#, ifs.stmt#> such that Next(ifs, s) with s.stmt# = 62 pattern ifs("D521", _, _)
+62 57
+5000
+22 - Diff Categories (Next*, with, a)
+while w; assign a;
+Select a such that Next*(w, a) with w.stmt# = 202 pattern a("if", _)
+204, 207
+5000
+23 - Diff Categories (Next*, with, w)
+stmt s; while w;
+Select w such that Next*(s, w) with s.stmt# = 184 pattern w("call", _)
+182
+5000
+24 - Diff Categories (Next*, with, ifs)
+if ifs; call c;
+Select c.stmt# such that Next*(ifs, c) with c.procName = "FiveNesting" pattern ifs("if", _, _)
+179
+5000
+25 - Diff Categories (Calls, with, a)
+procedure p; assign a;
+Select <a> such that Calls(p, "FiveNesting") with p.procName = "ThreeNesting" pattern a("ifA", _"ifC"_)
+56
+5000
+26 - Diff Categories (Calls, with, w)
+while w;
+Select w.stmt# such that Calls("FourNesting", "FiveNesting") with w.stmt# = 166 pattern w("procedure", _)
+166
+5000
+27 - Diff Categories (Calls, with, ifs)
+procedure p; if ifs;
+Select <ifs.stmt#> such that Calls(_, p) with p.procName = "Flat" pattern ifs(_, _, _)
+none
+5000
+28 - Diff Categories (Calls*, with, a)
+assign a; variable v;
+Select a such that Calls*("Flat", "Final") with v.varName = "else" pattern a(v, _"else"_)
+165, 172
+5000
+29 - Diff Categories (Calls*, with, w)
+while w; variable v;
+Select w such that Calls*("Flat", "whileElseC") with "B32" = v.varName pattern w(v, _)
+70
+5000
+30 - Diff Categories (Calls*, with, ifs)
+if ifs; variable v;
+Select <ifs.stmt#, ifs, ifs.stmt#> such that Calls*("ThreeNesting", "Final") with v.varName = "FiveNesting" pattern ifs(v, _, _)
+188 188 188, 191 191 191, 197 197 197
+5000
+31 - Multi Categories (such_that, such_that, such_that, such_that, such_that), Uses and Calls* works, Follows Parent* and Next* works
+while w; print pn; stmt s; procedure p;
+Select <pn.varName, w, s, p> such that Follows(w, pn) and Parent*(w, s) such that Uses(p, "Final") and Calls*(p, "Final") and Next*(s, pn)
+whileB2 102 103 FiveNesting, whileB2 102 103 FourNesting, whileB2 102 103 ThreeNesting, whileB2 102 103 TwoNesting, whileB2 102 103 Flat, whileB2 102 104 FiveNesting, whileB2 102 104 FourNesting, whileB2 102 104 ThreeNesting, whileB2 102 104 TwoNesting, whileB2 102 104 Flat, whileB2 102 105 FiveNesting, whileB2 102 105 FourNesting, whileB2 102 105 ThreeNesting, whileB2 102 105 TwoNesting, whileB2 102 105 Flat, whileB2 102 106 FiveNesting, whileB2 102 106 FourNesting, whileB2 102 106 ThreeNesting, whileB2 102 106 TwoNesting, whileB2 102 106 Flat
+5000
+32 - Multi Categories (with, with, with, with, such_that)
+prog_line pl; procedure p; variable v; stmt s1;
+Select p with p.procName = "ThreeNesting" and pl = 188 with v.varName = "Four4Nesting" with s1.stmt# = 154 such that Modifies(p, v) such that Uses(p, v) and Uses(pl, v) such that Next*(s1, 178)
+ThreeNesting
+5000
+33 - Multi Categories (pattern, pattern, pattern, pattern, such_that), Parent* works Uses work
+while w; if ifs; assign a; call c; variable v;
+Select v pattern w("FourNesting", _) and ifs("FiveNesting", _, _) pattern a("FiveNesting", _) and w("FiveNesting", _) such that Parent*(ifs, c) such that Uses(c, v) and Modifies(w, v) and Modifies(ifs, v) and Uses(a, v)
+Final
+5000
+34 - Multi Categories (pattern, with, such_that, pattern, with)
+if ifs; while w; procedure p; assign a; procedure p1; variable v;
+Select <v.varName, ifs> pattern a(v, "((((((twelve12twelve)/(thirteen))))))") with "TwoNesting" = p.procName such that Calls*(p, p1) pattern ifs("if", _, _) with p1.procName = "Final" such that Modifies(w, v) and Follows(ifs, w)
+ifwhile2 167
+5000
+35 - Multi Categories (with, such_that, pattern, with, with)
+while w; while w1; read rd; print pn;
+Select <w.stmt#, w1> with w.stmt# = 97 such that Next*(w, w1) and Next*(w1, w) pattern w1("x",_) and w("x", _) with rd.varName = "whileIfContainerStmt" and 117 = pn.stmt# such that Next*(w, rd) such that Next*(w1, pn)
+97 102, 97 124, 97 97
+5000
+36 - Multi Categories (such_that, pattern, with, such_that, with)
+if ifs; call c; while w; while w1;
+Select <w.stmt#, w1, ifs, c.stmt#> such that Parent*(ifs, c) pattern ifs("if", _, _) and ifs("else", _, _) with c.procName = "Final" such that Next*(c, ifs) with w.stmt# = 201 such that Next*(w, c) such that Next*(c, w) and Uses(c, "Final") and Modifies(c, "Final") and Next(ifs, 210) such that Next(w, w1)
+201 202 203 209
+5000
+37 - Multi Categories (such_that, with, pattern, such_that, pattern)
+
+Select
+none
+5000
+38 - Multi Categories (with, pattern, such_that, with, pattern)
+
+Select
+none
+5000
+39 - Multi Categories (pattern, such_that, with, pattern, pattern)
+
+Select
+none
+5000
+40 - Multi Categories (pattern, such_that, with, with, pattern)
+
+Select
+none
+5000
+41 - Multi Categories (with, such_that, with, such_that, pattern)
+
+Select
+none
+5000
+42 - Multi Categories (such_that, such_that, with, with, pattern)
+
+Select
+none
+5000
+43 - Multi Categories (such_that, such_that, with, pattern, pattern)
+
+Select
+none
+5000
+44 - Multi Categories (with, such_that, with, pattern, pattern)
+
+Select
+none
+5000
+45 - Multi Categories (pattern, such_that, with, such_that, pattern)
+
+Select
+none
+5000

@@ -1,0 +1,310 @@
+1 - Affects* (p, s, s)
+procedure p; stmt s; 
+Select p such that Affects*(s, s)
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+2 - Affects* (s, a, s)
+stmt s; assign a; 
+Select s such that Affects*(a, s)
+159, 164, 176, 178, 180, 183, 185, 186, 187, 194, 195, 206, 207, 208
+5000
+3 - Affects* (rd, prog_line, s)
+read rd; prog_line pl; stmt s; 
+Select rd such that Affects*(pl, s)
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+4 - Affects* (pn, constValue, s)
+print pn; stmt s; 
+Select pn such that Affects*(154, s)
+2, 12, 22, 34, 49, 54, 59, 63, 66, 73, 77, 86, 91, 95, 99, 104, 107, 113, 117, 121, 130, 136
+5000
+5 - Affects* (a, _, s)
+assign a; stmt s; 
+Select a such that Affects*(_, s)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+6 - Affects* (c, _, a)
+call c; assign a; 
+Select c such that Affects*(_, a)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+7 - Affects* (w, constValue, a)
+while w; assign a; 
+Select w such that Affects*(176, a)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+8 - Affects* (ifs, prog_line, a)
+if ifs; prog_line pl; assign a; 
+Select ifs such that Affects*(pl, a)
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 198, 203
+5000
+9 - Affects* (v, a, a)
+variable v; assign a; 
+Select v such that Affects*(a, a)
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+10 - Affects* (const, s, a)
+constant const; stmt s; assign a; 
+Select const such that Affects*(s, a)
+211, 1, 2, 3, 4, 5, 6, 10, 0, 222, 32, 8, 9, 1337
+5000
+11 - Affects* (prog_line, s, prog_line)
+prog_line pl; stmt s; 
+Select pl such that Affects*(s, pl)
+159, 164, 176, 178, 180, 183, 185, 186, 187, 194, 195, 206, 207, 208
+5000
+12 - Affects* (prog_line, a, constValue)
+prog_line pl; assign a; 
+Select pl such that Affects*(a, 195)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+13 - Affects* (const, prog_line, constValue)
+constant const; prog_line pl; 
+Select const such that Affects*(pl, 176)
+211, 1, 2, 3, 4, 5, 6, 10, 0, 222, 32, 8, 9, 1337
+5000
+14 - Affects* (v, constValue, constValue)
+variable v; 
+Select v such that Affects*(183, 176)
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+15 - Affects* (ifs, _, constValue)
+if ifs; 
+Select ifs such that Affects*(_, 172)
+none
+5000
+16 - Affects* (w, _, prog_line)
+while w; prog_line pl; 
+Select w such that Affects*(_, pl)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+17 - Affects* (c, s, constValue)
+call c; stmt s; 
+Select c such that Affects*(s, 159)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+18 - Affects* (a, a, prog_line)
+assign a; prog_line pl; 
+Select a such that Affects*(a, pl)
+154, 161, 164, 176, 178, 180, 183, 185, 186, 187, 189, 194, 204, 206, 207, 208, 210
+5000
+19 - Affects* (pn, prog_line, prog_line)
+print pn; prog_line pl; 
+Select pl such that Affects*(pl, pl)
+176, 178, 180, 183, 185, 186, 187, 206, 207, 208
+5000
+20 - Affects* (rd, constValue, prog_line)
+read rd; prog_line pl; 
+Select rd such that Affects*(154, pl)
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+21 - Affects* (s, constValue, _)
+stmt s; 
+Select s such that Affects*(168, _)
+none
+5000
+22 - Affects* (p, _, _)
+procedure p; 
+Select p such that Affects*(_, _)
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+23 - Affects* (p, prog_line, prog_line)
+procedure p; prog_line pl; 
+Select p such that Affects*(pl, pl)
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+24 - Affects* (s, prog_line, prog_line)
+stmt s; prog_line pl; 
+Select s such that Affects*(pl, pl)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+25 - Affects* (rd, s, _)
+read rd; stmt s; 
+Select rd such that Affects*(s, _)
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+26 - Affects* (pn, a, _)
+print pn; assign a; 
+Select pn such that Affects*(a, _)
+2, 12, 22, 34, 49, 54, 59, 63, 66, 73, 77, 86, 91, 95, 99, 104, 107, 113, 117, 121, 130, 136
+5000
+27 - Affects* (a, prog_line, _)
+assign a; prog_line pl; 
+Select a such that Affects*(pl, _)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+28 - Affects* (c, prog_line, prog_line)
+call c; prog_line pl; 
+Select c such that Affects*(pl, pl)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+29 - Affects* (w, prog_line, _)
+while w; prog_line pl; 
+Select w such that Affects*(pl, _)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+30 - Affects* (ifs, a, prog_line)
+if ifs; assign a; prog_line pl; 
+Select ifs such that Affects*(a, pl)
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 198, 203
+5000
+31 - Affects* (v, prog_line, prog_line)
+variable v; prog_line pl; 
+Select v such that Affects*(pl, pl)
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+32 - Affects* (const, a, prog_line)
+constant const; assign a; prog_line pl; 
+Select const such that Affects*(a, pl)
+211, 1, 2, 3, 4, 5, 6, 10, 0, 222, 32, 8, 9, 1337
+5000
+33 - Affects* (prog_line, prog_line, _)
+prog_line pl; 
+Select pl such that Affects*(pl, _)
+154, 161, 164, 176, 178, 180, 183, 185, 186, 187, 189, 194, 204, 206, 207, 208, 210
+5000
+34 - Affects* (prog_line, _, s)
+prog_line pl; stmt s; 
+Select pl such that Affects*(_, s)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+35 - Affects* (const, _, _)
+constant const; 
+Select const such that Affects*(_, _)
+211, 1, 2, 3, 4, 5, 6, 10, 0, 222, 32, 8, 9, 1337
+5000
+36 - Affects* (v, _, _)
+variable v; 
+Select v such that Affects*(_, _)
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+37 - Affects* (ifs, s, _)
+if ifs; stmt s; 
+Select ifs such that Affects*(s, _)
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 198, 203
+5000
+38 - Affects* (w, a, s)
+while w; assign a; stmt s; 
+Select w such that Affects*(a, s)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+39 - Affects* (c, a, _)
+call c; assign a; 
+Select c such that Affects*(a, _)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+40 - Affects* (a, s, constValue)
+assign a; stmt s; 
+Select a such that Affects*(s, 204)
+none
+5000
+41 - Affects* (pn, _, constValue)
+print pn; 
+Select pn such that Affects*(_, 194)
+2, 12, 22, 34, 49, 54, 59, 63, 66, 73, 77, 86, 91, 95, 99, 104, 107, 113, 117, 121, 130, 136
+5000
+42 - Affects* (rd, _, constValue)
+read rd; 
+Select rd such that Affects*(_, 189)
+none
+5000
+43 - Affects* (s, _, constValue)
+stmt s; 
+Select s such that Affects*(_, 186)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+44 - Affects* (p, a, constValue)
+procedure p; assign a; 
+Select a such that Affects*(a, 185)
+185
+5000
+45 - Affects* (p, constValue, a)
+procedure p; assign a; 
+Select a such that Affects*(187, a)
+187
+5000
+46 - Affects* (s, s, a)
+stmt s; assign a; 
+Select s such that Affects*(s, a)
+154, 161, 164, 176, 178, 180, 183, 185, 186, 187, 189, 194, 204, 206, 207, 208, 210
+5000
+47 - Affects* (rd, a, a)
+read rd; assign a; 
+Select a such that Affects*(a, a)
+176, 178, 180, 183, 185, 186, 187, 206, 207, 208
+5000
+48 - Affects* (pn, s, a)
+print pn; stmt s; assign a; 
+Select pn such that Affects*(s, a)
+2, 12, 22, 34, 49, 54, 59, 63, 66, 73, 77, 86, 91, 95, 99, 104, 107, 113, 117, 121, 130, 136
+5000
+49 - Affects* (a, constValue, a)
+assign a; 
+Select a such that Affects*(165, a)
+none
+5000
+50 - Affects* (c, constValue, s)
+call c; stmt s; 
+Select s such that Affects*(180, s)
+180
+5000
+51 - Affects* (w, s, constValue)
+while w; stmt s; 
+Select s such that Affects*(s, 183)
+176, 178, 183
+5000
+52 - Affects* (ifs, constValue, s)
+if ifs; stmt s; 
+Select ifs such that Affects*(189, 194)
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 198, 203
+5000
+53 - Affects* (v, s, s)
+variable v; stmt s; 
+Select v such that Affects*(s, s)
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+54 - Affects* (const, constValue, s)
+constant const; stmt s; 
+Select const such that Affects*(210, 208)
+211, 1, 2, 3, 4, 5, 6, 10, 0, 222, 32, 8, 9, 1337
+5000
+55 - Affects* (prog_line, constValue, a)
+prog_line pl; assign a; 
+Select pl such that Affects*(204, a)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+56 - Affects* (EXTRA)
+
+Select BOOLEAN such that Affects*(164, 187)
+TRUE
+5000
+57 - Affects* (EXTRA)
+
+Select BOOLEAN such that Affects*(161, 187)
+TRUE
+5000
+58 - Affects* (EXTRA)
+assign a; assign a1;
+Select <a, a1> such that Affects*(a, a1)
+154 159,161 164,161 187,164 187,176 176,176 178,176 183,178 176,178 178,178 183,180 180,183 176,183 178,183 183,185 185,186 186,187 187,189 194,189 195,194 195,204 207,206 206,207 207,208 208,210 208
+5000
+59 - Affects* (EXTRA)
+assign a; 
+Select a such that Affects*(154, a)
+159
+5000
+60 - Affects* (EXTRA)
+assign a; 
+Select a such that Affects*(161, a)
+164, 187
+5000
+61 - Affects* (EXTRA)
+assign a; 
+Select a such that Affects*(164, a)
+187
+5000
+62 - Affects* (EXTRA)
+assign a; 
+Select a such that Affects*(176, a)
+176, 178, 183
+5000

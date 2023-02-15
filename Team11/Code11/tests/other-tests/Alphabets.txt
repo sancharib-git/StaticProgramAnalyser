@@ -1,0 +1,15 @@
+procedure alphabets {
+    a = 1;
+    b =2;
+    c=3;
+
+    a = a+b;
+    b = b+c;
+    d = c+3;
+
+    while (a > 4) {
+        e = 5 + f;
+        g = e / f;
+        h=i%    j;
+    }
+}

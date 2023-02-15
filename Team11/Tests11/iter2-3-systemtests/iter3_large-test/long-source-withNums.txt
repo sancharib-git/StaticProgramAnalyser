@@ -1,0 +1,359 @@
+procedure garden {
+1      while ((garden > eden) && (root == leaves)) {
+2          bees = berries + honey;
+3          print plants;
+4          if (bees == 40) then {
+5              read hives;
+6              while(40 != berries) {
+7                  bees = plants;
+8                  print honey;
+9                  plants = eden + hives;
+               }
+           } else {
+10             grass = roses;
+11             honey = roses + trees;
+           }
+12         while ((40 > rose) || (30 == trees)) {
+13             if (plants <= trees) then {
+14                 read trees;
+15                 call gardener;
+               } else {
+16                 berries = 30;
+17                 while ((trees <= plants) || (eden != grass)) {
+18                     roses = bees + berries / plants % (trees - roses);
+19                     read roses;
+20                     plants = roots - trees;
+                   }
+21                 berries = 50 + hives;
+22                 print bees;
+23                 print honey;
+               }
+           }
+       }
+24     read plants;
+25     bees = bees + hives * flower;
+26     print bees;
+27     if ((roses < grass) && (trees <= roots)) then {
+28         if (30 != 20 * plants) then {
+29             print roses;
+30             read hives;
+31             read honey;
+           } else {
+32             while (bees >= roses) {
+33                 while ((plants != 0) && (bees == (roots + grass))) {
+34                     read bees;
+35                     while (!(40 > 10)) {
+36                         while (flower != roses) {
+37                             eden = roses + eden;
+38                             honey = roses * trees + grass + bees;
+                           }
+                       }
+                   }
+39                 print plants;
+               }
+           }
+       } else {
+40         flower = garden * bees + roses / (grass % trees) + 50;
+41         call gardener;
+       }
+42     call gardener;
+43     read trees;
+44     while (bees < 100) {
+45         if ((bees < 10) || (bees > (30 * 40 + hives))) then {
+46             eden = garden;
+47             roses = trees + roots - berries;
+           } else {
+48             call bees;
+49             while (((grass <= 30) && (trees >= 20)) || ((bees >= 30) && (roots <= 60))) {
+50                 grass = trees * flower - roses + hives * berries;
+51                 read roses;
+52                 read trees;
+53                 if (!(eden < 5)) then {
+54                     print eden;
+55                     read honey;
+56                     flower = roses + grass * flower;
+57                     bees = plants * trees - bees;
+58                     roses = flower + honey;
+59                     while (hives != 30) {
+60                         read bees;
+61                         print bees;
+                       }
+                   } else {
+62                     hives = hives * 5;
+63                     bees = bees + hives * 50;
+                   }
+               }
+           }
+64         bees = hives + flower;
+65         read grass;
+66         honey = flower;
+67         print honey;
+       }
+68     eden = garden + 20;
+69     while (roses <= grass) {
+70         trees =  roots;
+71         call bees;
+72         while (((40 != 3) && (grass == 20)) || !(roses < garden)) {
+73             print eden;
+74             eden = trees + grass;
+           }
+75         while (grass < 20) {
+76             bees = flower;
+           }
+77         if (flower < 100) then {
+78             roses = honey - plants + berries - garden;
+79             while (30 != 40) {
+80                 garden = roses + roots;
+               }
+           } else {
+81             while (grass == trees) {
+82                 roses = leaves;
+83                 print leaves;
+               }
+           }
+       }
+84     read grass;
+85     if (300 < 40) then {
+86         roses = bees + trees;
+       } else {
+87         print roses;
+       }
+88     if (bees != 0) then {
+89         flowers = eden;
+       } else {
+90         grass = leaves + 20;
+       }
+91     if (trees > grass) then {
+92         if (grass < roses) then {
+93             berries = plants + honey;
+           } else {
+94             read plants;
+95             print plants;
+96             if (grass < berries) then {
+97                 grass = hives * 60 / grass - 300;
+98                 bees = roses * flower;
+               } else {
+99                 if (10 < 30) then {
+100                    print eden;
+101                    roses = berries - trees;
+                   } else {
+102                    print grass;
+103                   call gardener;
+                   }
+               }
+           }
+       } else {
+104        while (berries > 100) {
+105            garden = trees / flower * garden + berries - roses + honey;
+106            print roses;
+107            roses = 20;
+108            while (bees < 20) {
+109                grass = 20;
+110                print trees;
+111                honey = bees * grass - trees;
+112                leaves = leaves + roses;
+113                while (garden > 2) {
+114                    call bees;
+115                    if (roots <= 40) {
+116                        roots = trees + bees;
+117                        trees = bees + roses;
+                       } else {
+118                        roots = bees;
+119                        print roots;
+                       }
+                   }
+120                eden = eden + berries;
+               }
+           }
+121        flower = roses - trees;
+122        print roses;
+123        print trees;
+124        print honey;
+125        trees = berries + roses;
+       }
+126    print eden;
+127    read garden;
+128    roses = roots - trees;
+129    leaves = flower * bees * hives - roses;
+130    if (roses > trees) then {
+131        bees = trees;
+132        print leaves;
+133        trees = flower;
+       } else {
+134       print roses;
+       }
+135    print bees;
+136    if (garden < eden) then {
+137        print trees;
+138        read honey;
+       } else {
+139        trees = bees * roses - grass;
+140        print grass;
+141        print trees;
+142        print flower;
+143        read hives;
+       }
+144    read grass;
+145    while (roses < hives) {
+146        read garden;
+147        while (trees > bees) {
+148            while (garden < 2) {
+149                print bees;
+150                while (30 != (80 * bees)) {
+151                    bees = bees + berries;
+152                    trees = 300 * bees;
+153                    read honey;
+154                    while (flower < 20) {
+155                        read flowers;
+156                        grass = berries / trees + roots;
+157                        flower = trees + roots / berries;
+158                        while ((30 * 5) != 40) {
+159                            berries = trees + garden;
+160                            honey = roses * flower + honey;
+161                            while (!(berries > (100 % 20)) {
+162                                while (30 > (20 * 3)) {
+163                                    while (bees > (roots - trees)) {
+164                                        bees = bees + roots;
+165                                        berries = grass + trees - berries * flower / grass;
+166                                        trees = leaves - eden / garden;
+167                                        garden = garden + flower - bees;
+168                                        print berries;
+169                                        print roses;
+170                                        print trees;
+171                                        berries = bees * trees;
+172                                        print leaves;
+173                                        roses = flower * honey;
+                                       }
+                                   }
+                               }
+174                            if (40 != (7 * 5)) then {
+175                                flower = bees + leaves;
+176                                bees = trees - roots;
+177                                read bees;
+                               } else {
+178                                print bees;
+179                                roses = flower - trees;
+                               }
+                           }
+180                        read bees;
+                       }
+                   }
+181                print flower;
+182                berries = trees * grass;
+183                bees = hives / bees + berries;
+               }
+184            trees = flower + 30;
+           }
+       }
+185    bees = trees * leaves - flower * eden;
+186    read roses;
+187    call gardener;
+188    print roses;
+189    read garden;
+190    if (flower > bees) then {
+191        roses = trees + eden / garden;
+192        print garden;
+193        read roses;
+194        read garden;
+195        if (eden > 3) then {
+196            trees = eden - roses * garden;
+197            grass = hives * 300;
+           } else {
+198            read roses;
+199            print honey;
+200            roses = bees + trees;
+201            trees = bees - garden;
+202            if (leaves > 30) then {
+203                read garden;
+204                garden = hives + roses - eden / bees;
+205                leaves = leaves - 30 + roses + grass;
+               } else {
+206                garden = honey * bees;
+               }
+           }
+       } else {
+207        grass = flower + hives * bees;
+208        read bees;
+209        while (honey < roses) {
+210            bees = roots - 100 * roses;
+211            hives = bees + garden * bees;
+           }
+212        garden = bees * flower;
+213        read garden;
+214        bees = grass + flower - hives;
+215        print trees;
+       }
+216    bees = flower * roses + hives - honey;
+217    print trees;
+218    print roses;
+219    call bees;
+220    while (eden > 30) {
+221        bees = leaves + trees * roses;
+222        eden = garden - roses + flower / bees;
+223        print trees;
+224        read roses;
+225        while ((trees < grass) || (flower <= 300)) {
+226            garden = garden + roses - (trees + roots) * grass;
+227            read grass;
+228            flower = roses - eden + bees * hives;
+229            print hives;
+230            if (roses < bees) then {
+231                garden = trees * grass - leaves + roses * flower;
+               } else {
+232                while (flower > trees) {
+233                    bees = flower * garden - leaves + trees - bees;
+234                    print bees;
+235                    print leaves;
+236                    read flower;
+                   }
+237                read flower;
+238                print eden;
+               }
+           }
+       }
+239    while (roses != flower * 30) {
+240        call bees;
+241        if (bees < trees) then {
+242            call gardener;
+           } else {
+243            roses = bees + trees;
+244            grass = roses + eden - roots;
+           }
+245        trees = roses - eden;
+       }
+246    grass = flower + eden;
+247    garden = eden;
+248    read honey;
+249    if ((20 > 6) && ((trees > roses) || (roots > 300))) then {
+250        bees = hives * eden;
+251        print roses;
+       } else {
+252        grass = honey + flower;
+253        read trees;
+       }
+}
+
+procedure bees {
+254    read flower;
+255    print roses;
+256    while (hives < 10) {
+257        hives = hives * 10;
+258        flower = 400;
+259        honey = 500 * 20;
+       }
+}
+
+procedure gardener {
+260    read bees;
+261    grass = grass * 100;
+262    trees = 10 * roots;
+263    roots = trees + 50;
+264    if (trees < 30) then {
+265        plants = roots * 50 + berries * 30;
+266        while (roses < 20) {
+267            roots = eden;
+           }
+       } else {
+268        grass = 400;
+       }
+}

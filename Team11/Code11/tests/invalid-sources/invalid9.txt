@@ -1,0 +1,6 @@
+procedure missingSemicolon {
+aplha = beta
+while(x==0) {
+x=3;
+}
+}

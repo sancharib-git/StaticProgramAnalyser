@@ -1,0 +1,67 @@
+  procedure Flat {
+   read A;
+   print B;
+   call C;
+   a = B;
+   b = 211;
+   c = A + B - C * D / E % F;
+   d = 1 + 2 - 3 * 4 / 5 % 6;
+   e = A + 2 - C * 4 / E % 6;
+   f = ((A + 2) - C) * (4 / E) % F;
+  if (((!(a == 1)) && (2 > b)) || (1 < 2)) then {
+    read thenA;
+    print thenB;
+    call thenC;
+    thena = thenB;
+    thenb = 211;
+    thenc = thenA + thenB - thenC * thenD / thenE % thenF;
+    thend = 1 + 2 - 3 * 4 / 5 % 6;
+    thene = thenA + 2 - thenC * 4 / thenE % 6;
+    thenf = ((thenA + 2) - thenC) * (4 / thenE) % thenF;
+    } else {
+    read elseA;
+    print elseB;
+    call elseC;
+    elsea = elseB;
+    elseb = 211;
+    elsec = elseA + elseB - elseC * elseD / elseE % elseF;
+    elsed = 1 + 2 - 3 * 4 / 5 % 6;
+    elsee = elseA + 2 - elseC * 4 / elseE % 6;
+    elsef = ((elseA + 2) - elseC) * (4 / elseE) % elseF;
+    }
+  e = A + 2 - C * 4 / E % 6;
+  f = ((A + 2) - C) * (4 / E) % F;
+  while ((!(a != b)) && ((a <= b) || (a >= b))) {
+    read whileA;
+    print whileB;
+    call whileC;
+    whilea = whileB;
+    whileb = 211;
+    whilec = whileA + whileB - whileC * whileD / whileE % whileF;
+    whiled = 1 + 2 - 3 * 4 / 5 % 6;
+    whilee = whileA + 2 - whileC * 4 / whileE % 6;
+    whilef = ((whileA + 2) - whileC) * (4 / whileE) % whileF;
+    }
+  e = A + 2 - C * 4 / E % 6;
+  f = ((A + 2) - C) * (4 / E) % F;
+  }
+
+procedure C {
+	read C;
+	a = b;
+}
+
+procedure thenC {
+	read thenC;
+	c = d;
+}
+
+procedure elseC {
+	read elseC;
+	e = f;
+}
+
+procedure whileC {
+	read whileC;
+	g = h;
+}

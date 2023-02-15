@@ -1,0 +1,116 @@
+procedure farm {
+    pigs = 100; chickens = 300; goats = 500;
+    sell = 20; money = 200;
+    count =
+              pigs      +chickens +
+      goats;
+    sleep = 0;
+    if (pigs < goats) then {
+        while ((money < 500) || (sleep == 0)) {
+            chickens = chickens - sell;
+            money = money + sell;
+            if (goats > ((  chickens / 2) + (pigs/ 2))) then {
+                while ((goats != 0) && (count != 0)) {
+                    read tired;
+                    if (tired != 0) then {
+                        goats = goats - (sell *         2);
+                        money =money +     (sell * 2); } else {
+                        sleep = 1; }
+                    count = pigs + goats + chickens; }
+            } else {
+                goats = goats +20;
+                money = money - 20; }
+            print money; }
+        } else {
+            pigs = pigs + sell;
+            money = money - sell;
+            while (money > 0) {
+                count = pigs + goats + chickens;
+                if (count > 500) then {
+                    print count; } else {
+                    sleep = 0;
+                    while (sleep > 0) {
+                        money = money * 2;
+                        sleep = 0; }
+                    print sleep; }
+                print money; }
+            sell = sell * 5; }
+    print count; }
+
+
+procedure day {
+    read sleeptime;
+    read wakeup;
+    energy = (sleeptime - wakeup) * (70 / 100 * (8 * wakeup) - (sleeptime/wakeup) % ((rand)));
+    read workload;
+    while (workload != 0) {
+        if ((energy >= workload * ((sleeptime -wakeup) % 12)) || ((sleeptime <= 12) && (wakeup >= 12)) || ((sleeptime >=3) && (wakeup <=6))) then {
+            print workload;
+            read deadline;
+            while ((energy != 0) || ((deadline < 10) && (deadline >= 0))) {
+                tired = temporary;
+                workload = forever;
+                forever = workload + infinity;
+                call food;
+                if (tired > energy) then {
+                    print deadline;
+                    print screams;
+                    call food;
+                    tired = ((deadline + screams) / (energy - (workload+infinity*screams)));
+                } else {
+                    print continue;
+                    read jiayous;
+                    call food;
+                    if (drunk == 0) then {
+                        print sleeptime;
+                    } else {
+                        energy = energy + tired;
+                        tired = energy -tired;
+                    }
+                }
+            }
+        } else {
+            call farm;
+            if ((money < 67 * count + sell) || (tired > energy - deadline * workload)) then {
+                print money;
+                print count;
+                while (money > 0) {
+                    stress = stress - money;
+                    energy = (stress*((deadline+workload)-tired) / money) * 10;
+                    money = money - stress;
+                }
+            } else {
+                read cry;
+                read calm;
+                call pray;
+                energy = (infinity * deadline * stress) % 100 + (((5 * fun)));
+            }
+        }
+    }
+}
+procedure food {
+    read brunch;
+    read tea;
+    if (brunch == 1) then {
+        energy = (brunch - 10 * (2 / tired)) * 10;
+    } else {
+        read drunk;
+        drunk = 90 * energy;
+        energy = energy + drunk % 5;
+    }
+}
+
+procedure pray {
+    read pray;
+    print thanks;
+    if (tired < energy) then {
+        tired = energy * deadline;
+    } else {
+        print sleep;
+    }
+}
+
+procedure test {
+    call pray;
+    call farm;
+}

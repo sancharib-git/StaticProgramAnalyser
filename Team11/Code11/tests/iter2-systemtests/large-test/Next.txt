@@ -1,0 +1,90 @@
+1 - return true if Next(_,_)
+
+Select BOOLEAN such that Next(_,_)
+TRUE
+5000
+2 - return all prog_lines that can be executed after 169
+prog_line p;
+Select p such that Next(169, p)
+170, 179
+5000
+3 - return all prog lines that 153 is executed right after
+prog_line p;
+Select p such that Next(p, 153)
+152
+5000
+4 - return all procedures if Next(56,57) is true
+procedure p;
+Select p such that Next(53,54)
+none
+5000
+5 - return all tuples of assign and print if print is executed after assign
+assign a; print pn;
+Select <a, pn> such that Next(a, pn)
+4 5, 176 177, 179 180
+5000
+6 - return all read stmts that are executed before another stmt
+read rd;
+Select rd such that Next(rd, _)
+6, 8, 15, 20, 30, 32, 35, 57, 60, 68, 89, 102, 106, 119, 122, 130, 141, 149, 170, 181, 182, 183, 188, 226, 251, 257, 283, 284, 295, 302
+5000
+7 - select all print statements that are executed after a stmt
+print pn;
+Select pn such that Next(_, pn)
+5, 16, 21,31, 33, 36, 52, 69, 88, 103, 107, 120, 121, 131, 142, 150, 171, 173, 177, 178, 180, 184, 189, 227, 253, 268, 296
+5000
+8 - select all while statements that are executed after an assign and before a print
+while w; assign a; print pn;
+Select w such that Next(a, w) and Next(w, pn)
+267
+5000
+9 - select all if statements that are after a while
+if i; while w;
+Select i such that Next(w, i)
+14, 134, 199, 281, 41
+5000
+10 - select all tuples of call and print where print is executed after call
+call c; print pn;
+Select <c, pn> such that Next*(c, pn)
+25 31, 25 33, 48 52, 49 52, 51 52, 83 88, 85 88, 87 88, 91 88, 93 103, 94 103, 95 103, 96 103, 101 103, 114 120, 114 121, 146 150, 174 171, 174 173, 174 177, 174 178, 174 180, 233 253, 237 253, 279 296, 280 296, 282 296, 297 296
+5000
+11 - return all while stmts if Next*(129, 129) is true
+while w;
+Select w such that Next*(129, 129)
+none
+5000
+12 - Select all assign statements that has an execution path to 66
+assign a;
+Select a such that Next*(a, 66)
+61, 62, 63, 65, 66, 67
+5000
+13 - select all if statements that 115 has an execution path to
+if ifs;
+Select ifs such that Next*(115, ifs)
+123
+5000
+14 - Find program lines that can be executed between line 43 and 46?
+prog_line n;
+Select n such that Next* (43, n) and Next* (n, 46)
+44, 40, 45, 39, 38, 41,42,43
+5000
+15 - return all the read statements in the path of execution from 181 to 190
+read rd;
+Select rd such that Next*(181, rd) and Next*(rd, 190)
+182, 183, 188
+5000
+16 - return the assign statements executed after 229 that uses a variable 233 modified
+assign a; variable v;
+Select a such that Next*(229, a) and Modifies(229, v) and Uses(a, v)
+229
+5000
+17 - select all the statements in the path of execution after 45
+stmt s;
+Select s such that Next*(45, s)
+38, 39, 40, 41, 42, 43, 44, 45, 46, 47
+5000
+18 - Next*, select tuple if Next relation is true
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; print pn;
+Select <p,w> such that Next* (39, 46)
+a 12, a 13, a 18, a 38, a 39, a 40, a 55, a 59, a 64, a 70, a 72, a 84, a 100, a 108, b 12, b 13, b 18, b 38, b 39, b 40, b 55, b 59, b 64, b 70, b 72, b 84, b 100, b 108, c 12, c 13, c 18, c 38, c 39, c 40, c 55, c 59, c 64, c 70, c 72, c 84, c 100, c 108, d 12, d 13, d 18, d 38, d 39, d 40, d 55, d 59, d 64, d 70, d 72, d 84, d 100, d 108, e 12, e 13, e 18, e 38, e 39, e 40, e 55, e 59, e 64, e 70, e 72, e 84, e 100, e 108, f 12, f 13, f 18, f 38, f 39, f 40, f 55, f 59, f 64, f 70, f 72, f 84, f 100, f 108, g 12, g 13, g 18, g 38, g 39, g 40, g 55, g 59, g 64, g 70, g 72, g 84, g 100, g 108, h 12, h 13, h 18, h 38, h 39, h 40, h 55, h 59, h 64, h 70, h 72, h 84, h 100, h 108, i 12, i 13, i 18, i 38, i 39, i 40, i 55, i 59, i 64, i 70, i 72, i 84, i 100, i 108, j 12, j 13, j 18, j 38, j 39, j 40, j 55, j 59, j 64, j 70, j 72, j 84, j 100, j 108, ABC 100,ABC 108,ABC 115,ABC 12,ABC 13,ABC 133,ABC 143,ABC 145,ABC 169,ABC 18,ABC 192,ABC 198,ABC 219,ABC 222,ABC 223,ABC 228,ABC 238,ABC 240,ABC 245,ABC 249,ABC 252,ABC 260,ABC 262,ABC 264,ABC 267,ABC 271,ABC 278,ABC 291,ABC 292,ABC 293,ABC 301,ABC 38,ABC 39,ABC 40,ABC 55,ABC 59,ABC 64,ABC 70,ABC 72,ABC 84,CountriesIWantToVisit 100,CountriesIWantToVisit 108,CountriesIWantToVisit 115,CountriesIWantToVisit 12,CountriesIWantToVisit 13,CountriesIWantToVisit 133,CountriesIWantToVisit 143,CountriesIWantToVisit 145,CountriesIWantToVisit 169,CountriesIWantToVisit 18,CountriesIWantToVisit 192,CountriesIWantToVisit 198,CountriesIWantToVisit 219,CountriesIWantToVisit 222,CountriesIWantToVisit 223,CountriesIWantToVisit 228,CountriesIWantToVisit 238,CountriesIWantToVisit 240,CountriesIWantToVisit 245,CountriesIWantToVisit 249,CountriesIWantToVisit 252,CountriesIWantToVisit 260,CountriesIWantToVisit 262,CountriesIWantToVisit 264,CountriesIWantToVisit 267,CountriesIWantToVisit 271,CountriesIWantToVisit 278,CountriesIWantToVisit 291,CountriesIWantToVisit 292,CountriesIWantToVisit 293,CountriesIWantToVisit 301,CountriesIWantToVisit 38,CountriesIWantToVisit 39,CountriesIWantToVisit 40,CountriesIWantToVisit 55,CountriesIWantToVisit 59,CountriesIWantToVisit 64,CountriesIWantToVisit 70,CountriesIWantToVisit 72,CountriesIWantToVisit 84,a 115,a 133,a 143,a 145,a 169,a 192,a 198,a 219,a 222,a 223,a 228,a 238,a 240,a 245,a 249,a 252,a 260,a 262,a 264,a 267,a 271,a 278,a 291,a 292,a 293,a 301,b 115,b 133,b 143,b 145,b 169,b 192,b 198,b 219,b 222,b 223,b 228,b 238,b 240,b 245,b 249,b 252,b 260,b 262,b 264,b 267,b 271,b 278,b 291,b 292,b 293,b 301,birds 100,birds 108,birds 115,birds 12,birds 13,birds 133,birds 143,birds 145,birds 169,birds 18,birds 192,birds 198,birds 219,birds 222,birds 223,birds 228,birds 238,birds 240,birds 245,birds 249,birds 252,birds 260,birds 262,birds 264,birds 267,birds 271,birds 278,birds 291,birds 292,birds 293,birds 301,birds 38,birds 39,birds 40,birds 55,birds 59,birds 64,birds 70,birds 72,birds 84,c 115,c 133,c 143,c 145,c 169,c 192,c 198,c 219,c 222,c 223,c 228,c 238,c 240,c 245,c 249,c 252,c 260,c 262,c 264,c 267,c 271,c 278,c 291,c 292,c 293,c 301,cL0th3s 100,cL0th3s 108,cL0th3s 115,cL0th3s 12,cL0th3s 13,cL0th3s 133,cL0th3s 143,cL0th3s 145,cL0th3s 169,cL0th3s 18,cL0th3s 192,cL0th3s 198,cL0th3s 219,cL0th3s 222,cL0th3s 223,cL0th3s 228,cL0th3s 238,cL0th3s 240,cL0th3s 245,cL0th3s 249,cL0th3s 252,cL0th3s 260,cL0th3s 262,cL0th3s 264,cL0th3s 267,cL0th3s 271,cL0th3s 278,cL0th3s 291,cL0th3s 292,cL0th3s 293,cL0th3s 301,cL0th3s 38,cL0th3s 39,cL0th3s 40,cL0th3s 55,cL0th3s 59,cL0th3s 64,cL0th3s 70,cL0th3s 72,cL0th3s 84,cake 100,cake 108,cake 115,cake 12,cake 13,cake 133,cake 143,cake 145,cake 169,cake 18,cake 192,cake 198,cake 219,cake 222,cake 223,cake 228,cake 238,cake 240,cake 245,cake 249,cake 252,cake 260,cake 262,cake 264,cake 267,cake 271,cake 278,cake 291,cake 292,cake 293,cake 301,cake 38,cake 39,cake 40,cake 55,cake 59,cake 64,cake 70,cake 72,cake 84,calls 100,calls 108,calls 115,calls 12,calls 13,calls 133,calls 143,calls 145,calls 169,calls 18,calls 192,calls 198,calls 219,calls 222,calls 223,calls 228,calls 238,calls 240,calls 245,calls 249,calls 252,calls 260,calls 262,calls 264,calls 267,calls 271,calls 278,calls 291,calls 292,calls 293,calls 301,calls 38,calls 39,calls 40,calls 55,calls 59,calls 64,calls 70,calls 72,calls 84,colors 100,colors 108,colors 115,colors 12,colors 13,colors 133,colors 143,colors 145,colors 169,colors 18,colors 192,colors 198,colors 219,colors 222,colors 223,colors 228,colors 238,colors 240,colors 245,colors 249,colors 252,colors 260,colors 262,colors 264,colors 267,colors 271,colors 278,colors 291,colors 292,colors 293,colors 301,colors 38,colors 39,colors 40,colors 55,colors 59,colors 64,colors 70,colors 72,colors 84,d 115,d 133,d 143,d 145,d 169,d 192,d 198,d 219,d 222,d 223,d 228,d 238,d 240,d 245,d 249,d 252,d 260,d 262,d 264,d 267,d 271,d 278,d 291,d 292,d 293,d 301,e 115,e 133,e 143,e 145,e 169,e 192,e 198,e 219,e 222,e 223,e 228,e 238,e 240,e 245,e 249,e 252,e 260,e 262,e 264,e 267,e 271,e 278,e 291,e 292,e 293,e 301,f 115,f 133,f 143,f 145,f 169,f 192,f 198,f 219,f 222,f 223,f 228,f 238,f 240,f 245,f 249,f 252,f 260,f 262,f 264,f 267,f 271,f 278,f 291,f 292,f 293,f 301,food 100,food 108,food 115,food 12,food 13,food 133,food 143,food 145,food 169,food 18,food 192,food 198,food 219,food 222,food 223,food 228,food 238,food 240,food 245,food 249,food 252,food 260,food 262,food 264,food 267,food 271,food 278,food 291,food 292,food 293,food 301,food 38,food 39,food 40,food 55,food 59,food 64,food 70,food 72,food 84,g 115,g 133,g 143,g 145,g 169,g 192,g 198,g 219,g 222,g 223,g 228,g 238,g 240,g 245,g 249,g 252,g 260,g 262,g 264,g 267,g 271,g 278,g 291,g 292,g 293,g 301,h 115,h 133,h 143,h 145,h 169,h 192,h 198,h 219,h 222,h 223,h 228,h 238,h 240,h 245,h 249,h 252,h 260,h 262,h 264,h 267,h 271,h 278,h 291,h 292,h 293,h 301,i 115,i 133,i 143,i 145,i 169,i 192,i 198,i 219,i 222,i 223,i 228,i 238,i 240,i 245,i 249,i 252,i 260,i 262,i 264,i 267,i 271,i 278,i 291,i 292,i 293,i 301,j 115,j 133,j 143,j 145,j 169,j 192,j 198,j 219,j 222,j 223,j 228,j 238,j 240,j 245,j 249,j 252,j 260,j 262,j 264,j 267,j 271,j 278,j 291,j 292,j 293,j 301,longAssignments 100,longAssignments 108,longAssignments 115,longAssignments 12,longAssignments 13,longAssignments 133,longAssignments 143,longAssignments 145,longAssignments 169,longAssignments 18,longAssignments 192,longAssignments 198,longAssignments 219,longAssignments 222,longAssignments 223,longAssignments 228,longAssignments 238,longAssignments 240,longAssignments 245,longAssignments 249,longAssignments 252,longAssignments 260,longAssignments 262,longAssignments 264,longAssignments 267,longAssignments 271,longAssignments 278,longAssignments 291,longAssignments 292,longAssignments 293,longAssignments 301,longAssignments 38,longAssignments 39,longAssignments 40,longAssignments 55,longAssignments 59,longAssignments 64,longAssignments 70,longAssignments 72,longAssignments 84,longCondExpr 100,longCondExpr 108,longCondExpr 115,longCondExpr 12,longCondExpr 13,longCondExpr 133,longCondExpr 143,longCondExpr 145,longCondExpr 169,longCondExpr 18,longCondExpr 192,longCondExpr 198,longCondExpr 219,longCondExpr 222,longCondExpr 223,longCondExpr 228,longCondExpr 238,longCondExpr 240,longCondExpr 245,longCondExpr 249,longCondExpr 252,longCondExpr 260,longCondExpr 262,longCondExpr 264,longCondExpr 267,longCondExpr 271,longCondExpr 278,longCondExpr 291,longCondExpr 292,longCondExpr 293,longCondExpr 301,longCondExpr 38,longCondExpr 39,longCondExpr 40,longCondExpr 55,longCondExpr 59,longCondExpr 64,longCondExpr 70,longCondExpr 72,longCondExpr 84,procedure 100,procedure 108,procedure 115,procedure 12,procedure 13,procedure 133,procedure 143,procedure 145,procedure 169,procedure 18,procedure 192,procedure 198,procedure 219,procedure 222,procedure 223,procedure 228,procedure 238,procedure 240,procedure 245,procedure 249,procedure 252,procedure 260,procedure 262,procedure 264,procedure 267,procedure 271,procedure 278,procedure 291,procedure 292,procedure 293,procedure 301,procedure 38,procedure 39,procedure 40,procedure 55,procedure 59,procedure 64,procedure 70,procedure 72,procedure 84,while 100,while 108,while 115,while 12,while 13,while 133,while 143,while 145,while 169,while 18,while 192,while 198,while 219,while 222,while 223,while 228,while 238,while 240,while 245,while 249,while 252,while 260,while 262,while 264,while 267,while 271,while 278,while 291,while 292,while 293,while 301,while 38,while 39,while 40,while 55,while 59,while 64,while 70,while 72,while 84
+5000

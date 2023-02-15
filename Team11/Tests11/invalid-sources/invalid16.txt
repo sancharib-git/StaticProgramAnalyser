@@ -1,0 +1,9 @@
+procedure InvalidWhile {
+while
+{
+read x;
+}
+c=o;
+
+
+}

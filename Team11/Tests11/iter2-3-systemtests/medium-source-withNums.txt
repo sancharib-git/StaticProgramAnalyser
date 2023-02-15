@@ -1,0 +1,117 @@
+procedure farm {
+    pigs = 100; // 1
+    chickens = 300; // 2
+    goats = 500; // 3
+    sell = 20; // 4
+    money = 200;  // 5
+    count = pigs      +chickens + goats; // 6
+    sleep = 0; // 7
+    if (pigs < goats) then { // 8
+        while ((money < 500) || (sleep == 0)) { // 9
+            chickens = chickens - sell; // 10
+            money = money + sell; // 11
+            if (goats > ((  chickens / 2) + (pigs/ 2))) then { // 12
+                while ((goats != 0) && (count != 0)) { // 13
+                    read tired; // 14
+                    if (tired != 0) then { // 15
+                        goats = goats - (sell *         2); // 16
+                        money =money +     (sell * 2); } else { // 17
+                        sleep = 1; } // 18
+                    count = pigs + goats + chickens; } // 19
+            } else {
+                goats = goats +20; // 20
+                money = money - 20; } // 21
+            print money; } // 22
+        } else {
+            pigs = pigs + sell; // 23
+            money = money - sell; // 24
+            while (money > 0) { // 25
+                count = pigs + goats + chickens; // 26
+                if (count > 500) then { // 27
+                    print count; } else { // 28
+                    sleep = 0; // 29
+                    while (sleep > 0) { // 30
+                        money = money * 2; // 31
+                        sleep = 0; } // 32
+                    print sleep; } // 33
+                print money; } // 34
+            sell = sell * 5; } // 35
+    print count; } // 36
+
+procedure day {
+    read sleeptime; // 37
+    read wakeup; // 38
+    energy = (sleeptime - wakeup) * (70 / 100 * (8 * wakeup) - (sleeptime/wakeup) % ((rand))) // 39
+    read workload; // 40
+    while (workload != 0) { // 41
+        if (energy >= workload * ((sleeptime -wakeup) % 12) || (sleeptime <= 12 && wakeup >= 12) || (sleeptime >=3 && wakeup <=6) { // 42
+            print workload; // 43
+            read deadline; // 44
+            while (energy != 0 || (deadline < 10 && deadline >= 0)) { // 45
+                tired = temporary; // 46
+                workload = forever; // 47
+                forever = workload + infinity; // 48
+                call food; // 49
+                if (tired > energy) { // 50
+                    print deadline; // 51
+                    print screams; // 52
+                    call food; // 53
+                    tired = ((deadline + screams) / (energy - (workload+infinity*screams))); // 54
+                } else {
+                    print continue; // 55
+                    read jiayous; // 56
+                    call food; // 57
+                    if (drunk == 0) { // 58
+                        print sleeptime; // 59
+                    } else {
+                        energy = energy + tired; // 60
+                        tired = energy -tired; // 61
+                    }
+                }
+            }
+        } else {
+            call farm; // 62
+            if (money < 67 * count + sell || tired > energy - deadline * workload) { // 63
+                print money; // 64
+                print count; // 65
+                while (money > 0) { // 66
+                    stress = stress - money; // 67
+                    energy = (stress*((deadline+workload)-tired) / money) * 10; // 68
+                    money = money - stress; // 69
+                }
+            } else {
+                read cry; // 70
+                read calm; // 71
+                call pray; // 72
+                energy = (infinity * deadline * stress) % 100 + (((5 * fun))); // 73
+            }
+        }
+    }
+}
+
+procedure food {
+    read brunch; // 74
+    read tea; // 75
+    if (brunch == 1) { // 76
+        energy = (brunch - 10 * (2 / tired)) * 10; // 77
+    } else {
+        read drunk; // 78
+        drunk = 90 * energy; // 79
+        energy = energy + drunk % 5; // 80
+    }
+}
+
+procedure pray {
+    read pray; // 81
+    print thanks; // 82
+    if (tired < energy) { // 83
+        tired = energy * deadline; // 84
+    } else {
+        print sleep; // 85
+    }
+}
+
+procedure test {
+    call pray; // 86
+    call farm; // 87
+}

@@ -1,0 +1,8 @@
+procedure x {
+x
+=
+3
++
+r
+read print;
+}

@@ -1,0 +1,139 @@
+procedure a {
+    a = 10;
+    b=10;
+    c= 10;
+    while ((a+b < (c%10+(b-100))) && (100-5<=a)){
+        read a;
+        print b;
+    }
+    call c;
+    d = a + (b-100/(a%(50)));
+}
+
+
+
+procedure b {
+    f = 10;
+    g=10;
+    h=20;
+    while(g>h) {
+        call c;
+        if (f+g <= g-h) then{
+            call d;
+        } else {
+            call e;
+            read g;
+            if(f > 0) then {
+                call d;
+            }else{
+                call e;
+            }
+            while(g>h){
+                while(h>f){
+                    if(f > 0) then {
+                        f = f + g;
+                        if(g + h < f + g) then{
+                            f = f * 2;
+                        }else{
+                            g = g * 2;
+                            if (g > 0) then {
+                                g = g - 1;
+                            }else{
+                                while(f > 0){
+                                    call a;
+                                    f = f - 1;
+                                    while(g > 0){
+                                        g = g - 1;
+                                    }
+                                }
+                            }
+                        }
+                    }else{
+                        g = g + 1;
+                        call e;
+                    }
+                }
+            }
+            a = 100+20-10;
+        }
+    }
+}
+
+procedure c {
+    call d;
+    if(a<b) then {
+        call e;
+    } else {
+        if(a > b) then {
+            if(a * b < b) then {
+                b = b * 100;
+            } else{
+                call e;
+            }
+        } else{
+            call e;
+        }
+        call e;
+    }
+}
+
+procedure d {
+    x = 10;
+    y = 20;
+    z = 30;
+    p = 50;
+    q = 60;
+    while(p < 100){
+        while(q < 90){
+            while(x < 80){
+                while(y < 40){
+                    while(z > 0){
+                        x = y + z;
+                        while(x+y < 100){
+                            while(z < y - 100){
+                                while(p < q){
+                                    p = q * 3;
+                                    while(p > q){
+                                        p = p + 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    a=b+10-50;
+}
+
+procedure e{
+    i=100-20;
+    read f;
+    call d;
+    while(p < 100){
+        while(q < 90){
+            while(x < 80){
+                while(y < 40){
+                    while(z > 0){
+                        x = y + z;
+                        print x;
+                        while(x+y < 100){
+                            while(z < y - 100){
+                                while(p < q){
+                                    p = q * 3;
+                                    print z;
+                                    while(p > q){
+                                        read q;
+                                        p = p + 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    print j;
+}

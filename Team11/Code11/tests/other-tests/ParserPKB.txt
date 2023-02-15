@@ -1,0 +1,12 @@
+procedure simple {
+   p = 4;
+   a = p * 2;
+   if (c == k) then {
+      pattern = p * a * a + p * ifs + p * w;
+ 	while(w > 0) {
+ 		print c;
+ 		w = w - 1;}
+ 	ifs = ifs -1;}
+else {
+   read p;
+  print pattern;}}

@@ -1,0 +1,185 @@
+1 - select statement with Follows clause
+stmt s;
+Select s such that Follows(1, 2)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+5000
+2 - select assignment with Follows clause
+assign a, a1;
+Select a such that Follows(a, a1)
+1, 2, 3, 4, 5, 6
+5000
+3 - select print with Follows clause
+assign a, a1; print p;
+Select p such that Follows(p, a1)
+22
+5000
+4 - select statement with FollowsStar clause
+assign a; stmt s;
+Select s such that Follows*(a, s)
+2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 14, 16, 17, 18
+5000
+5 - select print with FollowsStar clause
+print p; assign a;
+Select p such that Follows*(a, p)
+10
+5000
+6 - select statement with FollowsStar clause
+stmt s; assign a;
+Select s such that Follows*(s, a)
+1, 2, 3, 4, 5, 6, 13, 14, 22
+5000
+7 - select statement with Parent clause
+if ifs; stmt s;
+Select s such that Parent (ifs, s)
+19, 20, 21, 22, 23
+5000
+8 - select statement with Parent clause
+stmt s; assign a; while w; variable v;
+Select s such that Parent(w, s)
+9, 13, 14, 15, 16, 17
+5000
+9 - select assignment with Parent clause
+assign a; while w;
+Select a such that Parent (w, a)
+9, 13, 15, 17
+5000
+10 - select statement with ParentStar clause
+while w; stmt s;
+Select s such that Parent*(w, s)
+9, 13, 14, 15, 16, 17
+5000
+11 - select if statement with ParentStar clause
+assign a; if ifs;
+Select ifs such that Parent*(ifs, a)
+18, 19
+5000
+12 - select variable with ParentStar clause
+stmt s; assign a; while w; variable v;
+Select v such that Parent*(w, s)
+x, y, z, i, j
+5000
+13 - select assignment with Pattern clause
+assign a;
+Select a pattern a (_, _"z"_)
+6, 7, 15
+5000
+14 - select assignment with Pattern clause
+assign a;
+Select a pattern a ("z", _)
+3, 23
+5000
+15 - select assignment with Pattern clause
+assign a;
+Select a pattern a("x", _)
+1, 6, 13
+5000
+16 - select variable with Modifies clause
+stmt s; assign a; while w; variable v;
+Select v such that Modifies(a, v)
+x, y, z, i, j
+5000
+17 - Select assignment with Modifies clause
+stmt s; assign a; while w; variable v;
+Select a such that Modifies(a, v)
+1, 2, 3, 4, 5, 6, 7, 9, 13, 15, 17, 20, 21, 23
+5000
+18 - select statements with Modifies clause
+stmt s; assign a; while w; variable v;
+Select s such that Modifies(a, v)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23
+5000
+19 - select assignment with Modifies and pattern
+assign a; variable v;
+Select a such that Modifies(a, v) pattern a(v, _"y"_)
+20,21,23,6
+5000
+20 - select statement with Modifies and pattern clause
+stmt s; variable v; assign a;
+Select s pattern a(v, _"2"_) such that Modifies(s, v)
+11,12,14,15,16,18,19,2,21,23,3,8,20,7,9
+5000
+21 - select variable with Modifies clause
+variable v; print pn;
+Select v such that Modifies(pn, v)
+none
+5000
+22 - select variable with Modifies clause
+variable v; read r;
+Select v such that Modifies(r, v)
+y,z
+5000
+23 - select variable with Uses clause
+variable v; print pn;
+Select v such that Uses(pn, v)
+x,y
+5000
+24 - select assignment with Uses and pattern clause
+variable v; assign a;
+Select a such that Uses(a, "y") pattern a("x", _)
+6
+5000
+25 - select assignment with Uses and pattern clause
+assign a;
+Select a such that Uses(a, 1) pattern a(_, _"x"_)
+none
+5000
+26 - select assignment with Uses and pattern clause
+assign a;
+Select a such that Uses(_, "x") pattern a(_, _"x"_)
+none
+5000
+27 - select variable with Uses clause
+stmt s; assign a; while w; variable v;
+Select v such that Uses (w, v)
+x, i, j, z
+5000
+28 - select while with Uses clause
+stmt s; assign a; while w; variable v;
+Select w such that Uses (w, "y")
+none
+5000
+29 - select if with Uses clause
+stmt s; assign a; if ifs; variable v;
+Select ifs such that Uses(ifs, "x")
+18, 19
+5000
+30 - select statements with Follows and pattern clause
+stmt s; assign a;
+Select s such that Follows(s, s) pattern a(_, _)
+none
+5000
+31 - select statement with Follows and pattern clause
+stmt s;
+Select s such that Follows(6, s) pattern a ("x", _)
+none
+5000
+32 - select assignment with Follows and pattern clause
+assign a;
+Select a such that Follows(a, 7) pattern a(_, _"z"_)
+6
+5000
+33 - select statement with Follows and pattern clause
+stmt s; assign a;
+Select s such that Follows(18, s) pattern a(_, _)
+none
+5000
+34 - select statement with Follows and pattern clause
+stmt s; assign a; variable v;
+Select s such that Follows(a, s) pattern a(v, _"y"_)
+7
+5000
+35 - select read with Parent and pattern clause
+if ifs; assign a; read r;
+Select r such that Parent*(ifs, 12) pattern a (_,_)
+none
+5000
+36 - select with Parent and pattern clause
+if ifs; assign a; read r;
+Select r such that Parent*(ifs, 12) pattern a (_,_)
+none
+5000
+37 - pattern and follows* clause
+if ifs; assign a; read r;
+Select ifs such that Follows*(ifs, 12) pattern a (_,_)
+none
+5000

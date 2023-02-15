@@ -1,0 +1,6 @@
+missingDeclaration {
+a = 0;
+while (x<99) {
+www=wide;
+}
+}

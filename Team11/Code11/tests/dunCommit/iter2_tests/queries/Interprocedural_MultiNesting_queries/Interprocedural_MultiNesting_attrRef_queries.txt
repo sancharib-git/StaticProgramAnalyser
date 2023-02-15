@@ -1,0 +1,185 @@
+1 - No Clause (p.procName)
+procedure p;
+Select p.procName
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+2 - No Clause (c.procName)
+call c;
+Select c.procName
+C, thenC, TwoNesting, elseC, whileC, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ThreeNesting, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, FourNesting, FiveNesting, Final
+5000
+3 - No Clause (v.varName)
+variable v;
+Select v.varName
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+4 - No Clause (rd.varName)
+read rd;
+Select rd.varName
+A, thenA, elseA, whileA, C, thenC, elseC, whileC, ifA, ifIfA, ifElseA, ifA2, ifWhileA, ifA3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, ifA4, A2, whileWhileA, whileA2, whileIfA, whileElseA, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, A3, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, Final
+5000
+5 - No Clause (pn.varName)
+print pn;
+Select pn.varName
+B, thenB, elseB, whileB, ifB, ifIfB, ifElseB, ifB2, ifWhileB, ifB3, ifB4, B2, whileWhileB, whileB2, whileIfB, whileElseB, whileB3, whileB4, B3
+5000
+6 - No Clause (const.value)
+constant const;
+Select const.value
+211, 1, 2, 3, 4, 5, 6, 10, 0, 222, 32, 8, 9, 1337
+5000
+7 - No Clause (s.stmt#)
+stmt s;
+Select s.stmt#
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+8 - No Clause (rd.stmt#)
+read rd;
+Select rd.stmt#
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+9 - No Clause (pn.stmt#)
+print pn;
+Select pn.stmt#
+2, 12, 22, 34, 49, 54, 59, 63, 66, 73, 77, 86, 91, 95, 99, 104, 107, 113, 117, 121, 130, 136
+5000
+10 - No Clause (c.stmt#)
+call c;
+Select c.stmt#
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+11 - No Clause (w.stmt#)
+while w;
+Select w.stmt#
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+12 - No Clause (ifs.stmt#)
+if ifs;
+Select ifs.stmt#
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 198, 203
+5000
+13 - No Clause (a.stmt#)
+assign a;
+Select a.stmt#
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+14 - No Clause (p.varName) invalid
+procedure p;
+Select p.varName
+none
+5000
+15 - No Clause (p.stmt#) invalid
+procedure p;
+Select p.stmt#
+none
+5000
+16 - No Clause (p.value) invalid
+procedure p;
+Select p.value
+none
+5000
+17 - No Clause (c.varName) invalid
+call c;
+Select c.varName
+none
+5000
+18 - No Clause (c.value) invalid
+call c;
+Select c.value
+none
+5000
+19 - No Clause (v.procName) invalid
+variable v;
+Select v.procName
+none
+5000
+20 - No Clause (v.stmt#) invalid
+variable v;
+Select v.stmt#
+none
+5000
+21 - No Clause (v.value) invalid
+variable v;
+Select v.value
+none
+5000
+22 - No Clause (rd.procName) invalid
+read rd;
+Select rd.procName
+none
+5000
+23 - No Clause (rd.value) invalid
+read rd;
+Select rd.value
+none
+5000
+24 - No Clause (pn.procName) invalid
+print pn;
+Select pn.procName
+none
+5000
+25 - No Clause (pn.value) invalid
+print pn;
+Select pn.value
+none
+5000
+26 - No Clause (const.procName) invalid
+constant const;
+Select const.procName
+none
+5000
+27 - No Clause (const.varName) invalid
+constant const;
+Select const.varName
+none
+5000
+28 - No Clause (const.stmt#) invalid
+constant const;
+Select const.stmt#
+none
+5000
+29 - No Clause (s.procName) invalid
+stmt s;
+Select s.procName
+none
+5000
+30 - No Clause (s.varName) invalid
+stmt s;
+Select s.varName
+none
+5000
+31 - No Clause (s.value) invalid
+stmt s;
+Select s.value
+none
+5000
+32 - No Clause (w.procName) invalid
+while w;
+Select w.procName
+none
+5000
+33 - No Clause (w.varName) invalid
+while w;
+Select w.varName
+none
+5000
+34 - No Clause (w.value) invalid
+while w;
+Select w.value
+none
+5000
+35 - No Clause (ifs.procName) invalid
+if ifs;
+Select ifs.procName
+none
+5000
+36 - No Clause (ifs.varName) invalid
+if ifs;
+Select ifs.varName
+none
+5000
+37 - No Clause (ifs.value) invalid
+if ifs;
+Select ifs.value
+none
+5000

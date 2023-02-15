@@ -1,0 +1,250 @@
+1 - invalid query, not allowed as it is not clear if the ‘_’ refers to a statement or procedure
+variable v;
+Select v such that Modifies (_, "v")
+none
+5000
+2 - invalid query missing such that clause
+variable v;
+Select v Modifies(_, "v")
+none
+5000
+3 - invalid query, not allowed as it is not clear if the ‘_’ refers to a statement or procedure
+variable v;
+Select v Modifies(_,_)
+none
+5000
+4 - invalid query
+variable v; statement s;
+Select _ such that Modifies (s, v)
+none
+5000
+5 - invalid query
+variable 0v2; statement s;
+Select s such that Modifies (s, 0v2)
+none
+5000
+6 - invalid query,  a is not a synonym of a valid design entity (variable) for second argument of Modifies
+assign a;
+Select a such that Modifies(a, a)
+none
+5000
+7 - return variables that are modified in while loop
+variable v; assign a; while w;
+Select v such that Modifies (w, v)
+k,l,a,f,c,e,g,d,h,b,i,A,Argentina,Bhutan,F,Laos,SHAKERfries,ab,and,applePie,appleSlices,birds,black,choco,cornCup,dress,eat,else,flamingo,fries,hen,if,iffy,j,j34nj3ggings,jeggings,jorts,m,mcNuggets,n,nests,o,oSCar,ostrich,p,print,procedure,quarterpounder,rooster,shirt,shoes,sparrow,strawberryShortcake,swan,t,then,while,x,yellow
+5000
+8 - returns all assignment statements that modify a variable with variable a modified
+variable v; assign a;
+Select a such that Modifies(a, v) pattern a("a", _)
+1,19,27,46,61,65,75,104,208,220,221,224,274
+5000
+9 - returns all assignment statements that modify “A”
+assign a;
+Select a such that Modifies(a, "A")
+98
+5000
+10 - returns variables modified by statement 1
+variable v;
+Select v such that Modifies (1,v)
+a
+5000
+11 - return all statements where Modifies (p, v) holds
+statement s; procedure p;
+Select s such that Modifies(p, v)
+none
+5000
+12 - return all call statements whose procedure called modifies v
+variable v; call cl;
+Select cl such that Modifies(cl, v)
+25,29,34,37,42,43,44,45,48,49,51,54,56,71,73,74,78,79,80,81,82,83,85,87,91,93,94,95,96,101,110,113,114,132,146,155,156,158,159,160,161,162,163,164,165,174,215,233,237,279,280,282,297
+5000
+13 - return all variables if there is an assignment statement that modifies a variable
+variable v; assign a;
+Select v such that Modifies(a, v)
+a, c, e, g, h, d, i, b, j, l, f, m, n, o, A, F, x, ab, while, else, then, if, choco, banana, strawberryShortcake, BLACKfore5t, vanilla, SHAKERfries, applePie, quarterpounder, mcNuggets, cornCup, appleSlices, dress, shirt, jeggings, j34nj3ggings, shoes, Mongolia, Norway, Argentina, Bhutan, Laos, procedure, iffy, and, assign, birds, black, brown, call, eat, flamingo, hen, magenta, nests, oSCar, ostrich, print, read, red, rooster, sparrow, swan, white
+5000
+14 - returns all read statements that modifies a variable
+read r; variable v;
+Select r such that Modifies(r, v)
+6,8,15,20,30,32,35,57,60,68,89,102,106,119,122,130,141,149,170,181,182,183,188,226,251,257,283,284,295,302
+5000
+15 - returns all assignment statements that modifies a variable
+assign a; variable v; if ifs;
+Select v such that Modifies(ifs, v)
+c,e,g,d,h,k,l,a,f,b,m,o,A,F,ab,then,else,if,choco,strawberryShortcake,mcNuggets,cornCup,appleSlices,j34nj3ggings,jeggings,Mongolia,Norway,Colombia,Argentina,Bhutan,Laos,procedure,iffy,while,and,SHAKERfries,fries,applePie,quarterpounder,birds,brown,dress,shoes,shirt,swan,yellow,t,eat,flamingo,hen,i,j,jorts,n,nests,oSCar,orange,ostrich,p,red,rooster,sparrow,x
+5000
+16 - return true if procedure birds modifies variable ab
+procedure p;
+Select BOOLEAN such that Modifies(p, "ab") with p.procName = "birds"
+TRUE
+5000
+17 - returns none
+variable v; print pn; assign a;
+Select a such that Modifies(pn, v)
+none
+5000
+18 - select tuple if while modifies variable x
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2;
+Select <p, q> such that Modifies (w, "x")
+a a ,  a b ,  a c ,  a d ,  a e ,  a f ,  a g ,  a h ,  a i ,  a j ,  a while ,  a cake ,  a food ,  a calls ,  a cL0th3s ,  a CountriesIWantToVisit ,  a procedure ,  a longAssignments ,  a longCondExpr ,  a birds ,  a ABC ,  a colors ,  b a ,  b b ,  b c ,  b d ,  b e ,  b f ,  b g ,  b h ,  b i ,  b j ,  b while ,  b cake ,  b food ,  b calls ,  b cL0th3s ,  b CountriesIWantToVisit ,  b procedure ,  b longAssignments ,  b longCondExpr ,  b birds ,  b ABC ,  b colors ,  c a ,  c b ,  c c ,  c d ,  c e ,  c f ,  c g ,  c h ,  c i ,  c j ,  c while ,  c cake ,  c food ,  c calls ,  c cL0th3s ,  c CountriesIWantToVisit ,  c procedure ,  c longAssignments ,  c longCondExpr ,  c birds ,  c ABC ,  c colors ,  d a ,  d b ,  d c ,  d d ,  d e ,  d f ,  d g ,  d h ,  d i ,  d j ,  d while ,  d cake ,  d food ,  d calls ,  d cL0th3s ,  d CountriesIWantToVisit ,  d procedure ,  d longAssignments ,  d longCondExpr ,  d birds ,  d ABC ,  d colors ,  e a ,  e b ,  e c ,  e d ,  e e ,  e f ,  e g ,  e h ,  e i ,  e j ,  e while ,  e cake ,  e food ,  e calls ,  e cL0th3s ,  e CountriesIWantToVisit ,  e procedure ,  e longAssignments ,  e longCondExpr ,  e birds ,  e ABC ,  e colors ,  f a ,  f b ,  f c ,  f d ,  f e ,  f f ,  f g ,  f h ,  f i ,  f j ,  f while ,  f cake ,  f food ,  f calls ,  f cL0th3s ,  f CountriesIWantToVisit ,  f procedure ,  f longAssignments ,  f longCondExpr ,  f birds ,  f ABC ,  f colors ,  g a ,  g b ,  g c ,  g d ,  g e ,  g f ,  g g ,  g h ,  g i ,  g j ,  g while ,  g cake ,  g food ,  g calls ,  g cL0th3s ,  g CountriesIWantToVisit ,  g procedure ,  g longAssignments ,  g longCondExpr ,  g birds ,  g ABC ,  g colors ,  h a ,  h b ,  h c ,  h d ,  h e ,  h f ,  h g ,  h h ,  h i ,  h j ,  h while ,  h cake ,  h food ,  h calls ,  h cL0th3s ,  h CountriesIWantToVisit ,  h procedure ,  h longAssignments ,  h longCondExpr ,  h birds ,  h ABC ,  h colors ,  i a ,  i b ,  i c ,  i d ,  i e ,  i f ,  i g ,  i h ,  i i ,  i j ,  i while ,  i cake ,  i food ,  i calls ,  i cL0th3s ,  i CountriesIWantToVisit ,  i procedure ,  i longAssignments ,  i longCondExpr ,  i birds ,  i ABC ,  i colors ,  j a ,  j b ,  j c ,  j d ,  j e ,  j f ,  j g ,  j h ,  j i ,  j j ,  j while ,  j cake ,  j food ,  j calls ,  j cL0th3s ,  j CountriesIWantToVisit ,  j procedure ,  j longAssignments ,  j longCondExpr ,  j birds ,  j ABC ,  j colors ,  while a ,  while b ,  while c ,  while d ,  while e ,  while f ,  while g ,  while h ,  while i ,  while j ,  while while ,  while cake ,  while food ,  while calls ,  while cL0th3s ,  while CountriesIWantToVisit ,  while procedure ,  while longAssignments ,  while longCondExpr ,  while birds ,  while ABC ,  while colors ,  cake a ,  cake b ,  cake c ,  cake d ,  cake e ,  cake f ,  cake g ,  cake h ,  cake i ,  cake j ,  cake while ,  cake cake ,  cake food ,  cake calls ,  cake cL0th3s ,  cake CountriesIWantToVisit ,  cake procedure ,  cake longAssignments ,  cake longCondExpr ,  cake birds ,  cake ABC ,  cake colors ,  food a ,  food b ,  food c ,  food d ,  food e ,  food f ,  food g ,  food h ,  food i ,  food j ,  food while ,  food cake ,  food food ,  food calls ,  food cL0th3s ,  food CountriesIWantToVisit ,  food procedure ,  food longAssignments ,  food longCondExpr ,  food birds ,  food ABC ,  food colors ,  calls a ,  calls b ,  calls c ,  calls d ,  calls e ,  calls f ,  calls g ,  calls h ,  calls i ,  calls j ,  calls while ,  calls cake ,  calls food ,  calls calls ,  calls cL0th3s ,  calls CountriesIWantToVisit ,  calls procedure ,  calls longAssignments ,  calls longCondExpr ,  calls birds ,  calls ABC ,  calls colors ,  cL0th3s a ,  cL0th3s b ,  cL0th3s c ,  cL0th3s d ,  cL0th3s e ,  cL0th3s f ,  cL0th3s g ,  cL0th3s h ,  cL0th3s i ,  cL0th3s j ,  cL0th3s while ,  cL0th3s cake ,  cL0th3s food ,  cL0th3s calls ,  cL0th3s cL0th3s ,  cL0th3s CountriesIWantToVisit ,  cL0th3s procedure ,  cL0th3s longAssignments ,  cL0th3s longCondExpr ,  cL0th3s birds ,  cL0th3s ABC ,  cL0th3s colors ,  CountriesIWantToVisit a ,  CountriesIWantToVisit b ,  CountriesIWantToVisit c ,  CountriesIWantToVisit d ,  CountriesIWantToVisit e ,  CountriesIWantToVisit f ,  CountriesIWantToVisit g ,  CountriesIWantToVisit h ,  CountriesIWantToVisit i ,  CountriesIWantToVisit j ,  CountriesIWantToVisit while ,  CountriesIWantToVisit cake ,  CountriesIWantToVisit food ,  CountriesIWantToVisit calls ,  CountriesIWantToVisit cL0th3s ,  CountriesIWantToVisit CountriesIWantToVisit ,  CountriesIWantToVisit procedure ,  CountriesIWantToVisit longAssignments ,  CountriesIWantToVisit longCondExpr ,  CountriesIWantToVisit birds ,  CountriesIWantToVisit ABC ,  CountriesIWantToVisit colors ,  procedure a ,  procedure b ,  procedure c ,  procedure d ,  procedure e ,  procedure f ,  procedure g ,  procedure h ,  procedure i ,  procedure j ,  procedure while ,  procedure cake ,  procedure food ,  procedure calls ,  procedure cL0th3s ,  procedure CountriesIWantToVisit ,  procedure procedure ,  procedure longAssignments ,  procedure longCondExpr ,  procedure birds ,  procedure ABC ,  procedure colors ,  longAssignments a ,  longAssignments b ,  longAssignments c ,  longAssignments d ,  longAssignments e ,  longAssignments f ,  longAssignments g ,  longAssignments h ,  longAssignments i ,  longAssignments j ,  longAssignments while ,  longAssignments cake ,  longAssignments food ,  longAssignments calls ,  longAssignments cL0th3s ,  longAssignments CountriesIWantToVisit ,  longAssignments procedure ,  longAssignments longAssignments ,  longAssignments longCondExpr ,  longAssignments birds ,  longAssignments ABC ,  longAssignments colors ,  longCondExpr a ,  longCondExpr b ,  longCondExpr c ,  longCondExpr d ,  longCondExpr e ,  longCondExpr f ,  longCondExpr g ,  longCondExpr h ,  longCondExpr i ,  longCondExpr j ,  longCondExpr while ,  longCondExpr cake ,  longCondExpr food ,  longCondExpr calls ,  longCondExpr cL0th3s ,  longCondExpr CountriesIWantToVisit ,  longCondExpr procedure ,  longCondExpr longAssignments ,  longCondExpr longCondExpr ,  longCondExpr birds ,  longCondExpr ABC ,  longCondExpr colors ,  birds a ,  birds b ,  birds c ,  birds d ,  birds e ,  birds f ,  birds g ,  birds h ,  birds i ,  birds j ,  birds while ,  birds cake ,  birds food ,  birds calls ,  birds cL0th3s ,  birds CountriesIWantToVisit ,  birds procedure ,  birds longAssignments ,  birds longCondExpr ,  birds birds ,  birds ABC ,  birds colors ,  ABC a ,  ABC b ,  ABC c ,  ABC d ,  ABC e ,  ABC f ,  ABC g ,  ABC h ,  ABC i ,  ABC j ,  ABC while ,  ABC cake ,  ABC food ,  ABC calls ,  ABC cL0th3s ,  ABC CountriesIWantToVisit ,  ABC procedure ,  ABC longAssignments ,  ABC longCondExpr ,  ABC birds ,  ABC ABC ,  ABC colors ,  colors a ,  colors b ,  colors c ,  colors d ,  colors e ,  colors f ,  colors g ,  colors h ,  colors i ,  colors j ,  colors while ,  colors cake ,  colors food ,  colors calls ,  colors cL0th3s ,  colors CountriesIWantToVisit ,  colors procedure ,  colors longAssignments ,  colors longCondExpr ,  colors birds ,  colors ABC ,  colors colors
+5000
+19 - Select assignments that modifies variables
+assign a; variable v;
+Select a such that Modifies (a, v) pattern a (v, _)
+1,10,104,105,109,11,112,116,117,118,124,125,126,127,128,129,135,136,137,138,139,140,144,147,148,152,153,154,166,167,168,17,175,176,179,186,187,19,190,193,194,195,196,197,2,200,201,202,203,205,206,207,208,209,210,211,212,213,214,217,218,22,220,221,224,225,229,23,231,232,235,236,239,24,241,242,244,246,248,250,254,255,256,258,261,263,265,269,27,270,272,273,274,275,276,277,28,285,286,287,288,289,290,294,298,300,4,46,47,53,58,61,62,63,65,66,67,7,75,76,9,90,92,98,99
+5000
+20 - Select assignments that modifies variables that contains pattern 
+assign a; variable v;
+Select a such that Modifies (a, v) pattern a (v, _"a+b"_)
+2,7,11,19,46,92,208,209,211,218
+5000
+21 - Select assignments that modifies variables that contains pattern 
+assign a; variable v;
+Select a such that Modifies (a, v) pattern a ("ab", _)
+112
+5000
+22 - Select assignments that modifies variables that contains pattern 
+assign a; variable v;
+Select a such that Modifies (a, v) pattern a (v, "bc + de")
+112
+5000
+23 - Select tuples for assignments that modifies variables that contains pattern 
+assign a; variable v;
+Select <a, v> such that Modifies (a, v) pattern a (v, _)
+1 a,10 b,104 a,105 b,11 j,112 ab,118 else,128 choco,129 banana,136 strawberryShortcake,139 BLACKfore5t,144 SHAKERfries,147 applePie,148 quarterpounder,152 mcNuggets,153 cornCup,154 appleSlices,166 dress,167 shirt,168 jeggings,175 j34nj3ggings,176 jeggings,179 shoes,190 Argentina,193 Argentina,195 Laos,197 Mongolia,2 c,200 procedure,201 if,202 while,203 iffy,205 then,206 and,207 while,210 assign,211 c,213 e,214 f,22 m,220 a,221 a,224 a,225 b,23 n,231 sparrow,232 ostrich,235 eat,236 rooster,239 rooster,24 o,244 rooster,246 birds,250 swan,254 flamingo,255 nests,256 i,258 c,261 oSCar,263 oSCar,269 b,27 a,270 c,274 a,275 black,276 white,277 red,285 read,286 print,287 call,288 call,289 read,290 print,294 black,298 magenta,300 brown,4 e,47 b,61 a,62 b,63 f,65 a,66 b,67 e,7 h,75 a,76 h,9 i,92 f,98 A,99 F,109 c,116 while,117 if,124 then,125 else,126 if,127 if,135 choco,137 choco,138 choco,140 vanilla,17 l,186 Mongolia,187 Norway,19 a,194 Bhutan,196 Argentina,208 a,209 b,212 d,217 d,218 b,229 sparrow,241 hen,242 rooster,248 swan,265 x,272 c,273 x,28 b,46 a,53 h,58 g,90 b
+5000
+24 - Select tuples for assignments that modifies variables that contains pattern 
+assign a; variable v;
+Select <a, v> such that Modifies (a, v) pattern a (v, _"a+b"_)
+19 a,208 a,209 b,218 b,46 a,11 j,2 c,211 c,7 h,92 f
+5000
+25 - Select tuples for assignments that modifies variables that contains pattern 
+assign a; variable v;
+Select <a, v> such that Modifies (a, v) pattern a ("ab", _)
+112 ab
+5000
+26 - Select tuples for assignments that modifies variables that contains pattern 
+assign a; variable v;
+Select <a, v> such that Modifies (a, v) pattern a (v, "bc + de")
+112 ab
+5000
+27 - invalid query
+assign a; variable v;
+Select <a, v> such that Modifies (a, v) pattern a (v, _"bc + de")
+none
+5000
+28 - invalid query
+assign a; variable v;
+Select <a, v> such that Modifies (a, v) pattern a (v, "bc + de"_)
+none
+5000
+29 - invalid query
+assign a; variable v;
+Select <a, v> such that Modifies (a, v) pattern a (v, __)
+none
+5000
+30 - Select a tuple for procedure and a variable that is both used and modified the variable a
+variable v; procedure p;
+Select <p, v> such that Uses(p, v) such that Modifies(p, v)
+ABC a,ABC c,ABC x,CountriesIWantToVisit Argentina,CountriesIWantToVisit Bhutan,CountriesIWantToVisit Colombia,CountriesIWantToVisit Mongolia,CountriesIWantToVisit Norway,a a,a b,a c,a d,a g,a h,b a,b j,b k,b l,birds F,birds a,birds appleSlices,birds b,birds c,birds cornCup,birds d,birds dress,birds e,birds f,birds flamingo,birds g,birds h,birds hen,birds i,birds j,birds j34nj3ggings,birds jeggings,birds k,birds l,birds m,birds mcNuggets,birds n,birds o,birds ostrich,birds p,birds rooster,birds shirt,birds shoes,birds sparrow,birds swan,birds t,birds x,c a,c b,c c,c d,c e,c f,c g,c h,c i,c j,c k,c l,c m,c n,c o,c t,cL0th3s a,cL0th3s b,cL0th3s c,cL0th3s d,cL0th3s dress,cL0th3s e,cL0th3s f,cL0th3s g,cL0th3s h,cL0th3s i,cL0th3s j,cL0th3s j34nj3ggings,cL0th3s jeggings,cL0th3s k,cL0th3s l,cL0th3s shirt,cL0th3s shoes,cL0th3s t,cL0th3s x,cake BLACKfore5t,cake a,cake b,cake banana,cake c,cake choco,cake d,cake e,cake f,cake g,cake h,cake i,cake j,cake k,cake l,cake strawberryShortcake,cake t,cake vanilla,cake x,calls F,calls a,calls b,calls c,calls d,calls e,calls f,calls g,calls h,calls i,calls j,calls k,calls l,calls m,calls n,calls o,calls p,calls t,calls x,colors F,colors a,colors ab,colors b,colors c,colors call,colors d,colors e,colors f,colors g,colors h,colors i,colors if,colors j,colors k,colors l,colors m,colors n,colors o,colors p,colors print,colors procedure,colors read,colors red,colors t,colors while,colors x,d a,d b,d c,d d,d e,d f,d g,d h,d i,d j,d k,d l,d t,e a,e b,e c,e d,e f,e g,e h,e i,e j,e k,e l,e t,f a,f b,f d,f f,food F,food a,food appleSlices,food b,food c,food cornCup,food d,food e,food f,food g,food h,food i,food j,food k,food l,food m,food mcNuggets,food n,food o,food p,food t,g a,g b,g c,g d,g e,g f,g g,g h,g i,g j,g k,g l,g m,g n,g o,g t,g x,h a,h b,h c,h d,h e,h f,h g,h h,h j,h k,h l,i F,i a,i b,i c,i d,i e,i f,i g,i h,i i,i j,i k,i l,i m,i n,i o,i p,i t,j a,j b,j c,j d,j e,j f,j g,j h,j i,j j,j k,j l,j t,j x,longAssignments a,longAssignments b,longAssignments c,longAssignments d,longAssignments e,longAssignments f,longCondExpr a,longCondExpr b,longCondExpr c,longCondExpr d,procedure if,procedure while,while a,while b,while c,while d,while else,while g,while h,while if,while then,while while
+5000
+31 - Select a tuple for procedure and a variable that is both used and modified the variable a
+variable v; procedure p;
+Select <p, v> such that Uses(p, v) such that Modifies(p, v) with v.varName = "a"
+ABC a,a a,b a,birds a,c a,cL0th3s a,cake a,calls a,colors a,d a,e a,f a,food a,g a,h a,i a,j a,longAssignments a,longCondExpr a,while a
+5000
+32 - Select procedure that uses bc, de, c, and modifes ab, a, b
+procedure p;
+Select p such that Uses(p, "bc") such that Uses(p, "de") such that Uses(p, "c") such that Modifies(p, "ab") such that Modifies(p, "a") such that Modifies(p, "b")
+j, cake, colors, calls, cL0th3s, birds
+5000
+33 - Select read statements that modifies variable v
+read rd; variable v;
+Select rd such that Modifies(rd, v)
+102,106,119,122,130,141,149,15,170,181,182,183,188,20,226,251,257,283,284,295,30,302,32,35,57,6,60,68,8,89
+5000
+34 - Select read statements that modifies variable
+read rd;
+Select rd such that Modifies(rd, _)
+102,106,119,122,130,141,149,15,170,181,182,183,188,20,226,251,257,283,284,295,30,302,32,35,57,6,60,68,8,89
+5000
+35 - Select variable inside a procedure that is Modified by procedure and read
+read rd; variable v; procedure p;
+Select v such that Modifies(p, v) such that Modifies(rd, v) 
+Bhutan,Colombia,Iceland,Norway,d,else,flamingo,fries,g,jorts,k,m,orange,p,print,quarterpounder,red,strawberryShortcake,t,x,yellow,b,c,f,o,while
+5000
+36 - Select read statements inside a procedure that is modified by procedure and read
+read rd; variable v; procedure p;
+Select rd such that Modifies(p, v) such that Modifies(rd, v) 
+102,106,119,122,130,141,149,15,170,181,182,183,188,20,226,251,257,283,284,295,30,302,32,35,57,6,60,68,8,89
+5000
+37 - Select procedure for variables that is modified by procedure and read
+read rd; variable v; procedure p;
+Select p such that Modifies(p, v) such that Modifies(rd, v) 
+b,c,f,while,ABC,CountriesIWantToVisit,a,birds,cL0th3s,cake,calls,colors,d,e,food,g,h,i,j,longAssignments,longCondExpr,procedure
+5000
+38 - Select tuple for variables that is modified by procedure and read
+read rd; variable v; procedure p;
+Select <p, v> such that Modifies(p, v) such that Modifies(rd, v) 
+ABC b,ABC c,ABC x,CountriesIWantToVisit Bhutan,CountriesIWantToVisit Colombia,CountriesIWantToVisit Iceland,CountriesIWantToVisit Norway,a b,a c,a d,a g,b f,b k,birds b,birds c,birds d,birds f,birds flamingo,birds fries,birds g,birds jorts,birds k,birds m,birds o,birds p,birds quarterpounder,birds t,birds x,c b,c c,c d,c f,c g,c k,c m,c o,c p,c t,c x,cL0th3s b,cL0th3s c,cL0th3s d,cL0th3s f,cL0th3s g,cL0th3s jorts,cL0th3s k,cL0th3s p,cL0th3s t,cL0th3s x,cake b,cake c,cake d,cake f,cake g,cake k,cake p,cake strawberryShortcake,cake t,cake x,calls b,calls c,calls d,calls f,calls g,calls k,calls m,calls o,calls p,calls t,calls x,colors b,colors c,colors d,colors f,colors g,colors k,colors m,colors o,colors orange,colors p,colors print,colors red,colors t,colors while,colors x,colors yellow,d b,d c,d d,d f,d g,d k,d p,d t,d x,e b,e c,e d,e f,e g,e k,e t,e x,f b,f d,f f,f x,food b,food c,food d,food f,food fries,food g,food k,food m,food o,food p,food quarterpounder,food t,food x,g b,g c,g d,g f,g g,g k,g m,g o,g p,g t,g x,h b,h c,h d,h f,h g,h k,h x,i b,i c,i d,i f,i g,i k,i m,i o,i p,i t,i x,j b,j c,j d,j f,j g,j k,j p,j t,j x,longAssignments b,longAssignments c,longAssignments d,longAssignments f,longCondExpr b,longCondExpr c,longCondExpr d,procedure while,while b,while c,while d,while else,while g,while while
+5000
+39 - Select while statements that modifies a variable
+while w; variable v;
+Select w such that Modifies(w, v)
+100,108,115,12,13,133,143,145,169,18,192,198,219,222,223,228,238,240,245,249,260,262,264,267,271,278,291,292,293,38,39,40,55,59,64,70,72,84,301
+5000
+40 - Select while statements that modifies a variable
+while w; variable v;
+Select w such that Modifies(w, _)
+100,108,115,12,13,133,143,145,169,18,192,198,219,222,223,228,238,240,245,249,260,262,264,267,271,278,291,292,293,38,39,40,55,59,64,70,72,84,301
+5000
+41 - Select if statements that modifies a variable
+if ifs; variable v;
+Select ifs such that Modifies(ifs, v)
+111,123,134,14,151,157,172,185,191,199,216,230,234,243,247,259,26,266,281,3,41,50,77,86,97,204,299
+5000
+42 - Select if statements that modifies a variable
+if ifs; variable v;
+Select ifs such that Modifies(ifs, _)
+111,123,134,14,151,157,172,185,191,199,216,230,234,243,247,259,26,266,281,3,41,50,77,86,97,204,299
+5000
+43 - Select variables modified by while statements
+while w; variable v;
+Select v such that Modifies(w, v)
+A,Laos,SHAKERfries,ab,and,applePie,birds,black,eat,fries,iffy,jorts,nests,oSCar,procedure,quarterpounder,strawberryShortcake,yellow,Argentina,Bhutan,F,a,appleSlices,b,c,choco,cornCup,d,dress,e,else,f,flamingo,g,h,hen,i,if,j,j34nj3ggings,jeggings,k,l,m,mcNuggets,n,o,ostrich,p,print,rooster,shirt,shoes,sparrow,swan,t,then,while,x
+5000
+44 - Select variables modified by if statements
+if ifs; variable v;
+Select v such that Modifies(ifs, v)
+A,Laos,SHAKERfries,and,applePie,birds,brown,eat,fries,iffy,jorts,nests,oSCar,orange,quarterpounder,red,strawberryShortcake,yellow,Argentina,Bhutan,Colombia,F,Mongolia,Norway,a,ab,appleSlices,b,c,choco,cornCup,d,dress,e,else,f,flamingo,g,h,hen,i,if,j,j34nj3ggings,jeggings,k,l,m,mcNuggets,n,o,ostrich,p,procedure,rooster,shirt,shoes,sparrow,swan,t,then,while,x
+5000
+45 - Select variables modified by while and if
+if ifs; while w; variable v;
+Select v such that Modifies(ifs, v) such that Modifies(w, v)
+A,Argentina,Bhutan,F,Laos,SHAKERfries,a,ab,and,applePie,appleSlices,b,birds,c,choco,cornCup,d,dress,e,eat,else,f,flamingo,fries,g,h,hen,i,if,iffy,j,j34nj3ggings,jeggings,jorts,k,l,m,mcNuggets,n,nests,o,oSCar,ostrich,p,procedure,quarterpounder,rooster,shirt,shoes,sparrow,strawberryShortcake,swan,t,then,while,x,yellow
+5000
+46 - Select different variables modified by while and used by if
+if ifs; while w; variable v;
+Select v such that Modifies(w, v) such that Uses(ifs, v)
+Argentina,Bhutan,F,a,ab,appleSlices,b,c,choco,cornCup,d,dress,e,else,f,flamingo,g,h,hen,i,if,j,j34nj3ggings,jeggings,k,l,m,mcNuggets,n,o,ostrich,p,procedure,rooster,shirt,shoes,sparrow,swan,t,then,while,x
+5000
+47 - Select different variables used by while and modified by if
+if ifs; while w; variable v;
+Select v such that Uses(w, v) such that Modifies(ifs, v)
+Argentina,Bhutan,F,Norway,a,appleSlices,b,c,choco,cornCup,d,dress,e,else,f,flamingo,g,h,hen,i,if,j,j34nj3ggings,jeggings,k,l,m,mcNuggets,n,o,ostrich,p,red,rooster,shirt,shoes,sparrow,swan,t,then,while,x
+5000
+48 - Select variables used by modified by read and used by print
+read rd; print pr; variable v;
+Select v such that Modifies(rd, v) such that Uses(pr, v)
+b,c,f,o,while
+5000
+49 - Select variables used by used by read and modified by print
+read rd; print pr; variable v;
+Select v such that Modifies(pr, v) such that Uses(rd, v)
+none
+5000
+50 - Select variables used by modified by read and modified by print
+read rd; print pr; variable v;
+Select v such that Modifies(rd, v) such that Modifies(pr, v)
+none
+5000

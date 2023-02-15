@@ -1,0 +1,1360 @@
+1 - Calls (p, p, p)
+procedure p;
+Select p such that Calls(p, p)
+none
+5000
+2 - Calls (s, _, p)
+stmt s; procedure p;
+Select s such that Calls(_, p)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+3 - Calls (rd, string, p)
+read rd; procedure p;
+Select rd such that Calls("ThreeNesting", p)
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+4 - Calls (pn, string, _)
+print pn;
+Select pn such that Calls("FourNesting", _)
+2, 12, 22, 34, 49, 54, 59, 63, 66, 73, 77, 86, 91, 95, 99, 104, 107, 113, 117, 121, 130, 136
+5000
+5 - Calls (a, _, _)
+assign a;
+Select a such that Calls(_, _)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+6 - Calls (c, p, _)
+call c; procedure p;
+Select c such that Calls(p, _)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+7 - Calls (w, p, string)
+while w; procedure p;
+Select w such that Calls(p, "FiveNesting")
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+8 - Calls (ifs, _, string)
+if ifs;
+Select ifs such that Calls(_, "Final")
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 198, 203
+5000
+9 - Calls (v, string, string)
+variable v;
+Select v such that Calls("FourNesting", "FiveNesting")
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+10 - Calls (const, string, string)
+constant const;
+Select const such that Calls("Flat", "C")
+211, 1, 2, 3, 4, 5, 6, 10, 0, 222, 32, 8, 9, 1337
+5000
+11 - Calls (prog_line, string, string)
+prog_line pl;
+Select pl such that Calls("TwoNesting", "ifIfC")
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+12 - Calls (prog_line, _, _)
+prog_line pl;
+Select pl such that Calls(_, _)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+13 - Calls (const, _, _)
+constant const;
+Select const such that Calls(_, _)
+211, 1, 2, 3, 4, 5, 6, 10, 222, 32, 8, 9, 1337, 0
+5000
+14 - Calls (v, _, _)
+variable v;
+Select v such that Calls(_, _)
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+15 - Calls (ifs, string, _)
+if ifs;
+Select ifs such that Calls("Final", _)
+none
+5000
+16 - Calls (w, string, _)
+while w;
+Select w such that Calls("Final", _)
+none
+5000
+17 - Calls (c, string, string)
+call c;
+Select c such that Calls("Flat", "ThreeNesting")
+none
+5000
+18 - Calls (a, string, string)
+assign a;
+Select a such that Calls("Flat", "FourNesting")
+none
+5000
+19 - Calls (pn, _, string)
+print pn;
+Select pn such that Calls(_, "Flat")
+none
+5000
+20 - Calls (rd, _, string)
+read rd;
+Select rd such that Calls(_, "Flat")
+none
+5000
+21 - Calls (s, string, string)
+stmt s;
+Select s such that Calls("ThreeNesting", "FourNesting")
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+22 - Calls (p, string, string)
+procedure p;
+Select p such that Calls("TwoNesting", "whileElseC")
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+23 - Calls (p, _, _)
+procedure p;
+Select p such that Calls(_, _)
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+24 - Calls (s, p, _)
+stmt s; procedure p;
+Select s such that Calls(p, _)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+25 - Calls (rd, p, _)
+read rd; procedure p;
+Select rd such that Calls(p, _)
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+26 - Calls (pn, p, p)
+print pn; procedure p;
+Select pn such that Calls(p, p)
+none
+5000
+27 - Calls (a, p, p)
+assign a; procedure p;
+Select a such that Calls(p, p)
+none
+5000
+28 - Calls (c, _, p)
+call c; procedure p;
+Select c such that Calls(_, p)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+29 - Calls (w, _, p)
+while w; procedure p;
+Select w such that Calls(_, p)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+30 - Calls (ifs, p, p)
+if ifs; procedure p;
+Select ifs such that Calls(p, p)
+none
+5000
+31 - Calls (v, p, p)
+variable v; procedure p;
+Select v such that Calls(p, p)
+none
+5000
+32 - Calls (const, p, p)
+constant const; procedure p;
+Select const such that Calls(p, p)
+none
+5000
+33 - Calls (prog_line, p, p)
+prog_line pl; procedure p;
+Select pl such that Calls(p, p)
+none
+5000
+34 - Calls* (p, p, p)
+procedure p;
+Select p such that Calls*(p, p)
+none
+5000
+35 - Calls* (s, _, p)
+stmt s; procedure p;
+Select s such that Calls*(_, p)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+36 - Calls* (rd, string, p)
+read rd; procedure p;
+Select rd such that Calls*("ifC", p)
+none
+5000
+37 - Calls* (pn, string, _)
+print pn;
+Select pn such that Calls*("whileWhileC", _)
+none
+5000
+38 - Calls* (a, _, _)
+assign a;
+Select a such that Calls*(_, _)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+39 - Calls* (c, p, _)
+call c; procedure p;
+Select c such that Calls*(p, _)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+40 - Calls* (w, p, string)
+while w; procedure p;
+Select w such that Calls*(p, "Flat")
+none
+5000
+41 - Calls* (ifs, _, string)
+if ifs;
+Select ifs such that Calls*(_, "TwoNesting")
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 198, 203
+5000
+42 - Calls* (v, string, string)
+variable v;
+Select v such that Calls*("Flat", "FiveNesting")
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+43 - Calls* (const, string, string)
+constant const;
+Select const such that Calls*("Flat", "ThreeNesting")
+211, 1, 2, 3, 4, 5, 6, 10, 222, 32, 8, 9, 1337, 0
+5000
+44 - Calls* (prog_line, string, string)
+prog_line pl;
+Select pl such that Calls*("FourNesting", "Final")
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+45 - Calls* (prog_line, _, _)
+prog_line pl;
+Select pl such that Calls*(_, _)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+46 - Calls* (const, _, _)
+constant const;
+Select const such that Calls*(_, _)
+211, 1, 2, 3, 4, 5, 6, 10, 222, 32, 8, 9, 1337, 0
+5000
+47 - Calls* (v, _, _)
+variable v;
+Select v such that Calls*(_, _)
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+48 - Calls* (ifs, string, _)
+if ifs;
+Select ifs such that Calls*("whileIfC", _)
+none
+5000
+49 - Calls* (w, string, _)
+while w;
+Select w such that Calls*("ThreeNesting", _)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+50 - Calls* (c, string, string)
+call c;
+Select c such that Calls*("TwoNesting", "Flat")
+none
+5000
+51 - Calls* (a, string, string)
+assign a;
+Select a such that Calls*("TwoNesting", "FourNesting")
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+52 - Calls* (pn, _, string)
+print pn;
+Select pn such that Calls*(_, "whileC2")
+2, 12, 22, 34, 49, 54, 59, 63, 66, 73, 77, 86, 91, 95, 99, 104, 107, 113, 117, 121, 130, 136
+5000
+53 - Calls* (rd, _, string)
+read rd;
+Select rd such that Calls*(_, "C3")
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+54 - Calls* (s, string, string)
+stmt s;
+Select s such that Calls*("ThreeNesting", "Final")
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+55 - Calls* (p, string, string)
+procedure p;
+Select p such that Calls*("TwoNesting", "ifC4")
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+56 - Calls* (p, _, _)
+procedure p;
+Select p such that Calls*(_, _)
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+57 - Calls* (s, p, _)
+stmt s; procedure p;
+Select s such that Calls*(p, _)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+58 - Calls* (rd, p, _)
+read rd; procedure p;
+Select rd such that Calls*(p, _)
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+59 - Calls* (pn, p, p)
+print pn; procedure p;
+Select pn such that Calls*(p, p)
+none
+5000
+60 - Calls* (a, p, p)
+assign a; procedure p;
+Select a such that Calls*(p, p)
+none
+5000
+61 - Calls* (c, _, p)
+call c; procedure p;
+Select c such that Calls*(_, p)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+62 - Calls* (w, _, p)
+while w; procedure p;
+Select w such that Calls*(_, p)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+63 - Calls* (ifs, p, p)
+if ifs; procedure p;
+Select ifs such that Calls*(p, p)
+none
+5000
+64 - Calls* (v, p, p)
+variable v; procedure p;
+Select v such that Calls*(p, p)
+none
+5000
+65 - Calls* (const, p, p)
+constant const; procedure p;
+Select const such that Calls*(p, p)
+none
+5000
+66 - Calls* (prog_line, p, p)
+prog_line pl; procedure p;
+Select pl such that Calls*(p, p)
+none
+5000
+67 - Next (p, s, s)
+procedure p; stmt s;
+Select p such that Next(s, s)
+none
+5000
+68 - Next (s, rd, s)
+stmt s; read rd;
+Select s such that Next(rd, s)
+2, 12, 22, 34, 49, 54, 59, 63, 68, 72, 79, 83, 86, 90, 94, 99, 104, 109, 113, 117, 123, 129, 134, 124, 97
+5000
+69 - Next (rd, pn, s)
+read rd; print pn; stmt s;
+Select rd such that Next(pn, s)
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+70 - Next (pn, c, s)
+print pn; call c; stmt s;
+Select pn such that Next(c, s)
+2, 12, 22, 34, 49, 54, 59, 63, 66, 73, 77, 86, 91, 95, 99, 104, 107, 113, 117, 121, 130, 136
+5000
+71 - Next (a, w, s)
+assign a; while w; stmt s;
+Select a such that Next(w, s)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+72 - Next (c, ifs, s)
+call c; if ifs; stmt s;
+Select c such that Next(ifs, s)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+73 - Next (w, prog_line, s)
+while w; prog_line pl; stmt s;
+Select w such that Next(pl, s)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+74 - Next (ifs, constValue, s)
+if ifs; stmt s;
+Select ifs such that Next(126, s)
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 198, 203
+5000
+75 - Next (v, _, s)
+variable v; stmt s;
+Select v such that Next(_, s)
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+76 - Next (const, _, rd)
+constant const; read rd;
+Select const such that Next(_, rd)
+211, 1, 2, 3, 4, 5, 6, 10, 222, 32, 8, 9, 1337, 0
+5000
+77 - Next (prog_line, constValue, rd)
+prog_line pl; read rd;
+Select pl such that Next(52, rd)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+78 - Next (prog_line, prog_line, pn)
+prog_line pl; print pn;
+Select pl such that Next(pl, pn)
+1, 11, 21, 33, 48, 53, 58, 62, 61, 65, 72, 76, 85, 90, 94, 98, 103, 102, 112, 116, 120, 129, 135
+5000
+79 - Next (const, ifs, pn)
+constant const; if ifs; print pn;
+Select const such that Next(ifs, pn)
+none
+5000
+80 - Next (v, w, pn)
+variable v; while w; print pn;
+Select v such that Next(w, pn)
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+81 - Next (ifs, c, pn)
+if ifs; call c; print pn;
+Select ifs such that Next(c, pn)
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 198, 203
+5000
+82 - Next (w, pn, pn)
+while w; print pn;
+Select w such that Next(pn, pn)
+none
+5000
+83 - Next (c, rd, pn)
+call c; read rd; print pn;
+Select c such that Next(rd, pn)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+84 - Next (a, s, pn)
+assign a; stmt s; print pn;
+Select a such that Next(s, pn)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+85 - Next (pn, s, rd)
+print pn; stmt s; read rd;
+Select pn such that Next(s, rd)
+2, 12, 22, 34, 49, 54, 59, 63, 66, 73, 77, 86, 91, 95, 99, 104, 107, 113, 117, 121, 130, 136
+5000
+86 - Next (rd, rd, rd)
+read rd;
+Select rd such that Next(rd, rd)
+none
+5000
+87 - Next (s, _, pn)
+stmt s; print pn;
+Select s such that Next(_, pn)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+88 - Next (p, constValue, pn)
+procedure p; print pn;
+Select p such that Next(112, pn)
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+89 - Next (p, prog_line, rd)
+procedure p; prog_line pl; read rd;
+Select p such that Next(pl, rd)
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+90 - Next (s, ifs, rd)
+stmt s; if ifs; read rd;
+Select s such that Next(ifs, rd)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+91 - Next (rd, w, c)
+read rd; while w; call c;
+Select rd such that Next(w, c)
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+92 - Next (pn, pn, c)
+print pn; call c;
+Select pn such that Next(pn, c)
+2, 12, 22, 34, 49, 54, 59, 63, 73, 91, 99, 104, 113, 117, 130
+5000
+93 - Next (a, c, rd)
+assign a; call c; read rd;
+Select a such that Next(c, rd)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+94 - Next (c, c, c)
+call c;
+Select c such that Next(c, c)
+none
+5000
+95 - Next (w, constValue, c)
+while w; call c;
+Select w such that Next(119, c)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+96 - Next (ifs, _, c)
+if ifs; call c;
+Select ifs such that Next(_, c)
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 198, 203
+5000
+97 - Next (v, s, c)
+variable v; stmt s; call c;
+Select v such that Next(s, c)
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+98 - Next (const, rd, c)
+constant const; read rd; call c;
+Select const such that Next(rd, c)
+211, 1, 2, 3, 4, 5, 6, 10, 222, 32, 8, 9, 1337, 0
+5000
+99 - Next (prog_line, pn, w)
+prog_line pl; print pn; while w;
+Select pl such that Next(pn, w)
+none
+5000
+100 - Next (prog_line, w, ifs)
+prog_line pl; while w; if ifs;
+Select pl such that Next(w, ifs)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+101 - Next (const, prog_line, ifs)
+constant const; prog_line pl; if ifs;
+Select const such that Next(pl, ifs)
+211, 1, 2, 3, 4, 5, 6, 10, 222, 32, 8, 9, 1337, 0
+5000
+102 - Next (v, ifs, ifs)
+variable v; if ifs;
+Select v such that Next(ifs, ifs)
+none
+5000
+103 - Next (ifs, ifs, w)
+if ifs; while w;
+Select ifs such that Next(ifs, w)
+181, 191, 197
+5000
+104 - Next (w, rd, ifs)
+while w; read rd; if ifs;
+Select w such that Next(rd, ifs)
+none
+5000
+105 - Next (c, w, rd)
+call c; while w; read rd;
+Select c such that Next(w, rd)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+106 - Next (a, _, ifs)
+assign a; if ifs;
+Select a such that Next(_, ifs)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+107 - Next (pn, prog_line, w)
+print pn; prog_line pl; while w;
+Select pn such that Next(pl, w)
+2, 12, 22, 34, 49, 54, 59, 63, 66, 73, 77, 86, 91, 95, 99, 104, 107, 113, 117, 121, 130, 136
+5000
+108 - Next (rd, constValue, ifs)
+read rd; if ifs;
+Select rd such that Next(175, ifs)
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+109 - Next (s, s, ifs)
+stmt s; if ifs;
+Select s such that Next(s, ifs)
+9, 51, 56, 79, 110, 124, 154, 156, 166, 175, 174, 182, 190, 197, 202
+5000
+110 - Next (p, c, ifs)
+procedure p; call c; if ifs;
+Select p such that Next(c, ifs)
+none
+5000
+111 - Next (p, pn, prog_line)
+procedure p; print pn; prog_line pl;
+Select p such that Next(pn, pl)
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+112 - Next (s, pn, constValue)
+stmt s; print pn;
+Select s such that Next(pn, 114)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+113 - Next (rd, c, w)
+read rd; call c; while w;
+Select rd such that Next(c, w)
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+114 - Next (pn, _, constValue)
+print pn;
+Select pn such that Next(_, 1)
+none
+5000
+115 - Next (a, ifs, c)
+assign a; if ifs; call c;
+Select a such that Next(ifs, c)
+none
+5000
+116 - Next (c, constValue, w)
+call c; while w;
+Select c such that Next(174, w)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+117 - Next (w, s, w)
+while w; stmt s;
+Select w such that Next(s, w)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+118 - Next (ifs, w, constValue)
+if ifs; while w;
+Select ifs such that Next(w, 177)
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 198, 203
+5000
+119 - Next (v, prog_line, constValue)
+variable v; prog_line pl;
+Select v such that Next(pl, 210)
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+120 - Next (const, pn, _)
+constant const; print pn;
+Select const such that Next(pn, _)
+211, 1, 2, 3, 4, 5, 6, 10, 222, 32, 8, 9, 1337, 0
+5000
+121 - Next (prog_line, rd, constValue)
+prog_line pl; read rd;
+Select pl such that Next(rd, 124)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+122 - Next (prog_line, c, _)
+prog_line pl; call c;
+Select pl such that Next(c, _)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+123 - Next (const, s, constValue)
+constant const; stmt s;
+Select const such that Next(s, 1)
+none
+5000
+124 - Next (v, constValue, _)
+variable v;
+Select v such that Next(213, _)
+none
+5000
+125 - Next (ifs, rd, _)
+if ifs; read rd;
+Select ifs such that Next(rd, _)
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 198, 203
+5000
+126 - Next (w, w, _)
+while w;
+Select w such that Next(w, _)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+127 - Next (c, _, _)
+call c;
+Select c such that Next(_, _)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+128 - Next (a, prog_line, _)
+assign a; prog_line pl;
+Select a such that Next(pl, _)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+129 - Next (pn, ifs, _)
+print pn; if ifs;
+Select pn such that Next(ifs, _)
+2, 12, 22, 34, 49, 54, 59, 63, 66, 73, 77, 86, 91, 95, 99, 104, 107, 113, 117, 121, 130, 136
+5000
+130 - Next (rd, ifs, constValue)
+read rd; if ifs;
+Select rd such that Next(ifs, 116)
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+131 - Next (s, prog_line, c)
+stmt s; prog_line pl; call c;
+Select s such that Next(pl, c)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+132 - Next (p, w, w)
+procedure p; while w;
+Select p such that Next(w, w)
+none
+5000
+133 - Next (p, _, c)
+procedure p; call c;
+Select p such that Next(_, c)
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+134 - Next (s, constValue, prog_line)
+stmt s; prog_line pl;
+Select s such that Next(1, pl)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+135 - Next (rd, _, prog_line)
+read rd; prog_line pl;
+Select rd such that Next(_, pl)
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+136 - Next (pn, rd, prog_line)
+print pn; read rd; prog_line pl;
+Select pn such that Next(rd, pl)
+2, 12, 22, 34, 49, 54, 59, 63, 66, 73, 77, 86, 91, 95, 99, 104, 107, 113, 117, 121, 130, 136
+5000
+137 - Next (a, pn, ifs)
+assign a; print pn; if ifs;
+Select a such that Next(pn, ifs)
+none
+5000
+138 - Next (c, s, prog_line)
+call c; stmt s; prog_line pl;
+Select c such that Next(s, pl)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+139 - Next (w, c, constValue)
+while w; call c;
+Select w such that Next(c, 161)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+140 - Next (ifs, s, ifs)
+if ifs; stmt s;
+Select ifs such that Next(s, ifs)
+10, 52, 57, 80, 111, 126, 155, 157, 167, 177, 181, 184, 191, 198, 203
+5000
+141 - Next (v, pn, rd)
+variable v; print pn; read rd;
+Select v such that Next(pn, rd)
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+142 - Next (const, c, prog_line)
+constant const; call c; prog_line pl;
+Select const such that Next(c, pl)
+211, 1, 2, 3, 4, 5, 6, 10, 222, 32, 8, 9, 1337, 0
+5000
+143 - Next (prog_line, s, c)
+prog_line pl; stmt s; call c;
+Select pl such that Next(s, c)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+144 - Next (a, constValue, constValue)
+assign a;
+Select a such that Next(170, 166)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+145 - Next (prog_line, _, s)
+prog_line pl; stmt s;
+Select pl such that Next(_, s)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+146 - Next (const, w, s)
+constant const; while w; stmt s;
+Select const such that Next(w, s)
+211, 1, 2, 3, 4, 5, 6, 10, 222, 32, 8, 9, 1337, 0
+5000
+147 - Next (v, rd, w)
+variable v; read rd; while w;
+Select v such that Next(rd, w)
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+148 - Next (ifs, prog_line, prog_line)
+if ifs; prog_line pl;
+Select ifs such that Next(pl, pl)
+none
+5000
+149 - Next (w, _, rd)
+while w; read rd;
+Select w such that Next(_, rd)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+150 - Next (c, prog_line, ifs)
+call c; prog_line pl; if ifs;
+Select c such that Next(pl, ifs)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+151 - Next (pn, w, ifs)
+print pn; while w; if ifs;
+Select pn such that Next(w, ifs)
+2, 12, 22, 34, 49, 54, 59, 63, 66, 73, 77, 86, 91, 95, 99, 104, 107, 113, 117, 121, 130, 136
+5000
+152 - Next (rd, s, _)
+read rd; stmt s;
+Select rd such that Next(s, _)
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+153 - Next (s, w, _)
+stmt s; while w;
+Select s such that Next(w, _)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+154 - Next (p, ifs, _)
+procedure p; if ifs;
+Select p such that Next(ifs, _)
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+155 - Next (a, rd, w)
+assign a; read rd; while w;
+Select a such that Next(rd, w)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+156 - Next (p, rd, constValue)
+procedure p; read rd;
+Select p such that Next(rd, 129)
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+157 - Next (s, c, w)
+stmt s; call c; while w;
+Select s such that Next(c, w)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+158 - Next (rd, prog_line, pn)
+read rd; prog_line pl; print pn;
+Select rd such that Next(pl, pn)
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+159 - Next (pn, constValue, pn)
+print pn;
+Select pn such that Next(62, pn)
+63
+5000
+160 - Next (c, pn, constValue)
+call c; print pn;
+Select c such that Next(pn, 114)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+161 - Next (w, ifs, prog_line)
+while w; if ifs; prog_line pl;
+Select w such that Next(ifs, pl)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+162 - Next (ifs, pn, rd)
+if ifs; print pn; read rd;
+Select ifs such that Next(pn, rd)
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 203, 198
+5000
+163 - Next (v, c, prog_line)
+variable v; call c; prog_line pl;
+Select v such that Next(c, pl)
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+164 - Next (const, constValue, w)
+constant const; while w;
+Select const such that Next(132, w)
+211, 1, 2, 3, 4, 5, 6, 10, 222, 32, 8, 9, 1337, 0
+5000
+165 - Next (prog_line, ifs, prog_line)
+prog_line pl; if ifs;
+Select pl such that Next(ifs, pl)
+11, 21, 53, 89, 58, 62, 81, 82, 112, 116, 127, 128, 154, 156, 165, 158, 159, 168, 169, 178, 180, 182, 187, 185, 186, 189, 196, 192, 194, 198, 201, 199, 200, 204, 210, 172
+5000
+166 - Next (a, w, prog_line)
+assign a; while w; prog_line pl;
+Select a such that Next(w, pl)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+167 - Next (a, _, w)
+assign a; while w;
+Select a such that Next(_, w)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+168 - Next* (p, s, s)
+procedure p; stmt s;
+Select p such that Next*(s, s)
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+169 - Next* (s, rd, s)
+stmt s; read rd;
+Select s such that Next*(rd, s)
+2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42 ,43, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137
+5000
+170 - Next* (rd, pn, s)
+read rd; print pn; stmt s;
+Select rd such that Next*(pn, s)
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+171 - Next* (pn, c, s)
+print pn; call c; stmt s;
+Select pn such that Next*(c, s)
+2, 12, 22, 34, 49, 54, 59, 63, 66, 73, 77, 86, 91, 95, 99, 104, 107, 113, 117, 121, 130, 136
+5000
+172 - Next* (a, w, s)
+assign a; while w; stmt s;
+Select a such that Next*(w, s)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+173 - Next* (c, ifs, s)
+call c; if ifs; stmt s;
+Select c such that Next*(ifs, s)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+174 - Next* (w, prog_line, s)
+while w; prog_line pl; stmt s;
+Select w such that Next*(pl, s)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+175 - Next* (ifs, constValue, s)
+if ifs; stmt s;
+Select ifs such that Next*(212, s)
+none
+5000
+176 - Next* (v, _, s)
+variable v; stmt s;
+Select v such that Next*(_, s)
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+177 - Next* (const, _, rd)
+constant const; read rd;
+Select const such that Next*(_, rd)
+211, 1, 2, 3, 4, 5, 6, 10, 222, 32, 8, 9, 1337, 0
+5000
+178 - Next* (prog_line, constValue, rd)
+prog_line pl; read rd;
+Select pl such that Next*(30, rd)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+179 - Next* (prog_line, prog_line, pn)
+prog_line pl; print pn;
+Select pl such that Next*(pl, pn)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135
+5000
+180 - Next* (const, ifs, pn)
+constant const; if ifs; print pn;
+Select const such that Next*(ifs, pn)
+211, 1, 2, 3, 4, 5, 6, 10, 222, 32, 8, 9, 1337, 0
+5000
+181 - Next* (v, w, pn)
+variable v; while w; print pn;
+Select v such that Next*(w, pn)
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+182 - Next* (ifs, c, pn)
+if ifs; call c; print pn;
+Select ifs such that Next*(c, pn)
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 198, 203
+5000
+183 - Next* (w, pn, pn)
+while w; print pn;
+Select w such that Next*(pn, pn)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+184 - Next* (c, rd, pn)
+call c; read rd; print pn;
+Select c such that Next*(rd, pn)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+185 - Next* (a, s, pn)
+assign a; stmt s; print pn;
+Select a such that Next*(s, pn)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+186 - Next* (pn, s, rd)
+print pn; stmt s; read rd;
+Select pn such that Next*(s, rd)
+2, 12, 22, 34, 49, 54, 59, 63, 66, 73, 77, 86, 91, 95, 99, 104, 107, 113, 117, 121, 130, 136
+5000
+187 - Next* (rd, rd, rd)
+read rd;
+Select rd such that Next*(rd, rd)
+33, 71, 84, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132
+5000
+188 - Next* (s, _, pn)
+stmt s; print pn;
+Select s such that Next*(_, pn)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+189 - Next* (p, constValue, pn)
+procedure p; print pn;
+Select p such that Next*(105, pn)
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+190 - Next* (p, prog_line, rd)
+procedure p; prog_line pl; read rd;
+Select p such that Next*(pl, rd)
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+191 - Next* (s, ifs, rd)
+stmt s; if ifs; read rd;
+Select s such that Next*(ifs, rd)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+192 - Next* (rd, w, c)
+read rd; while w; call c;
+Select rd such that Next*(w, c)
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+193 - Next* (pn, pn, c)
+print pn; call c;
+Select pn such that Next*(pn, c)
+2, 12, 22, 34, 49, 54, 59, 63, 66, 73, 77, 86, 91, 95, 99, 104, 107, 113, 117, 121, 130
+5000
+194 - Next* (a, c, rd)
+assign a; call c; read rd;
+Select a such that Next*(c, rd)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+195 - Next* (c, c, c)
+call c;
+Select c such that Next*(c, c)
+35, 72, 74, 100, 105, 109, 114, 118, 120, 131, 179, 193, 209
+5000
+196 - Next* (w, constValue, c)
+while w; call c;
+Select w such that Next*(200, c)
+none
+5000
+197 - Next* (ifs, _, c)
+if ifs; call c;
+Select ifs such that Next*(_, c)
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 198, 203
+5000
+198 - Next* (v, s, c)
+variable v; stmt s; call c;
+Select v such that Next*(s, c)
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+199 - Next* (const, rd, c)
+constant const; read rd; call c;
+Select const such that Next*(rd, c)
+211, 1, 2, 3, 4, 5, 6, 10, 222, 32, 8, 9, 1337, 0
+5000
+200 - Next* (prog_line, pn, w)
+prog_line pl; print pn; while w;
+Select pl such that Next*(pn, w)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+201 - Next* (prog_line, w, ifs)
+prog_line pl; while w; if ifs;
+Select pl such that Next*(w, ifs)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+202 - Next* (const, prog_line, ifs)
+constant const; prog_line pl; if ifs;
+Select const such that Next*(pl, ifs)
+211, 1, 2, 3, 4, 5, 6, 10, 222, 32, 8, 9, 1337, 0
+5000
+203 - Next* (v, ifs, ifs)
+variable v; if ifs;
+Select v such that Next*(ifs, ifs)
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+204 - Next* (ifs, ifs, w)
+if ifs; while w;
+Select ifs such that Next*(ifs, w)
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 203
+5000
+205 - Next* (w, rd, ifs)
+while w; read rd; if ifs;
+Select w such that Next*(rd, ifs)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+206 - Next* (c, w, rd)
+call c; while w; read rd;
+Select c such that Next*(w, rd)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+207 - Next* (a, _, ifs)
+assign a; if ifs;
+Select a such that Next*(_, ifs)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+208 - Next* (pn, prog_line, w)
+print pn; prog_line pl; while w;
+Select pn such that Next*(pl, w)
+2, 12, 22, 34, 49, 54, 59, 63, 66, 73, 77, 86, 91, 95, 99, 104, 107, 113, 117, 121, 130, 136
+5000
+209 - Next* (rd, constValue, ifs)
+read rd; if ifs;
+Select rd such that Next*(188, ifs)
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+210 - Next* (s, s, ifs)
+stmt s; if ifs;
+Select s such that Next*(s, ifs)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 197, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210
+5000
+211 - Next* (p, c, ifs)
+procedure p; call c; if ifs;
+Select p such that Next*(c, ifs)
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+212 - Next* (p, pn, prog_line)
+procedure p; print pn; prog_line pl;
+Select p such that Next*(pn, pl)
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+213 - Next* (s, pn, constValue)
+stmt s; print pn;
+Select s such that Next*(pn, 130)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+214 - Next* (rd, c, w)
+read rd; call c; while w;
+Select rd such that Next*(c, w)
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+215 - Next* (pn, _, constValue)
+print pn;
+Select pn such that Next*(_, 1)
+none
+5000
+216 - Next* (a, ifs, c)
+assign a; if ifs; call c;
+Select a such that Next*(ifs, c)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+217 - Next* (c, constValue, w)
+call c; while w;
+Select c such that Next*(36, w)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+218 - Next* (w, s, w)
+while w; stmt s;
+Select w such that Next*(s, w)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+219 - Next* (ifs, w, constValue)
+if ifs; while w;
+Select ifs such that Next*(w, 32)
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 198, 203
+5000
+220 - Next* (v, prog_line, constValue)
+variable v; prog_line pl;
+Select v such that Next*(pl, 150)
+none
+5000
+221 - Next* (const, pn, _)
+constant const; print pn;
+Select const such that Next*(pn, _)
+211, 1, 2, 3, 4, 5, 6, 10, 222, 32, 8, 9, 1337, 0
+5000
+222 - Next* (prog_line, rd, constValue)
+prog_line pl; read rd;
+Select pl such that Next*(rd, 128)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+223 - Next* (prog_line, c, _)
+prog_line pl; call c;
+Select pl such that Next*(c, _)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+224 - Next* (const, s, constValue)
+constant const; stmt s;
+Select const such that Next*(s, 1)
+none
+5000
+225 - Next* (v, constValue, _)
+variable v;
+Select v such that Next*(212, _)
+none
+5000
+226 - Next* (ifs, rd, _)
+if ifs; read rd;
+Select ifs such that Next*(rd, _)
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 198, 203
+5000
+227 - Next* (w, w, _)
+while w;
+Select w such that Next*(w, _)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+228 - Next* (c, _, _)
+call c;
+Select c such that Next*(_, _)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+229 - Next* (a, prog_line, _)
+assign a; prog_line pl;
+Select a such that Next*(pl, _)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+230 - Next* (pn, ifs, _)
+print pn; if ifs;
+Select pn such that Next*(ifs, _)
+2, 12, 22, 34, 49, 54, 59, 63, 66, 73, 77, 86, 91, 95, 99, 104, 107, 113, 117, 121, 130, 136
+5000
+231 - Next* (rd, ifs, constValue)
+read rd; if ifs;
+Select rd such that Next*(ifs, 212)
+none
+5000
+232 - Next* (s, prog_line, c)
+stmt s; prog_line pl; call c;
+Select s such that Next*(pl, c)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+233 - Next* (p, w, w)
+procedure p; while w;
+Select p such that Next*(w, w)
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+234 - Next* (p, _, c)
+procedure p; call c;
+Select p such that Next*(_, c)
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+235 - Next* (s, constValue, prog_line)
+stmt s; prog_line pl;
+Select s such that Next*(212, pl)
+none
+5000
+236 - Next* (rd, _, prog_line)
+read rd; prog_line pl;
+Select rd such that Next*(_, pl)
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+237 - Next* (pn, rd, prog_line)
+print pn; read rd; prog_line pl;
+Select pn such that Next*(rd, pl)
+2, 12, 22, 34, 49, 54, 59, 63, 66, 73, 77, 86, 91, 95, 99, 104, 107, 113, 117, 121, 130, 136
+5000
+238 - Next* (a, pn, ifs)
+assign a; print pn; if ifs;
+Select a such that Next*(pn, ifs)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+239 - Next* (c, s, prog_line)
+call c; stmt s; prog_line pl;
+Select c such that Next*(s, pl)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+240 - Next* (w, c, constValue)
+while w; call c;
+Select w such that Next*(c, 1)
+none
+5000
+241 - Next* (ifs, s, ifs)
+if ifs; stmt s;
+Select ifs such that Next*(s, ifs)
+10, 52, 57, 80, 111, 126, 155, 157, 167, 177, 181, 184, 191, 198, 203
+5000
+242 - Next* (v, pn, rd)
+variable v; print pn; read rd;
+Select v such that Next*(pn, rd)
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+243 - Next* (const, c, prog_line)
+constant const; call c; prog_line pl;
+Select const such that Next*(c, pl)
+211, 1, 2, 3, 4, 5, 6, 10, 222, 32, 8, 9, 1337, 0
+5000
+244 - Next* (prog_line, s, c)
+prog_line pl; stmt s; call c;
+Select pl such that Next*(s, c)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+245 - Next* (a, constValue, constValue)
+assign a;
+Select a such that Next*(2, 1)
+none
+5000
+246 - Next* (prog_line, _, s)
+prog_line pl; stmt s;
+Select pl such that Next*(_, s)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+247 - Next* (const, w, s)
+constant const; while w; stmt s;
+Select const such that Next*(w, s)
+211, 1, 2, 3, 4, 5, 6, 10, 222, 32, 8, 9, 1337, 0
+5000
+248 - Next* (v, rd, w)
+variable v; read rd; while w;
+Select v such that Next*(rd, w)
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+249 - Next* (ifs, prog_line, prog_line)
+if ifs; prog_line pl;
+Select ifs such that Next*(pl, pl)
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 198, 203
+5000
+250 - Next* (w, _, rd)
+while w; read rd;
+Select w such that Next*(_, rd)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+251 - Next* (c, prog_line, ifs)
+call c; prog_line pl; if ifs;
+Select c such that Next*(pl, ifs)
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+252 - Next* (pn, w, ifs)
+print pn; while w; if ifs;
+Select pn such that Next*(w, ifs)
+2, 12, 22, 34, 49, 54, 59, 63, 66, 73, 77, 86, 91, 95, 99, 104, 107, 113, 117, 121, 130, 136
+5000
+253 - Next* (rd, s, _)
+read rd; stmt s;
+Select rd such that Next*(s, _)
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+254 - Next* (s, w, _)
+stmt s; while w;
+Select s such that Next*(w, _)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+255 - Next* (p, ifs, _)
+procedure p; if ifs;
+Select p such that Next*(ifs, _)
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+256 - Next* (a, rd, w)
+assign a; read rd; while w;
+Select a such that Next*(rd, w)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+257 - Next* (p, rd, constValue)
+procedure p; read rd;
+Select p such that Next*(rd, 2)
+Flat, C, thenC, elseC, whileC, TwoNesting, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, ThreeNesting, FourNesting, FiveNesting, Final
+5000
+258 - Next* (s, c, w)
+stmt s; call c; while w;
+Select s such that Next*(c, w)
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+259 - Next* (rd, prog_line, pn)
+read rd; prog_line pl; print pn;
+Select rd such that Next*(pl, pn)
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+260 - Next* (pn, constValue, pn)
+print pn;
+Select pn such that Next*(48, pn)
+49, 54, 59, 63, 66, 73, 77, 86, 91, 95, 99, 104, 107, 113, 117, 121, 130, 136
+5000
+261 - Next* (c, pn, constValue)
+call c; print pn;
+Select c such that Next*(pn, 212)
+none
+5000
+262 - Next* (w, ifs, prog_line)
+while w; if ifs; prog_line pl;
+Select w such that Next*(ifs, pl)
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+263 - Next* (ifs, pn, rd)
+if ifs; print pn; read rd;
+Select ifs such that Next*(pn, rd)
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 198, 203
+5000
+264 - Next* (v, c, prog_line)
+variable v; call c; prog_line pl;
+Select v such that Next*(c, pl)
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+265 - Next* (const, constValue, w)
+constant const; while w;
+Select const such that Next*(138, w)
+none
+5000
+266 - Next* (prog_line, ifs, prog_line)
+prog_line pl; if ifs;
+Select pl such that Next*(ifs, pl)
+11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 189, 190, 191, 192, 193, 194, 195, 196, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210
+5000
+267 - Next* (a, w, prog_line)
+assign a; while w; prog_line pl;
+Select a such that Next*(w, pl)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+268 - Next* (a, _, w)
+assign a; while w;
+Select a such that Next*(_, w)
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+269 - Calls (a, p, string), To test that the Calls works with pattern
+assign a; procedure p;
+Select a such that Calls(p, "FourNesting") pattern a(_, "if")
+154, 159, 207
+5000
+270 - Calls* (a, p, string), To test that the Calls* works with pattern
+assign a; procedure p;
+Select a such that Calls*("Flat", "FourNesting") pattern a("else", "else")
+165, 172
+5000
+271 - Next (a, a, w), To test that the Next works with pattern
+assign a; while w;
+Select a such that Next(a, w) pattern a("while", "while")
+161, 164, 187
+5000
+272 - Next* (a, p, string), To test that the Next* works with pattern
+assign a; while w;
+Select a such that Next*(a, w) pattern a("while", "while")
+161, 164, 187, 206
+5000

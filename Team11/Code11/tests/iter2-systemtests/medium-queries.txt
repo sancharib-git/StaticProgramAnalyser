@@ -1,0 +1,310 @@
+1 - invalid query
+assign a1;
+Select a1.value
+none
+5000
+2 - invalid query
+print p;
+Select p.procName
+none
+5000
+3 - invalid query
+call c;
+Select c.varName
+none
+5000
+4 - invalid query
+stmt s, s1, s2;
+Select s1.value
+none
+5000
+5 - invalid query
+procedure proc;
+Select proc.stmt#
+none
+5000
+6 - invalid query
+while w;
+Select w.varName
+none
+5000
+7 - invalid query
+read r;
+Select r.procName
+none
+5000
+8 - invalid query
+read ; assign a;
+Select a
+none
+5000
+9 - invalid query
+assign a; while w;
+Select [a, w]
+none
+5000
+10 - invalid query
+assign a; read r;
+Select <r, a.varName>
+none
+5000
+11 - invalid query
+call c; procedure p;
+Select c such that Calls*("day", c)
+none
+5000
+12 - invalid query
+call c; procedure p; stmt s; print pn;
+Select c such that Calls*("day", pn) with c.procName = p.procName
+none
+5000
+13 - tuple query
+if ifs; while w;
+Select <ifs, w.stmt#>
+8 9, 8 13, 8 25, 8 30, 8 41, 8 45, 8 66, 12 9, 12 13, 12 25, 12 30, 12 41, 12 45, 12 66, 15 9, 15 13, 15 25, 15 30, 15 41, 15 45, 15 66, 27 9, 27 13, 27 25, 27 30, 27 41, 27 45, 27 66, 42 9, 42 13, 42 25, 42 30, 42 41, 42 45, 42 66, 50 9, 50 13, 50 25, 50 30, 50 41, 50 45, 50 66, 58 9, 58 13, 58 25, 58 30, 58 41, 58 45, 58 66, 63 9, 63 13, 63 25, 63 30, 63 41, 63 45, 63 66, 76 9, 76 13, 76 25, 76 30, 76 41, 76 45, 76 66, 83 9, 83 13, 83 25, 83 30, 83 41, 83 45, 83 66
+5000
+14 - tuple query
+procedure proc; print pn; call c;
+Select <proc, pn, c>
+farm 22 49, farm 22 53, farm 22 57, farm 22 62, farm 22 72, farm 22 86, farm 22 87, farm 28 49, farm 28 53, farm 28 57, farm 28 62, farm 28 72, farm 28 86, farm 28 87, farm 33 49, farm 33 53, farm 33 57, farm 33 62, farm 33 72, farm 33 86, farm 33 87, farm 34 49, farm 34 53, farm 34 57, farm 34 62, farm 34 72, farm 34 86, farm 34 87, farm 36 49, farm 36 53, farm 36 57, farm 36 62, farm 36 72, farm 36 86, farm 36 87, farm 43 49, farm 43 53, farm 43 57, farm 43 62, farm 43 72, farm 43 86, farm 43 87, farm 51 49, farm 51 53, farm 51 57, farm 51 62, farm 51 72, farm 51 86, farm 51 87, farm 52 49, farm 52 53, farm 52 57, farm 52 62, farm 52 72, farm 52 86, farm 52 87, farm 55 49, farm 55 53, farm 55 57, farm 55 62, farm 55 72, farm 55 86, farm 55 87, farm 59 49, farm 59 53, farm 59 57, farm 59 62, farm 59 72, farm 59 86, farm 59 87, farm 64 49, farm 64 53, farm 64 57, farm 64 62, farm 64 72, farm 64 86, farm 64 87, farm 65 49, farm 65 53, farm 65 57, farm 65 62, farm 65 72, farm 65 86, farm 65 87, farm 82 49, farm 82 53, farm 82 57, farm 82 62, farm 82 72, farm 82 86, farm 82 87, farm 85 49, farm 85 53, farm 85 57, farm 85 62, farm 85 72, farm 85 86, farm 85 87, day 22 49, day 22 53, day 22 57, day 22 62, day 22 72, day 22 86, day 22 87, day 28 49, day 28 53, day 28 57, day 28 62, day 28 72, day 28 86, day 28 87, day 33 49, day 33 53, day 33 57, day 33 62, day 33 72, day 33 86, day 33 87, day 34 49, day 34 53, day 34 57, day 34 62, day 34 72, day 34 86, day 34 87, day 36 49, day 36 53, day 36 57, day 36 62, day 36 72, day 36 86, day 36 87, day 43 49, day 43 53, day 43 57, day 43 62, day 43 72, day 43 86, day 43 87, day 51 49, day 51 53, day 51 57, day 51 62, day 51 72, day 51 86, day 51 87, day 52 49, day 52 53, day 52 57, day 52 62, day 52 72, day 52 86, day 52 87, day 55 49, day 55 53, day 55 57, day 55 62, day 55 72, day 55 86, day 55 87, day 59 49, day 59 53, day 59 57, day 59 62, day 59 72, day 59 86, day 59 87, day 64 49, day 64 53, day 64 57, day 64 62, day 64 72, day 64 86, day 64 87, day 65 49, day 65 53, day 65 57, day 65 62, day 65 72, day 65 86, day 65 87, day 82 49, day 82 53, day 82 57, day 82 62, day 82 72, day 82 86, day 82 87, day 85 49, day 85 53, day 85 57, day 85 62, day 85 72, day 85 86, day 85 87, food 22 49, food 22 53, food 22 57, food 22 62, food 22 72, food 22 86, food 22 87, food 28 49, food 28 53, food 28 57, food 28 62, food 28 72, food 28 86, food 28 87, food 33 49, food 33 53, food 33 57, food 33 62, food 33 72, food 33 86, food 33 87, food 34 49, food 34 53, food 34 57, food 34 62, food 34 72, food 34 86, food 34 87, food 36 49, food 36 53, food 36 57, food 36 62, food 36 72, food 36 86, food 36 87, food 43 49, food 43 53, food 43 57, food 43 62, food 43 72, food 43 86, food 43 87, food 51 49, food 51 53, food 51 57, food 51 62, food 51 72, food 51 86, food 51 87, food 52 49, food 52 53, food 52 57, food 52 62, food 52 72, food 52 86, food 52 87, food 55 49, food 55 53, food 55 57, food 55 62, food 55 72, food 55 86, food 55 87, food 59 49, food 59 53, food 59 57, food 59 62, food 59 72, food 59 86, food 59 87, food 64 49, food 64 53, food 64 57, food 64 62, food 64 72, food 64 86, food 64 87, food 65 49, food 65 53, food 65 57, food 65 62, food 65 72, food 65 86, food 65 87, food 82 49, food 82 53, food 82 57, food 82 62, food 82 72, food 82 86, food 82 87, food 85 49, food 85 53, food 85 57, food 85 62, food 85 72, food 85 86, food 85 87, pray 22 49, pray 22 53, pray 22 57, pray 22 62, pray 22 72, pray 22 86, pray 22 87, pray 28 49, pray 28 53, pray 28 57, pray 28 62, pray 28 72, pray 28 86, pray 28 87, pray 33 49, pray 33 53, pray 33 57, pray 33 62, pray 33 72, pray 33 86, pray 33 87, pray 34 49, pray 34 53, pray 34 57, pray 34 62, pray 34 72, pray 34 86, pray 34 87, pray 36 49, pray 36 53, pray 36 57, pray 36 62, pray 36 72, pray 36 86, pray 36 87, pray 43 49, pray 43 53, pray 43 57, pray 43 62, pray 43 72, pray 43 86, pray 43 87, pray 51 49, pray 51 53, pray 51 57, pray 51 62, pray 51 72, pray 51 86, pray 51 87, pray 52 49, pray 52 53, pray 52 57, pray 52 62, pray 52 72, pray 52 86, pray 52 87, pray 55 49, pray 55 53, pray 55 57, pray 55 62, pray 55 72, pray 55 86, pray 55 87, pray 59 49, pray 59 53, pray 59 57, pray 59 62, pray 59 72, pray 59 86, pray 59 87, pray 64 49, pray 64 53, pray 64 57, pray 64 62, pray 64 72, pray 64 86, pray 64 87, pray 65 49, pray 65 53, pray 65 57, pray 65 62, pray 65 72, pray 65 86, pray 65 87, pray 82 49, pray 82 53, pray 82 57, pray 82 62, pray 82 72, pray 82 86, pray 82 87, pray 85 49, pray 85 53, pray 85 57, pray 85 62, pray 85 72, pray 85 86, pray 85 87, test 22 49, test 22 53, test 22 57, test 22 62, test 22 72, test 22 86, test 22 87, test 28 49, test 28 53, test 28 57, test 28 62, test 28 72, test 28 86, test 28 87, test 33 49, test 33 53, test 33 57, test 33 62, test 33 72, test 33 86, test 33 87, test 34 49, test 34 53, test 34 57, test 34 62, test 34 72, test 34 86, test 34 87, test 36 49, test 36 53, test 36 57, test 36 62, test 36 72, test 36 86, test 36 87, test 43 49, test 43 53, test 43 57, test 43 62, test 43 72, test 43 86, test 43 87, test 51 49, test 51 53, test 51 57, test 51 62, test 51 72, test 51 86, test 51 87, test 52 49, test 52 53, test 52 57, test 52 62, test 52 72, test 52 86, test 52 87, test 55 49, test 55 53, test 55 57, test 55 62, test 55 72, test 55 86, test 55 87, test 59 49, test 59 53, test 59 57, test 59 62, test 59 72, test 59 86, test 59 87, test 64 49, test 64 53, test 64 57, test 64 62, test 64 72, test 64 86, test 64 87, test 65 49, test 65 53, test 65 57, test 65 62, test 65 72, test 65 86, test 65 87, test 82 49, test 82 53, test 82 57, test 82 62, test 82 72, test 82 86, test 82 87, test 85 49, test 85 53, test 85 57, test 85 62, test 85 72, test 85 86, test 85 87
+5000
+15 - select tuples such that, pattern clauses evaluating to true
+procedure proc; assign a;
+Select <proc, a> such that Calls(proc, "food") pattern a("tired", _)
+day 46, day 54, day 61, day 84
+5000
+16 - select tuples of assign and call which are child of while
+assign a; while w; call c;
+Select <a, c> such that Parent(w, a) and Parent(w, c)
+46 49, 47 49, 48 49
+5000
+17 - tuple query : select tuples next in a while block
+prog_line p, p1; while w;
+Select <p , p1> such that Next(p, p1) and Parent(w, p) and Parent(w, p1) with w.stmt# = 13
+14 15
+5000
+18 - tuple query: Select tuples which use and modify the same variable in a specified while block
+stmt s, s1; variable v; if ifs;
+Select <s, s1> such that Modifies(s, v) and Uses(s1, v) and Parent(ifs, s) and Parent(ifs, s1) with ifs.stmt# = 63
+66 64,66 66,66 72,66 73,72 66,72 72,73 72
+5000
+19 - valid query - start of modifies tests
+stmt s; while w; variable v;
+Select v such that Modifies("pray", v) such that Modifies(s, v)
+tired, pray
+5000
+20 - valid query
+stmt s; variable v; procedure p;
+Select v such that Modifies(s, v) such that Uses(p, v)
+pigs, goats, sell, money, count, sleep, energy, workload, deadline, wakeup, sleeptime, forever, drunk, stress, brunch, chickens, tired
+5000
+21 - valid query
+procedure p; stmt s; variable v; constant c; prog_line n;
+Select s with p.procName = "day" such that Modifies(p, v) and Uses(p, v) and Modifies(s, v) and Uses(s, v) with s.stmt# = c.value
+8, 10, 12, 20, 67
+5000
+22 - valid query
+while w; procedure p; stmt s; variable v; constant c; if ifs;
+Select v such that Modifies(ifs, v) and Uses (p, v) with p.procName = "food"
+energy, drunk, tired, brunch
+5000
+23 - valid query
+print pn; variable v;
+Select pn such that Uses(pn, v) with "workload" = v.varName
+43
+5000
+24 - valid query
+stmt s; constant c; call call;
+Select <s, call> with c.value = s.stmt# and call.procName = "farm" such that Uses(s, "goats")
+12 62,12 87,20 62,20 87,8 62,8 87
+5000
+25 - valid query
+stmt s;
+Select BOOLEAN such that Modifies(s, "tired") and Uses(11, "money")
+TRUE
+5000
+26 - valid query
+call c; procedure p;
+Select c.procName such that Calls*("day", p)
+pray, food, farm
+5000
+27 - valid query
+constant c; procedure p;
+Select p such that Calls(p, "pray")
+day, test
+5000
+28 - valid query
+
+Select BOOLEAN such that Calls(_,_)
+TRUE
+5000
+29 - boolean query
+procedure p, q; print pn; call c; while w;
+Select BOOLEAN such that Calls*("day", q) and Calls("day", "pray")
+TRUE
+5000
+30 - valid query
+assign a, a1; while w; prog_line n;
+Select a such that Parent*(w, a1) pattern a("energy", _"sleeptime /      wakeup   "_) with a.stmt# = n
+39
+5000
+31 - valid query
+assign a;
+Select a pattern a (_, _"energy"_)
+54, 60, 61, 79, 80, 84
+5000
+32 - valid query
+stmt s; constant c;
+Select s with s.stmt# = c.value
+1, 2, 5, 8, 10, 12, 20, 67, 70
+5000
+33 - valid query
+prog_line n; stmt s;
+Select s.stmt# such that Follows*(s, n) with n=12
+10, 11
+5000
+34 - valid query
+stmt s, s1; prog_line n;
+Select s.stmt# such that Follows*(s, s1) with s1.stmt#=n with n=40
+37, 38, 39
+5000
+35 - valid query
+stmt s; while w; if ifs; assign a; variable v; read r;
+Select <w, r.varName> such that Next*(w, r) pattern w("energy", _)
+45 jiayous,45 calm,45 cry,45 deadline
+5000
+36 - valid query
+stmt s; while w; if ifs; assign a; variable v; read r;
+Select ifs pattern ifs("energy",_,_)
+42, 50, 63, 83
+5000
+37 - valid query
+if ifs;variable v;
+Select v pattern ifs(v,_,_)
+pigs, goats, chickens, count, energy, workload, sleeptime, wakeup, tired, sell, deadline, brunch, drunk, money
+5000
+38 - valid query
+if ifs;
+Select ifs pattern ifs("tired",_,_)
+15, 50, 63, 83
+5000
+39 - valid query
+assign a;
+Select a pattern a(_, _"((((sleeptime -wakeup))))"_)
+39
+5000
+40 - valid query
+
+Select BOOLEAN
+TRUE
+5000
+41 - valid query
+procedure p; call c;
+Select BOOLEAN with p.procName = c.procName
+TRUE
+5000
+42 - valid query
+procedure p; call c; variable v;
+Select BOOLEAN with p.procName = v.varName
+TRUE
+5000
+43 - valid query
+while w; read r; stmt s1;
+Select w such that Next(s1, w) such that Next(w, r)
+13
+5000
+44 - valid query
+while w; read r; stmt s1;
+Select w such that Next(s1, w) such that Next(w, 10)
+9
+5000
+45 - valid query
+prog_line n1, n2;
+Select BOOLEAN such that Next*(10, 87)
+FALSE
+5000
+46 - valid query
+prog_line n1, n2;
+Select BOOLEAN such that Next*(n1, 87)
+TRUE
+5000
+47 - valid query
+variable v; procedure p;
+Select p with p.procName = v.varName
+pray
+5000
+48- valid query
+stmt s1; while w;
+Select w such that Next(_, w)
+9, 13, 25, 30, 41, 45, 66
+5000
+49 - valid query
+stmt s1; if ifs; while w;
+Select ifs such that Next*(s1, ifs) and Parent*(w, ifs)
+12, 15, 27, 42, 50, 58, 63
+5000
+50 - valid query
+stmt s1; if ifs; while w;
+Select s1 such that Next*(s1, w) and Parent*(w, ifs) and Follows(s1, ifs)
+11, 14, 26, 49, 57, 62
+5000
+51 - valid query
+
+Select BOOLEAN such that Next* (_, _)
+TRUE
+5000
+52 - valid query
+while w; print pn;
+Select w such that Next* (w, pn) pattern w (_, _)
+9, 25, 30, 41, 45,13,66
+5000
+53 - valid query
+while w; print p; read r; assign a;
+Select w such that Next*(37, r) and Parent(w, r) with r.varName = "tired"
+none
+5000
+54 - valid query
+while w; print p; read r; assign a; if ifs;
+Select ifs such that Next*(r, 46) and Parent(ifs, r) with r.varName = "workload"
+none
+5000
+55 - valid query
+while w; print p; read r; assign a; if ifs;
+Select ifs such that Next*(r, 46) and Parent(ifs, r) with r.varName = "deadline"
+42
+5000
+56 - valid query
+stmt s; while w; if ifs; assign a; variable v; read r; procedure p;
+Select <a, r> such that Next*(a, r) and Parent*(w, r) and Follows(ifs, r) with r.varName = p.procName
+none
+5000
+57 - valid query
+stmt s; while w; if ifs; assign a; variable v; read r; procedure p; prog_line n, n1;
+Select <a, r> such that Next*(a, r) and Parent*(w, r) and Follows(n, r) with r.stmt# = n1
+39 44, 39 56,39 71,46 44,46 56,46 71,47 44,47 56,47 71,48 44,48 56,48 71,54 44,54 56,54 71,60 44,60 56,60 71,61 44,61 56,61 71,67 44,67 56,67 71,68 44,68 56,68 71,69 44,69 56,69 71,73 44,73 56,73 71
+5000
+58 - boolean query
+procedure p, q; print pn; call c; while w; if ifs; assign a;
+Select BOOLEAN such that Parent*(ifs, a) pattern a (_,_" energy"_)
+TRUE
+5000
+59 - boolean query
+procedure p, q; print pn; call c; while w; if ifs; assign a;
+Select BOOLEAN such that Parent*(ifs, a) and pattern a (_,_" energy"_)
+none
+5000
+60 - valid query
+while w; print p; read r; assign a; if ifs;
+Select ifs such that Next*(r, 46) and Parent(ifs, r) with r.varName = "deadline"
+42
+5000
+61 - valid query
+assign a; variable v;
+Select a pattern a (v, "just + testing") and a(v, "hmm")
+none
+5000
+62 - boolean query
+prog_line n;
+Select n such that Next*(n,46)
+37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73
+5000

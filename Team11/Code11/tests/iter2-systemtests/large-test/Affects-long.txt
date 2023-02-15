@@ -1,0 +1,295 @@
+1 - return statements that stmt 50 affects
+stmt s;
+Select s such that Affects(50,s)
+56
+5000
+2 - Affects
+assign a;
+Select a such that Affects(11,a)
+2,93,105,206,216
+5000
+3 - Affects
+assign a;
+Select a such that Affects(25,a)
+40
+5000
+4 - return assignment statements that 164 affects
+assign a;
+Select a such that Affects(164,a)
+167,171,164,175
+5000
+5 - return true if stmt 50 affects* 58
+
+Select BOOLEAN such that Affects*(50,58)
+TRUE
+5000
+6 - return true if stmt 50 affects 58
+
+Select BOOLEAN such that Affects(50,58)
+FALSE
+5000
+7 - return statements that 62 affects
+stmt s;
+Select s such that Affects(62,s)
+50,62,63,64,97,129,183,197,204,207,214,216
+5000
+8 - return assignment statements that affect* 97
+assign a;
+Select a such that Affects*(a,97)
+62,90
+5000
+9 - Affects
+stmt s;
+Select s such that Affects(97,s)
+139
+5000
+10 - return true if stmt 112 affects 112
+
+Select BOOLEAN such that Affects(112,112)
+TRUE
+5000
+11 - return assignment statements that 107 affects
+assign a;
+Select a such that Affects(107,a)
+105,112,117,121,125
+5000
+12 - return assignment statements that 117 affects
+assign a;
+Select a such that Affects(117,a)
+105,111,116,121
+5000
+13 - Affects
+stmt s;
+Select s such that Affects(86,s)
+98,105,121,125
+5000
+14 - return true if a affects a1
+assign a, a1;
+Select BOOLEAN such that Affects(a,a1)
+TRUE
+5000
+15 - return true if relation is true
+
+Select BOOLEAN such that Affects(_,_)
+TRUE
+5000
+16 - Affects
+stmt s;
+Select s such that Affects(58,s)
+50,105,121,125,98
+5000
+17 - Affects
+stmt s;
+Select s such that Affects(s,105)
+11,21,38,40,47,56,58,66,70,78,80,82,86,105,107,111,117
+5000
+18 - Affects
+assign a;
+Select a such that Affects(105,a)
+105
+5000
+19 - Affects
+assign a;
+Select a such that Affects(111,a)
+105,206,216
+5000
+20 - Affects
+assign a;
+Select a such that Affects(118,a)
+128,156,157,164,176
+5000
+21 - Affects
+assign a;
+Select a such that Affects(120,a)
+120,166,185,191,196,204,244,245,246,247,250
+5000
+22 - Affects
+assign a;
+Select a such that Affects(121,a)
+129,133,184,185,207,212,214,216
+5000
+23 - Affects
+assign a;
+Select a such that Affects(157,a)
+160,165,167,173,179,184,185,207,212,214,216
+5000
+24 - Affects
+assign a;
+Select a such that Affects(a,160)
+128,157,160,173,175,179
+5000
+25 - Affects
+assign a;
+Select a such that Affects(166,a)
+156,157,159,165,171,176,179,182
+5000
+26 - Affects
+assign a,a1;
+Select <a,a1> such that Affects(a,171) and Affects(171,a1)
+164 151,164 156,164 157,164 165,166 151,166 156,166 157,166 165
+5000
+27 - Affects
+assign a;
+Select a such that Affects(a,183)
+62,64,76,98,131,151,182,183
+5000
+28 - Affects
+assign a;
+Select a such that Affects(200,a)
+204,205,216,221,222,245
+5000
+29 - Affects
+assign a;
+Select a such that Affects(222,a)
+228,244,245,246,247,250
+5000
+31 - Affects
+assign a;
+Select a such that Affects(a,233)
+129,196,201,205,221,226,228,233
+5000
+32 - Affects
+assign a;
+Select a such that Affects(21,a)
+2,47,50,78,101,105,120,125,151,156,157
+5000
+33 - Affects
+assign a;
+Select a such that Affects(10,a)
+38,40
+5000
+34 - Affects
+assign a;
+Select a such that Affects(109,a)
+111,139
+5000
+35 - Affects
+assign a;
+Select a such that Affects(116,a)
+128,156,157,164,176
+5000
+36 - Affects
+assign a;
+Select a such that Affects(125,a)
+128,131,182,185
+5000
+37 - Affects
+assign a;
+Select a such that Affects(128,a)
+129,139,160
+5000
+38 - Affects
+assign a;
+Select a such that Affects(129,a)
+166,175,185,205,221,231,233
+5000
+39 - Affects
+assign a;
+Select a such that Affects(131,a)
+139,151,183
+5000
+40 - Affects
+assign a;
+Select a such that Affects(133,a)
+182,185
+5000
+41 - Affects
+assign a;
+Select a such that Affects(139,a)
+182,185
+5000
+42 - Affects
+assign a;
+Select a such that Affects(151,a)
+151,152,164,175,183
+5000
+43 - Affects
+assign a;
+Select a such that Affects(152,a)
+156,157,159,165,176,179,182
+5000
+44 - Affects
+assign a;
+Select a such that Affects(156,a)
+165,182
+5000
+44 - Affects
+assign a;
+Select a such that Affects(159,a)
+151,156,157,165
+5000
+45 - Affects
+assign a;
+Select a such that Affects(228,a)
+222,231,233,246,252
+5000
+46 - Affects
+assign a;
+Select a such that Affects(40,a)
+64,66,98,105,129,133,184,185,207,212,214,216
+5000
+47 - Affects
+assign a;
+Select a such that Affects(98,a)
+129,139,151,183
+5000
+48 - Affects
+assign a;
+Select a such that Affects(233,a)
+228,233,243
+5000
+49 - Affects
+assign a;
+Select a such that Affects(167,a)
+159,166,167
+5000
+50 - Affects
+assign a,a1;
+Select <a,a1> such that Affects(a,a1)
+10 38,10 40,105 105,107 105,107 112,107 117,107 121,107 125,109 111,109 139,11 105,11 2,11 206,11 216,11 93,111 105,111 206,111 216,112 112,116 128,116 156,116 157,116 164,116 176,117 105,117 111,117 116,117 121,118 128,118 156,118 157,118 164,118 176,120 120,120 166,120 185,120 191,120 196,120 204,120 244,120 245,120 246,120 247,120 250,121 129,121 133,121 184,121 185,121 207,121 212,121 214,121 216,125 128,125 131,125 182,125 185,128 129,128 139,128 160,129 166,129 175,129 185,129 205,129 221,129 231,129 233,131 139,131 151,131 183,133 182,133 185,139 182,139 185,151 151,151 152,151 164,151 175,151 183,152 156,152 157,152 159,152 165,152 176,152 179,152 182,156 165,156 182,157 160,157 165,157 167,157 173,157 179,157 184,157 185,157 207,157 212,157 214,157 216,159 151,159 156,159 157,159 165,16 18,160 160,160 173,160 206,160 216,164 164,164 167,164 171,164 175,166 156,166 157,166 159,166 165,166 171,166 176,166 179,166 182,167 159,167 166,167 167,171 151,171 156,171 157,171 165,173 160,175 160,175 165,175 167,175 173,175 179,175 184,175 185,175 207,175 212,175 214,175 216,179 160,182 151,182 156,182 157,182 183,183 151,183 183,184 182,184 185,196 221,196 226,196 231,196 233,196 243,197 226,2 18,2 25,20 18,20 7,200 204,200 205,200 216,200 221,200 222,200 245,201 221,201 226,201 231,201 233,201 243,204 222,204 226,205 221,205 231,205 233,206 222,206 226,207 214,207 226,21 101,21 105,21 120,21 125,21 151,21 156,21 157,21 2,21 47,21 50,21 78,210 211,210 212,211 214,211 216,216 243,221 222,221 228,221 233,221 243,222 228,222 244,222 245,222 246,222 247,222 250,226 222,226 226,226 233,228 222,228 231,228 233,228 246,228 252,231 222,231 226,233 228,233 233,233 243,243 244,243 245,245 243,25 40,257 257,262 263,263 265,37 37,38 105,38 206,38 216,38 93,40 105,40 129,40 133,40 184,40 185,40 207,40 212,40 214,40 216,40 64,40 66,40 98,47 105,47 121,47 125,47 50,47 98,50 56,56 105,56 129,56 133,56 184,56 185,56 207,56 212,56 214,56 216,56 50,56 56,56 58,56 64,56 66,56 98,57 57,57 63,58 105,58 121,58 125,58 50,58 98,62 129,62 183,62 197,62 204,62 207,62 214,62 216,62 50,62 62,62 63,62 64,62 97,63 57,63 63,64 111,64 116,64 117,64 118,64 129,64 139,64 151,64 183,64 57,64 63,64 86,66 105,66 206,66 216,66 93,68 120,68 166,68 185,68 191,68 196,68 204,68 244,68 245,68 246,68 247,68 250,68 89,7 18,7 25,70 101,70 105,70 111,70 116,70 121,70 128,70 131,70 182,70 185,70 74,70 86,74 120,74 166,74 185,74 191,74 196,74 204,74 244,74 245,74 246,74 247,74 250,74 89,76 111,76 116,76 117,76 118,76 129,76 139,76 151,76 183,76 86,78 105,78 121,78 125,78 80,78 98,80 105,80 78,82 105,82 121,82 125,82 98,86 105,86 121,86 125,86 98,9 18,9 7,90 139,90 97,93 151,93 156,93 157,97 139,98 129,98 139,98 151,98 183
+5000
+51 - Affects*
+assign a,a1;
+Select BOOLEAN such that Affects*(_,_)
+TRUE
+5000
+52 - Affects*
+stmt s;
+Select s such that Affects*(s,105)
+2,7,9,10,11,20,21,25,38,40,47,50,56,58,62,64,66,70,76,78,80,82,86,105,107,109,111,117
+5000
+53 - Affects*
+assign a;
+Select a such that Affects*(105,a)
+105
+5000
+54 - Affects*
+assign a;
+Select a such that Affects*(111,a)
+105,206,216,222,226,228,231,233,243,244,245,246,247,250,252
+5000
+55 - Affects and Affects*
+assign a1,a,a2;
+Select <a1,a,a2> such that Affects(a1,a) and Affects*(a,a2) with a1.stmt# = 129 and a.stmt# = 233
+129 233 222,129 233 226,129 233 228,129 233 231,129 233 233,129 233 243,129 233 244,129 233 245,129 233 246,129 233 247,129 233 250,129 233 252
+5000
+56 - Affects*
+assign a;
+Select a such that Affects*(200,a)
+204,205,216,221,222,226,228,231,233,243,244,245,246,247,250,252
+5000
+57 - Affects*
+assign a;
+Select a such that Affects*(222,a)
+222,226,228,231,233,243,244,245,246,247,250,252
+5000
+58 - Affects*
+assign a;
+Select a such that Affects*(228,a)
+222,226,228,231,233,243,244,245,246,247,250,252
+5000
+59 - Affects*
+assign a;
+Select a such that Affects*(173,a)
+160,173,206,216,222,226,228,231,233,243,244,245,246,247,250,252
+5000

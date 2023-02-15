@@ -1,0 +1,7 @@
+procedure a {
+    if(x-33+40%53*99/100 <= 44-100*100%65-a+w) {
+        then = missing;
+    } else {
+        x=0;
+    }
+}

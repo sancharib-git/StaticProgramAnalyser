@@ -1,0 +1,245 @@
+1 - 'With' Clause (p.procName, c.procName)
+procedure p; call c;
+Select p with p.procName = c.procName
+C, thenC, TwoNesting, elseC, whileC, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ThreeNesting, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, FourNesting, FiveNesting, Final
+5000
+2 - 'With' Clause (v.varName, rd.varName)
+variable v; read rd;
+Select v with v.varName = rd.varName
+A, thenA, elseA, whileA, C, thenC, elseC, whileC, ifA, ifIfA, ifElseA, ifA2, ifWhileA, ifA3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, ifA4, A2, whileWhileA, whileA2, whileIfA, whileElseA, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, A3, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, Final
+5000
+3 - 'With' Clause (rd.varName, pn.varName)
+read rd; print pn;
+Select rd with rd.varName = pn.varName
+none
+5000
+4 - 'With' Clause (string, v.varName)
+variable v;
+Select v with "else" = v.varName
+else
+5000
+5 - 'With' Clause (v.varName, v.varName) Meaningless Query
+variable v;
+Select v with v.varName = v.varName
+A, B, a, b, c, C, D, E, F, d, e, f, thenA, thenB, thena, thenb, thenc, thenC, thenD, thenE, thenF, thend, thene, thenf, elseA, elseB, elsea, elseb, elsec, elseC, elseD, elseE, elseF, elsed, elsee, elsef, whilea, whileb, whilec, whileD, whileE, whileF, whiled, whilee, whilef, A1, D444, ifA, ifB, ifC, D521, ifIfA, ifIfB, ifIfC, ifElseA, ifElseB, ifElseC, ifB2, ifA2, ifC2, B32, D24, ifWhileA, ifWhileC, ifWhileB, ifB3, ifA3, ifC3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, x, ifA4, ifB4, ifC4, A2, B2, C2, whileA, whileB, whileC, whileWhileA, whileWhileB, whileWhileC, whileB2, whileA2, whileC2, whileIfA, whileIfB, whileIfC, whileElseA, whileElseB, whileElseC, whileC3, whileB3, whileA3, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, whileA4, whileB4, whileC4, A3, B3, C3, A4, if, y, then, if3, eight, nine, ten, while, if2while, else, procedure, ifwhileif, nine9, ten10ten, eleven11even, if22, print, ifwhile2, twelve12twelve, thirteen, ThreeNesting, call, read, FiveNesting, FourNesting, Four4Nesting, pineapple, pear2, pear3, apple4, Flat, bahasa4, Final, TwoNesting
+5000
+6 - 'With' Clause (const.value, s.stmt#)
+constant const; stmt s;
+Select const with const.value = s.stmt#
+211, 1, 2, 3, 4, 5, 6, 10, 32, 8, 9
+5000
+7 - 'With' Clause (rd.stmt#, pn.stmt#)
+read rd; print pn;
+Select rd with rd.stmt# = pn.stmt#
+none
+5000
+8 - 'With' Clause (c.stmt#, w.stmt#)
+call c; while w;
+Select c with c.stmt# = w.stmt#
+none
+5000
+9 - 'With' Clause (ifs.stmt#, a.stmt#)
+if ifs; assign a;
+Select ifs with ifs.stmt# = a.stmt#
+none
+5000
+10 - 'With' Clause (constValue, a.stmt#)
+assign a;
+Select a with 38 = a.stmt#
+38
+5000
+11 - 'With' Clause (prog_line, s.stmt#)
+prog_line pl; stmt s;
+Select pl with pl = s.stmt#
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212
+5000
+12 - 'With' Clause (prog_line, rd.stmt#)
+prog_line pl; read rd;
+Select pl with pl = rd.stmt#
+1, 11, 21, 33, 44, 45, 46, 47, 48, 53, 58, 62, 67, 71, 78, 81, 82, 84, 85, 89, 93, 98, 103, 108, 112, 116, 122, 125, 127, 128, 132, 133, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 212
+5000
+13 - 'With' Clause (prog_line, pn.stmt#)
+prog_line pl; print pn;
+Select pl with pl = pn.stmt#
+2, 12, 22, 34, 49, 54, 59, 63, 66, 73, 77, 86, 91, 95, 99, 104, 107, 113, 117, 121, 130, 136
+5000
+14 - 'With' Clause (prog_line, c.stmt#)
+prog_line pl; call c;
+Select pl with pl = c.stmt#
+3, 13, 14, 23, 35, 50, 55, 60, 64, 68, 72, 74, 76, 88, 92, 94, 100, 105, 109, 114, 118, 120, 131, 135, 160, 179, 193, 209
+5000
+15 - 'With' Clause (prog_line, w.stmt#)
+prog_line pl; while w;
+Select pl with pl = w.stmt#
+32, 70, 83, 97, 102, 124, 162, 166, 170, 173, 174, 175, 182, 190, 192, 201, 202, 205
+5000
+16 - 'With' Clause (prog_line, ifs.stmt#)
+prog_line pl; if ifs;
+Select pl with pl = ifs.stmt#
+10, 52, 57, 80, 111, 126, 153, 155, 157, 167, 177, 181, 184, 188, 191, 197, 198, 203
+5000
+17 - 'With' Clause (prog_line, a.stmt#)
+prog_line pl; assign a;
+Select pl with pl = a.stmt#
+4, 5, 6, 7, 8, 9, 15, 16, 17, 18, 19, 20, 24, 25, 26, 27, 28, 29, 30, 31, 36, 37, 38, 39, 40, 41, 42, 43, 51, 56, 61, 65, 69, 75, 79, 87, 90, 96, 101, 106, 110, 115, 119, 123, 129, 134, 137, 154, 156, 158, 159, 161, 163, 164, 165, 168, 169, 171, 172, 176, 178, 180, 183, 185, 186, 187, 189, 194, 195, 196, 199, 200, 204, 206, 207, 208, 210, 211
+5000
+18 - 'With' Clause (rd.varName, v.varName)
+read rd; variable v;
+Select rd.varName with rd.varName = v.varName such that Modifies("Flat", v)
+A, thenA, elseA, whileA, C, thenC, elseC, whileC, ifA, ifIfA, ifElseA, ifA2, ifWhileA, ifA3, ifIfContainerStmt, ifElseContainerStmt, ifWhileContainerStmt, ifA4, A2, whileWhileA, whileA2, whileIfA, whileElseA, whileA3, whileA4, whileWhileContainerStmt, whileIfContainerStmt, whileElseContainerStmt, A3, ifC, ifIfC, ifElseC, ifC2, ifWhileC, ifC3, ifC4, C2, whileWhileC, whileC2, whileIfC, whileElseC, whileC3, whileC4, C3, Final
+5000
+19 - 'With' Clause (rd.varName, v.varName)
+read rd; variable v; assign a;
+Select rd.stmt# with rd.varName = v.varName pattern a(v, _"elseB"_)
+21, 89
+5000
+20 - 'With' Clause Left arg (procedure) Invalid
+procedure p;
+Select p with p = "Flat"
+none
+5000
+21 - 'With' Clause Left arg (stmt) Invalid
+stmt s;
+Select s with s = 1
+none
+5000
+22 - 'With' Clause Left arg (read) Invalid
+read rd;
+Select rd with rd = 1
+none
+5000
+23 - 'With' Clause Left arg (print) Invalid
+print pn;
+Select pn with pn = 2
+none
+5000
+24 - 'With' Clause Left arg (assign) Invalid
+assign a;
+Select a with a = 4
+none
+5000
+25 - 'With' Clause Left arg (call) Invalid
+call c;
+Select c with c = 3
+none
+5000
+26 - 'With' Clause Left arg (while) Invalid
+while w;
+Select w with w = 32
+none
+5000
+27 - 'With' Clause Left arg (if) Invalid
+if ifs;
+Select ifs with ifs = 10
+none
+5000
+28 - 'With' Clause Left arg (variable) Invalid
+variable v;
+Select v with v = "A"
+none
+5000
+29 - 'With' Clause Left arg (constant) Invalid
+constant const;
+Select const with const = 1
+none
+5000
+30 - 'With' Clause Left arg (BOOLEAN) Invalid
+procedure p;
+Select p with BOOLEAN = 1
+none
+5000
+31 - 'With' Clause Left arg (Tuple) Invalid
+constant const;
+Select const with <const> = 1
+none
+5000
+32 - 'With' Clause Left arg (_) Invalid
+constant const;
+Select const with _ = 1
+none
+5000
+33 - 'With' Clause Right arg (procedure) Invalid
+procedure p;
+Select p with "Flat" = p
+none
+5000
+34 - 'With' Clause Right arg (stmt) Invalid
+stmt s;
+Select s with 1 = s
+none
+5000
+35 - 'With' Clause Right arg (read) Invalid
+read rd;
+Select rd with 1 = rd
+none
+5000
+36 - 'With' Clause Right arg (print) Invalid
+print pn;
+Select pn with 2 = pn
+none
+5000
+37 - 'With' Clause Right arg (assign) Invalid
+assign a;
+Select a with 4 = a
+none
+5000
+38 - 'With' Clause Right arg (call) Invalid
+call c;
+Select c with 3 = c
+none
+5000
+39 - 'With' Clause Right arg (while) Invalid
+while w;
+Select w with 32 = w
+none
+5000
+40 - 'With' Clause Right arg (if) Invalid
+if ifs;
+Select ifs with 10 = ifs
+none
+5000
+41 - 'With' Clause Right arg (variable) Invalid
+variable v;
+Select v with "A" = v
+none
+5000
+42 - 'With' Clause Right arg (constant) Invalid
+constant const;
+Select const with 1 = const
+none
+5000
+43 - 'With' Clause Right arg (BOOLEAN) Invalid
+procedure p;
+Select p with 1 = BOOLEAN
+none
+5000
+44 - 'With' Clause Right arg (Tuple) Invalid
+constant const;
+Select const with 1 = <const>
+none
+5000
+45 - 'With' Clause Right arg (_) Invalid
+constant const;
+Select const with 1 = _
+none
+5000
+46 - 'With' Clause Left arg String, Right arg Integer, Invalid
+procedure p; assign a;
+Select p with p.procName = a.stmt#
+none
+5000
+47 - 'With' Clause Left arg Integer, Right arg String, Invalid
+prog_line pl; read rd;
+Select pl with pl = rd.varName
+none
+5000
+48 - 'With' varname invalid (lowercase n)
+prog_line pl; read rd;
+Select pl with "Final" = rd.varname
+none
+5000
+49 - 'With' SPECIAL
+prog_line pl; stmt s; stmt s1;
+Select s.stmt# such that Follows*(s, s1) with s1.stmt#=pl and pl=10
+1, 2, 3, 4, 5, 6, 7, 8, 9
+5000

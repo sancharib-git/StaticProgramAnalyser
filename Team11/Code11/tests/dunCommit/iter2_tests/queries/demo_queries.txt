@@ -1,0 +1,40 @@
+1 - 
+if ifs; while w; procedure p;
+Select <ifs,w,p> such that Modifies(p, "varX") and Modifies(ifs, "varY") and Modifies(w, "d")
+19 40 main,19 13 main,19 5 main,19 9 main,18 40 main,18 13 main,18 5 main,18 9 main,17 40 main,17 13 main,17 5 main,17 9 main
+5000
+2 - 
+procedure p;
+Select p such that Modifies(p, "a") such that Modifies(p, "b") and Modifies(p, "c")
+main, main2, main3
+5000
+3 - 
+variable v; call cl;
+Select <cl, v> such that Modifies(cl, v) such that Modifies(cl, "x") and Modifies("main4", v)
+14 a,25 a,38 a,41 a
+5000
+4 -
+assign a; variable v, v1, v2; procedure p;
+Select <p, a> such that Modifies(a, v) such that Modifies(p, v) and Modifies(p,"varX")
+main 1,main 2,main 7,main 8,main 11,main 12,main 20,main 21,main 22,main 23,main 27,main 30,main 31,main 34,main 35,main 37,main 43,main 44,main 48,main 51,main 54,main 55,main 56,main 58,main 65,main 71,main 72,main 77,main 78
+5000
+5 -
+while w; procedure p1, p2; variable v; stmt s; call cl; if ifs;
+Select <p1,ifs> such that Calls(p1, p2) with p2.procName = cl.procName such that Uses(cl, "counter") and Next*(w, 5) pattern w(v,_) such that Uses(ifs, v)
+main 17, main 18, main 19, main 33, main 53, main 61, main 64
+5000
+6 -
+variable v; call cl; assign a;
+Select a such that Uses(a, v) and Next*(a, cl) pattern a(_,_"b"_) such that Modifies("main4", v) and Modifies(cl,"a")
+7,8,11,12,23,27,30,37
+5000
+7 -
+constant c; read r; print pn; if ifs; variable v; while w;
+Select r such that Modifies(r, v) with v.varName = pn.varName such that Next*(pn, w) pattern w("b",_) with w.stmt# = c.value
+15,24,50,57,68
+5000
+8 - 
+if ifs,ifs2,ifs3,ifs4,ifs5,ifs6;
+Select ifs such that Next*(ifs, ifs2) and Next*(ifs, ifs3) and Next*(ifs, ifs4) such that Next*(ifs, ifs5) and Next*(ifs, ifs6) pattern ifs("a",_,_) and ifs2("a",_,_) and ifs3("a",_,_) and ifs4("a",_,_) and ifs5("a",_,_) pattern ifs6("a",_,_)
+17, 33, 53, 61
+5000

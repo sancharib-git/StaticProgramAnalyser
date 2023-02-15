@@ -1,0 +1,346 @@
+1 - select all stmts
+stmt s; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select s
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302
+5000
+2 - select all read
+stmt s; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select r
+6, 8, 15, 20, 30, 32, 35, 57, 60, 68, 89, 102, 106,119,122,130,141,149,170,181,182,183,188,226,251,257,283,284,295,302
+5000
+3 - select all print
+stmt s; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select pn
+5, 16, 21, 31, 33, 36, 52, 69, 88, 103, 107,120,121,131,142,150,171,173,177,178,180,184,189,227,253,268,296
+5000
+4 - select all while
+stmt s; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select w
+12, 13, 18, 38, 39, 40, 55, 59, 64, 70, 72, 84, 100, 108,115,133,143,145,169,192,198,219,222,223,228,238,240,245,249,252,260,262,264,267,271,278,291,292,293,301
+5000
+5 - select all if
+stmt s; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select ifs
+3, 14, 26, 41, 50, 77, 86, 97, 111,123,134,151,157,172,185,191,199,204,216,230,234,243,247,259,266,281,299
+5000
+6 - select all assign
+stmt s; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select a
+1, 2, 4, 7, 9, 10, 11, 17, 19, 22, 23, 24, 27, 28, 46, 47, 53, 58, 61, 62, 63, 65, 66, 67, 75, 76, 90, 92, 98, 99, 104, 105, 109, 112,116,117,118,124,125,126,127,128,129,135,136,137,138,139,140,144,147,148,152,153,154,166,167,168,175,176,179,186,187,190,193,194,195,196,197,200,201,202,203,205,206,207,208,209,210,211,212,213,214,217,218,220,221,224,225,229,231,232,235,236,239,241,242,244,246,248,250,254,255,256,258,261,263,265,269,270,272,273,274,275,276,277,285,286,287,288,289,290,294,298,300
+5000
+7 - select all variable
+stmt s; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select v
+a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, r, t, u, x, y, A, B, C, D, F, G, J, KLM, ab, bc, de,while,if,else,choco,banana,strawberryShortcake,vanilla,BLACKfore5t,fries,burger,filetOfish,mcspicy,SHAKERfries,fri35,s34w33D,salt,doubleMcSpicy,bananapie,applePie,ondehondehPI3,chocopie,quarterpounder,McChicken,happyMeal,appleSlices,cornCup,mcNuggets,dress,shirt,jeggings,jorts,flipflops,j34nj3ggings,wearOCSsinglet,denim,cotton,OOT,OOS,shoes,heels,sneakers,flats,courtShoes,socks,Bhutan,Iceland,Norway,Mongolia,Ethiopia,Colombia,Philippines,Argentina,Uruguay,Laos,Cambodia,procedure,worthwhile,iffy,assign,insidebrac,doublebrac1,alba,jane,xo,abcde,dfg,rog,gh,fg,yes,bye,sparrow,ostrich,rooster,eat,hen,chicks,ducklings,flamingo,birds,great,swan,kingfisher,bluebird,oSCar,tmp,j1k,chArlie,left,right,Romeo,delta,width,white,pink,blue,red,black,orange,magenta,purple,cyan,aquamarine,teal,brown,yellow,I,abcdefg,absolutelynot,ad,adbc,and,beta,call,chicken,colors,df,duck,intrend,mcmuffin,nests,print,q,re,read,then,tv
+5000
+8 - select all constants
+stmt s; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select c
+0, 3, 10, 20, 23, 30, 33, 40, 45, 50, 60, 67, 70, 80, 90, 100, 200, 300, 400, 800, 850,2,1,2005,56,7,25,1995,2004,1996,1990,700,32,34,65,99,89,673,8989,890,33098,789,567,50000,230,10000,2222,3333,4444,555,6666,777,526445731,7777777,500,10009,200000,1000,11,11111,12,2320,445,5,6,63,666,670,87,98
+5000
+9 - select all procedures
+stmt s; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select p
+a, b, c, d, e, f, g, h, i, j,while,cake,food,calls,cL0th3s,CountriesIWantToVisit,procedure,longAssignments,longCondExpr,birds,ABC,colors
+5000
+10 - select all call
+call call; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select call
+25, 29, 34, 37, 42, 43, 44, 45, 48, 49, 51, 54, 56, 71, 73, 74, 78, 79, 80, 81, 82, 83, 85, 87, 91, 93, 94, 95, 96, 101, 110, 113,114,132,146,155,156,158,159,160,161,162,163,164,165,174,215,233,237,279,280,282,297
+5000
+11 - Next, select boolean for prog lines belonging to different procedures
+stmt s; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select BOOLEAN such that Next (1,11)
+FALSE
+5000
+12 - Next, select synonym for prog lines belonging to same procedure
+stmt s; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select BOOLEAN such that Next (1,2)
+TRUE
+5000
+13 - Next, select tuple for prog lines belonging to same procedure
+stmt s; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select < a > such that Next* (1,2) pattern a(_,"200-20 ")
+75
+5000
+14 - select clauses in different order but same result
+assign a; while w;
+Select a such that Modifies (a, "b") and Parent* (w, a) and Next* (59, a)
+62,66
+5000
+15 - select clauses in different order but same result
+stmt s; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select a such that Parent* (w, a) and Modifies (a, "b") such that Next* (59, a)
+62,66
+5000
+16 - select clauses in different order but same result
+stmt s; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select a such that Next* (59, a) and Parent* (w, a) and Modifies (a, "b")
+62,66
+5000
+17 - select clauses in different order but same result
+stmt s; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select a pattern a ("b", _) such that Parent* (w, a) such that Next* (59, a)
+62,66
+5000
+18 - select clauses in different order but same result
+stmt s; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select a such that Parent* (w, a) and Next* (59, a) pattern a ("b", _)
+62,66
+5000
+19 - select clauses in different order but same result
+stmt s; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select a such that Next* (59, a) and Parent* (w, a) pattern a ("b", _)
+62,66
+5000
+20 - syntactically incorrect query, and should not be used to connect or introduce clauses of different types
+stmt s; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select a such that Parent* (w, a) and Modifies (a, "b") and such that Next* (1, a)
+none
+5000
+21 - syntactically incorrect query, and should not be used to connect or introduce clauses of different types
+stmt s; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select a such that Parent* (w, a) and pattern a (“b”, _) such that Next* (1, a)
+none
+5000
+22 - syntactically incorrect query, and should not be used to connect or introduce clauses of different types
+stmt s; read r; print pn; while w; if ifs; assign a; variable v; constant c; procedure p;
+Select a such that Parent* (w, a) pattern a ("b", _) and Next* (1, a)
+none
+5000
+23 - select tuple
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2;
+Select <p, w> such that Modifies (w, "x") and Next(w,_) with p.procName = "birds" pattern w(_,_)
+birds 100,birds 108,birds 143,birds 145,birds 169,birds 228,birds 264,birds 278,birds 291,birds 292,birds 293,birds 38,birds 39,birds 40,birds 55,birds 64,birds 70,birds 72
+5000
+24 - select all combi of read and print statements if procedure g calls procedure d
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; read r; if ifs; print pn; stmt s;
+Select <pn.stmt#, s.stmt#> such that Calls("g","d") and Follows(pn,s)
+88 89,107 108,120 121,121 122,131 132,142 143,150 151,16 17,171 172,173 174,177 178,184 185,189 190,268 269,296 297,31 32,36 37,5 6,52 53
+5000
+25 - Calls, return TRUE if there is a procedure that calls other procedure
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2;
+Select BOOLEAN such that Calls (_,_)
+TRUE
+5000
+26 - select all assignment statements if statement 112 is assignment statement
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2;
+Select a1 with 112 = a.stmt#
+1, 2, 4, 7, 9, 10, 11, 17, 19, 22, 23, 24, 27, 28, 46, 47, 53, 58, 61, 62, 63, 65, 66, 67, 75, 76, 90, 92, 98, 99, 104, 105, 109, 112,116,117,118,124,125,126,127,128,129,135,136,137,138,139,140,144,147,148,152,153,154,166,167,168,175,176,179,186,187,190,193,194,195,196,197,200,201,202,203,205,206,207,208,209,210,211,212,213,214,217,218,220,221,224,225,229,231,232,235,236,239,241,242,244,246,248,250,254,255,256,258,261,263,265,269,270,272,273,274,275,276,277,285,286,287,288,289,290,294,298,300
+5000
+27 - select all assignment statements if statement 112 is assignment statement
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2;
+Select a1 with a.stmt# = 112
+1, 2, 4, 7, 9, 10, 11, 17, 19, 22, 23, 24, 27, 28, 46, 47, 53, 58, 61, 62, 63, 65, 66, 67, 75, 76, 90, 92, 98, 99, 104, 105, 109, 112,116,117,118,124,125,126,127,128,129,135,136,137,138,139,140,144,147,148,152,153,154,166,167,168,175,176,179,186,187,190,193,194,195,196,197,200,201,202,203,205,206,207,208,209,210,211,212,213,214,217,218,220,221,224,225,229,231,232,235,236,239,241,242,244,246,248,250,254,255,256,258,261,263,265,269,270,272,273,274,275,276,277,285,286,287,288,289,290,294,298,300
+5000
+28 - Meaningless query, should still return TRUE
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2;
+Select BOOLEAN with 12 = 12
+TRUE
+5000
+29 - If statement 12 is an assignment statement, return true
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2;
+Select BOOLEAN with a.stmt# = 12
+FALSE
+5000
+30 - Calls, invalid query since parameter contains synonym that is not type procedure
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; print pn;
+Select q such that Calls (pn, q)
+none
+5000
+30 - Calls, select procedures that call procedure f
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; print pn;
+Select p such that Calls (p, "f")
+c, d, e, g, h, i, calls
+5000
+31 - Calls*, select procedures that indirectly calls f
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; print pn;
+Select p such that Calls* (p, "f")
+c, d, e, g, h, i, j,calls,colors,cL0th3s,cake,birds,food
+5000
+32 - Calls*, return TRUE if procedure j indirectly calls b
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; print pn;
+Select BOOLEAN such that Calls* ("j", "b")
+TRUE
+5000
+33 - Calls*, return TRUE if procedure d indirectly calls g
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; print pn;
+Select BOOLEAN such that Calls* ("d", "g")
+FALSE
+5000
+34 - Next*, select tuple if Next relation is true
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; print pn;
+Select <p,w> such that Next* (39, 46) with p.procName = "d"
+d 12,d 13,d 18,d 38,d 39,d 40,d 55,d 59,d 64,d 70,d 72,d 84,d 100,d 108,d 115,d 133,d 143,d 145,d 169,d 192,d 198,d 219,d 222,d 223,d 228,d 238,d 240,d 245,d 249,d 252,d 260,d 262,d 264,d 267,d 271,d 278,d 291,d 292,d 293,d 301
+5000
+34 - Assignment, select assignment statements that has subexpression 90 + 40
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; print pn;
+Select a pattern a(_,_"90+40"_)
+9
+5000
+35 - Assignment, select assignment statements that has subexpression (90 + 40)
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; print pn;
+Select a pattern a(_,_"(90+40)"_)
+9
+5000
+36 - Assignment, select assignment statements that has subexpression d*a/b
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; print pn;
+Select a pattern a(_,_"d*a/b"_)
+9
+5000
+36 - Assignment, select assignment statements that has subexpression f+d*a/b
+procedure p, q; assign a, a1; while w; variable v; prog_line n1, n2; print pn;
+Select a pattern a(_,_"f+d*a/b"_)
+none
+5000
+37 - If pattern, return statements that are if statement and use variable(s) in condition
+if ifs; while w;
+Select ifs pattern ifs(_,_,_)
+3, 14, 26, 41, 50, 77, 86, 97, 111,123,134,151,157,172,185,191,216,230,234,243,247,259,266,281
+5000
+38 - While pattern, return statements that are while statement and use variable(s) in condition
+if ifs; while w;
+Select w pattern w(_,_)
+12, 13, 18, 38, 39, 40, 55, 59, 64, 70, 72, 84, 100, 108,115,133,143,145,169,192,219,222,228,238,240,245,249,252,260,262,264,267,271,278,291,292,293
+5000
+39 - If pattern,return tuple of if statement with control variable and the control variable
+if ifs; while w; variable v;
+Select <ifs, v> pattern ifs(v,_,_)
+3 a, 3 b, 3 c, 14 a,14 b, 14 g, 26 a, 26 b, 26 g, 41 a, 41 c, 41 b, 50 d, 77 b, 77 c, 77 d, 86 a, 86 b, 97 m, 97 l, 97 p, 111 y,123 else,123 if,123 while,134 banana,134 choco,151 appleSlices,151 cornCup,151 happyMeal,151 mcNuggets,157 a,157 b,172 j34nj3ggings,185 Ethiopia,185 Mongolia,191 Argentina,216 a,216 b,216 c,216 d,216 e,216 f,216 g,216 h,216 j,230 ostrich,230 sparrow,234 hen,234 rooster,243 duck,243 rooster,247 flamingo,247 swan,259 a,259 beta,266 left,281 colors,281 procedure
+5000
+39 - While pattern,return tuple of while statement with control variable and the control variable
+if ifs; while w; variable v;
+Select <w, v> pattern w(v,_)
+12 a, 12 c, 12 b, 12 j, 13 a, 13 b, 18 a, 18 b, 38 d,38 b, 38 e, 39 d, 39 e,39 f, 39 g, 39 c, 39 a, 39 b, 40 a, 40 b, 55 i, 59 a, 59 b, 64 d, 64 g, 64 f, 70 a, 70 x, 72 b, 84 f, 84 h, 84 d, 100 F, 100 c, 108 c, 108 x,115 else,115 if,115 then,115 while,133 banana,133 choco,143 filetOfish,143 mcmuffin,143 mcspicy,145 doubleMcSpicy,145 mcspicy,169 intrend,169 jeggings,192 Argentina,219 a,219 b,219 c,219 d,219 e,219 f,219 g,219 h,219 i,219 q,219 x,219 y,222 a,222 abcdefg,222 ad,222 alba,222 b,222 bc,222 c,222 d,222 e,222 f,222 fg,222 gh,222 jane,222 rog,222 xo,228 ostrich,228 sparrow,238 rooster,240 hen,240 rooster,245 flamingo,245 swan,249 bluebird,249 kingfisher,252 bluebird,252 kingfisher,260 beta,262 tmp,264 x,267 right,271 c,278 pink,291 blue,291 read,292 call,292 red,293 print
+5000
+40 - Find statements that follow 77
+prog_line n; stmt s;
+Select s.stmt# such that Follows* (s, n) with n=77
+73, 74, 75, 76
+5000
+41 - Find statements that follow 77
+prog_line n; stmt s, s1;
+Select s.stmt# such that Follows* (s, s1) with s1.stmt#=n and n=77
+73, 74, 75, 76
+5000
+42 - Find while loops with assignment to variable f
+assign a; while w;
+Select w such that Parent* (w, a) pattern a ("f", _)
+59, 84
+5000
+43 - Find assignments that use and modify the same variable
+assign a; variable v;
+Select a such that Uses (a, v) pattern a (v, _)
+17, 19, 28, 46, 53, 58, 90, 109,116,117,124,125,126,127,135,137,138,140,186,187,194,196,208,209,212,217,218,229,241,242,248,265,272,273
+5000
+44 - Find assignments that use and modify the variable a
+assign a; while w;
+Select a pattern a ("a", _) such that Uses (a, "a")
+19, 46, 208
+5000
+45 - Find assignments that use and modify the variable a
+assign a; while w;
+Select a pattern a ("a", _) such that Uses (a, "a")
+19, 46, 208
+5000
+46 - Find assignments that are nested directly or indirectly in a while loop and modify the variable b
+assign a; while w;
+Select a such that Parent* (w, a) pattern a ("b", _)
+62, 66, 90,225,269
+5000
+47 - Find assignments that are nested directly or indirectly in a while loop and modify the variable b
+assign a; while w;
+Select a pattern a ("b", _) such that Parent* (w, a)
+62, 66, 90, 225,269
+5000
+48 - Find procedures in the program that call another procedure
+procedure p, q;
+Select p.procName such that Calls (p, q)
+c, d, e, g, h, i, j,birds,cL0th3s,cake,calls,colors,food,longAssignments,while
+5000
+49 - Find procedures that directly call procedure c and modify variable x
+procedure p, q;
+Select p such that Calls (p, q) with q.procName = "c" such that Modifies (p, "x")
+i, g, calls
+5000
+50 - Find procedures that are called from d in a while loop
+procedure p; call c; while w;
+Select p such that Calls ("d", p) and Parent (w, c) with c.procName = p.procName
+a, b, e, f
+5000
+51 - Return TRUE if there is an execution path from statement 71 to 70
+
+Select BOOLEAN such that Next* (71, 70)
+TRUE
+5000
+52 - Return TRUE if there an execution path from statement 13 to 12 that passes through 17
+
+Select BOOLEAN such that Next* (13, 12) and Next* (13, 17)
+TRUE
+5000
+53 - Find assignments to variable l located in a loop, that can be reached from statement 11
+assign a; while w;
+Select a pattern a ("l", _) such that Parent* (w, a) and Next* (11, a)
+17
+5000
+54 - Find program lines that can be executed between line 43 and 46?
+prog_line n;
+Select n such that Next* (43, n) and Next* (n, 46)
+44, 40, 45, 39, 38, 41,42,43
+5000
+55 - Find all statements whose statement number is equal to some constant
+stmt s; constant c;
+Select s with s.stmt# = c.value
+3, 10, 20, 23, 30, 33, 40, 45, 50, 60, 67, 70, 80, 90, 100,1,2,5,11,12,32,34,200,230,25,300,,56,6,63,65,7,87,89,98,99
+5000
+56 - Find procedures whose name is the same as the name of some variable
+stmt s; procedure p; variable v;
+Select p with p.procName = v.varName
+a, b, c, d, e, f, g, h, i, j,birds,colors,procedure,while
+5000
+57 - Find three while loops nested one in another
+while w1, w2, w3;
+Select <w1, w2, w3> such that Parent* (w1, w2) and Parent* (w2, w3)
+38 39 40, 12 13 18,228 238 240,228 238 245,228 238 249,228 238 252,228 240 245,228 240 249,228 240 252,228 245 249,228 245 252,228 249 252,238 240 245,238 240 249,238 240 252,238 245 249,238 245 252,238 249 252,240 245 249,240 245 252,240 249 252,245 249 252,291 292 293
+5000
+58 - Find all assignments with variable ab on the left, located in some while loop, and that can be reached from line 105
+assign a; while w; prog_line n;
+Select a such that Parent* (w, a) and Next* (60, n) pattern a("ab", _) with a.stmt# = n
+none
+5000
+59 - Find all while statements with c as a control variable
+while w;
+Select w pattern w ("c", _)
+12, 39, 100, 108,219,222,271
+5000
+60 - Invalid query as right hand side of pattern while should only be wildcard
+while w;
+Select w pattern w ("c", "c")
+none
+5000
+61 - which call statements has its procedure called by any procedures
+call c; procedure p;
+Select c such that Calls(_, p) with p.procName = c.procName
+25, 29, 34, 37, 42, 43, 44, 45, 48, 49, 51, 54, 56, 71, 73, 74, 78, 79, 80, 81, 82, 83, 85, 87, 91, 93, 94, 95, 96, 101, 110, 113,114,132,146,155,156,158,159,160,161,162,163,164,165,174,215,233,237,279,280,282,297
+5000
+62 - valid query
+prog_line n, n1; assign a; while w;
+Select a such that Follows*(a, w) with a.stmt# = n and 11 = n
+11
+5000
+63 - invalid query
+prog_line n, n1; stmt s;
+Select n with n ="a"
+none
+5000
+64 - valid query
+prog_line n, n1; stmt s; while w;
+Select w with "a1" = "a1"
+12, 13, 18, 38, 39, 40, 55, 59, 64, 70, 72, 84, 100, 108,115,133,143,145,169,192,198,219,222,223,228,238,240,245,249,252,260,262,264,267,271,278,291,292,293,301
+5000
+65 - invalid query
+prog_line n, n1; stmt s; while w;
+Select w pattern s (_, _)
+none
+5000
+

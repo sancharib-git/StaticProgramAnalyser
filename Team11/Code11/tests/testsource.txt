@@ -1,0 +1,54 @@
+procedure a {
+a = 10;
+b=10;
+c= 10;
+while ((a+b < (c%10+(b-100))) && (100-5<=a)){
+read a;
+print b;
+}
+    call c;
+    d = a + (b-100/(a%(50)));
+}
+
+
+
+procedure b {
+f = 10;
+g=10;
+h=20;
+while(g>h) {
+call c;
+if (f+g <= g-h) then{
+call d;
+} else {
+call e;
+read g;
+a = 100+20-10;
+}
+}
+}
+
+procedure c {
+call d;
+if(a<b) then {
+call a;
+call e;
+} else {
+call e;}
+}
+
+
+
+
+
+procedure d
+{
+a=b+10-50;
+}
+
+procedure e{
+i=100-20;
+read f;
+call d;
+print j;
+}

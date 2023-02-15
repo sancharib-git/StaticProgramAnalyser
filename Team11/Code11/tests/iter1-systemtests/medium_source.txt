@@ -1,0 +1,38 @@
+procedure farm {
+    pigs = 100; chickens = 300; goats = 500;
+    sell = 20; money = 200;
+    count =
+              pigs      +chickens +
+      goats;
+    sleep = 0;
+    if (pigs < goats) then {
+        while ((money < 500) || (sleep == 0)) {
+            chickens = chickens - sell;
+            money = money + sell;
+            if (goats > ((  chickens / 2) + (pigs/ 2))) then {
+                while ((goats != 0) && (count != 0)) {
+                    read tired;
+                    if (tired != 0) then {
+                        goats = goats - (sell *         2);
+                        money =money +     (sell * 2); } else {
+                        sleep = 1; }
+                    count = pigs + goats + chickens; }
+            } else {
+                goats = goats +20;
+                money = money - 20; }
+            print money; }
+        } else {
+            pigs = pigs + sell;
+            money = money - sell;
+            while (money > 0) {
+                count = pigs + goats + chickens;
+                if (count > 500) then {
+                    print count; } else {
+                    sleep = 0;
+                    while (sleep > 0) {
+                        money = money * 2;
+                        sleep = 0; }
+                    print sleep; }
+                print money; }
+            sell = sell * 5; }
+    print count; }

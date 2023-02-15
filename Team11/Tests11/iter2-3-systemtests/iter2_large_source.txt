@@ -1,0 +1,189 @@
+procedure a {
+    a = 10;
+    c = (a + b-20)%30 / 70+90*(40-30);
+    if ((a > b) && (b <= (90+67%(a-b+(c/45))))) then {
+        e = 80 + 90;
+        print f;
+        read g;
+    } else {
+        h = a + b + c - d%g;
+         read d;
+    }
+    i = h - f +d * a / b % (90+40);
+    b = 20;
+}
+
+procedure b {
+    j = a + b -c;
+    while (!(((a-c+50 != a+b)&&(j == b - c+50))||(b >= (50+45)%33-a)))
+    {
+        while (!(a <= b)) {
+            if (a-b <= g) then {
+                read k;
+                print l;
+                l = k + l - 10 / (a %b);
+            }
+         else {
+                while ((a-b < 0)&&(a+b>10)) {
+                    a = a + b - 10 / 20;
+                    read f;
+                    print c;
+                }
+        }
+    }
+}
+}
+
+
+
+procedure c {
+    m = 20;
+    n = m + 20 - 100;
+    o = n + m + 10;
+    call d;
+    if ((a + b  <= g  ) || (!(a <= b-g))) then {
+        a = 10;
+        b = a - b + (c%(c-90/(d+100))) - 70;
+        call e;
+    } else {
+        read m;
+        print n;
+        read o;
+        print o;
+    }
+    call f;
+}
+
+
+
+procedure d {
+read p;
+print r;
+call b;
+while ((d > 0) && (b-e+d <= 10)) {
+    while (d+e+f+g-c*b-(a+c) >= 3) {
+        while (a + b == 0) {
+            if (a-c*b != 90) then{
+                 call a;
+            } else {
+                call b;
+            }
+            call e;
+        }
+        call f;
+    }
+}
+    a = a+ b -c -10;
+    b = 60;
+}
+
+
+procedure e
+{
+call a;
+call b;
+if (d >0) then {
+call a;
+print r;
+h = h+a+f;
+} else {
+call f;
+}
+while ((i>0)&&(i < 200+20)) {
+call f;
+read t;
+g = g-(r+t)%23;
+}
+
+}
+
+
+procedure f {
+    while (a >b) {
+        read d;
+        a = 200;
+        b = a-f;
+        f = 200;
+    } while (d+g <= f) {a=b; b=20; e = 20+10; read x;}
+    print y;
+ }
+
+
+    procedure g {
+        while (a >x+800) {
+            call a;
+            while (b <= 850) {
+                call a;
+                call b;
+                a = 200 -20;
+                h = a+ g-100;
+                if(b+c==c+d) then {
+                    call f;
+                    call c;
+                } else {
+                    call d;
+                    call e;
+                }
+            }
+            call a;
+        }
+    }
+
+
+ procedure h {
+    call f;
+    while (f < h+90%d) {
+        call a;
+        if ( a < b) then {
+            call b;
+            print b;
+            read b;
+            b = 200- 70 + 10 - a + b;
+        } else {
+            call a;
+            f = a + b -c *d %e;
+        }
+    }
+ }
+
+
+
+
+
+ procedure i {
+    call a;
+    call b;
+    call c;
+    call d;
+    if (m < l+p) then {
+        A = B+C-D;
+    } else {
+        F =G +J - KLM;
+    }
+    while (F >= c%10) {
+        call f;
+    }
+    read x;
+    print y;
+
+
+
+
+ }
+
+ procedure j {
+    a = 200 - b;
+    b = 400 + c;
+    read d;
+    print u;
+    while ( x > c) {
+        c = c+c;
+        call d;
+        if (y -400+60 == 300) then {
+            ab = bc + de;
+        } else {
+            call a;
+        }
+    }
+
+ }

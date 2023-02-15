@@ -1,0 +1,95 @@
+procedure large {
+    big = 123;
+    giant = 321;
+    great = 78;
+    read huge;
+    print vast;
+    while ((mammoth > giant) && (!(big == great))) {
+        enormous = huge + vast;
+        vast = great - gargantuan;
+        if (((wide != long) && (thick == fat)) || ((big%4) <= giant+66)) then {
+            read colossal;
+            print ginormous;
+            gigantic = giant + titanic;
+        } else {
+            massive = kingsized + queensized;
+            ginormous = enormous - voluminous;
+        }
+        while (longnestahead == truth) {
+            muscular = heavy + bulky;
+            cosmic = colossal + lofty + 998;
+            while (elephantine != monstrous) {
+                cosmic = unlimited + size - limits;
+                while ((jumbo > ((tall + high) % (wide / broad))) || (!((small == 0) && (tiny == 0)))) {
+                    read extensive;
+                    print worldwide;
+                    if (mega > oversized) then {
+                        if (oversized >= (tall + hefty)) then {
+                            kingly = titanic + olympic;
+                            tremendous = oversized - overgrown + 56 - 90;
+                            if ((corpulent < mega) && (towering != mountainous)) then {
+                                while (heavy != bulky) {
+                                    read solid;
+                                    print mega;
+                                    while (humongous >= oversized) {
+                                        while (herculean == wellfed) {
+                                            enormous = ginormous + humongous + 77 -45 * 67;
+                                            elephantine = giant - huge + large % big;
+                                        }
+                                        long = tall + lengthy - 78;
+                                        long = long % 67;
+                                    }
+                                    oversized = megasized + kingsized - mansized;
+                                    read great;
+                                    print weighty;
+                                }
+                            } else {
+                                monster = astronomical - 78 + 99 % 33 + gargantuan / 56 * 88;
+                                big = friendly + giant - monster;
+                            }
+                        } else {
+                            read hefty;
+                            print burly;
+                            read heavy;
+                            if (huge < large) then {
+                                 big = big * big;
+                                 large = large + 2;
+                            } else {
+                                large = large - small;
+                                print large;
+                            }
+                        }
+                    } else {
+                        plentiful = bountiful + 99;
+                    }
+                }
+                exitedFourthwhile =  great * 99;
+                print large;
+            }
+            exitedThirdWhile = hulking - gargantuan;
+            read hefty;
+            print towering;
+        }
+        print exitedSecondWhile;
+        exitedSecondWhile = huge + strong * 100;
+    }
+    exitedFirstWhile = pop;
+    widereaching = farreaching + huge23 + ginorn0u5e;
+    elephantine = largescale * animal;
+    animal = animal * 99;
+    harvests = plentiful * 100 / 55;
+    while (broad > 99) {
+        while (great < 100) {
+            hefty = lofty * 8;
+            lofty = meaty + 66;
+            meaty = meaty * 77;
+            }
+        heavy = bulky + chunky;
+        chunky = bulky + 5;
+        if (bulky == 99) then {
+            porky = porky + 1;
+            } else {
+            fleshy = flesh * 2;
+            }
+        }
+}

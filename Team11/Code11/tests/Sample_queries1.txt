@@ -1,0 +1,100 @@
+3 - comment
+while a1;
+Select a1
+1, 2, 3
+5000
+1 - comment
+variable a2;
+Select a2
+x, y, q
+5000
+2 - comment
+assign a1;
+Select a1
+1, 2, 3
+5000
+4 - comment
+procedure a1;
+Select a1
+None
+5000
+5 - comment
+if a1;
+Select a1
+None
+5000
+6 - comment
+stmt a1;
+Select a1
+None
+5000
+7 - comment
+assign a1;
+Select a1 pattern a1(_, _)
+1, 2, 3
+5000
+3 - comment
+print a1;
+Select a1
+None
+5000
+1 - comment
+read a2;
+Select a2
+x, y, q
+5000
+1 - comment
+assign a;
+Select a pattern a(_, _)
+x, y, q
+5000
+1 - comment
+assign a; variable v;
+Select v pattern a(v, _)
+x, y, q
+5000
+1 - comment
+constant c;
+Select c
+5, 3, 9
+5000
+1 - comment
+assign a; variable v;
+Select v pattern a(v, _"y"_)
+q
+5000
+1 - comment
+print a;
+Select a
+5
+5000
+1 - comment
+stmt a; read r;
+Select a such that Follow (a, r)
+4
+5000
+1 - comment
+assign a1;
+Select a1
+1, 2, 3
+5000
+1 - comment
+read r;
+Select r
+4
+5000
+1 - comment
+print r;
+Select r
+5
+5000
+1 - comment
+assign r;
+Select r
+1, 2, 3
+5000
+1 - comment
+stmt a;
+Select a such that Follow* (a, 5)
+1,2,3,4
+5000

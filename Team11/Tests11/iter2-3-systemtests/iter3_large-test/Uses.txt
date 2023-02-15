@@ -1,0 +1,285 @@
+1 - Select all variables procedure f uses
+variable v;
+Select v such that Uses("f", v)
+a,b,f,d,g,y
+5000
+2 - Select all procedures that uses variable a
+procedure p;
+Select p such that Uses(p, "a")
+a,b,c,d,e,f,g,h,i,j,while,ABC,birds,cL0th3s,cake,calls,colors,food,longAssignments,longCondExpr
+5000
+3 - Select pair of procedure and statement number where it uses a
+variable v; procedure p;
+Select <p, v> such that Uses(p, "a") such that Uses(v, "a")
+none
+5000
+4 - Select all procedures that uses variable a and b
+procedure p;
+Select p such that Uses(p, "a") and Uses(p, "b")
+c, h, i, j, a, b, birds, cL0th3s, cake, calls, colors, d, e, f, food, g, longAssignments, longCondExpr, while
+5000
+5 - Select all procedures that uses variable B
+procedure p;
+Select p such that Uses(p, "B")
+i,birds,calls,colors,food
+5000
+6 - Select all variables that is used procedure procedure
+variable v;
+Select v such that Uses("procedure", v)
+if, while, worthwhile
+5000
+7 - Select all procedures that uses a and calls a
+procedure p;
+Select p such that Uses(p, "a") such that Calls(p, "a")
+d,e,h,calls,g,i,j,while
+5000
+8 - Select all procedures that uses bc and modifies ab
+procedure p;
+Select p such that Uses(p, "bc") such that Modifies(p, "ab")
+j,birds,cL0th3s,cake,calls,colors
+5000
+9 - Select while statements that uses a
+while w;
+Select w such that Uses(w, "a")
+100,108,12,13,143,145,169,18,219,222,228,278,291,292,293,38,39,40,55,59,70,72,84
+5000
+10 - Select if statements that uses while
+if ifs;
+Select ifs such that Uses(ifs, "while")
+123, 199
+5000
+11 - invalid query
+variable v;
+Select v such that Uses(_, v)
+none
+5000
+12 - invalid query
+variable v;
+Select v such that Uses(_, _)
+none
+5000
+13 - invalid query
+procedure p;
+Select p such that Uses(_, p)
+none
+5000
+14 - invalid query
+stmt s;
+Select s such that Uses(_, s)
+none
+5000
+15 - invalid query
+procedure p; variable v;
+Select _ such that Uses(p, v)
+none
+5000
+16 - invalid query
+procedure p; variable v;
+Select p Uses(p, v)
+none
+5000
+17 - invalid query
+procedure p; variable v;
+Select p such that Uses(v, p)
+none
+5000
+18 - invalid query
+procedure proc; variable v;
+Select v such that Uses(proc,proc)
+none
+5000
+19 - invalid query
+procedure p; stmt s;
+Select p such that Uses(p, s)
+none
+5000
+20 - Check if procedure a uses variable a
+procedure p;
+Select BOOLEAN such that Uses(p, "a") with p.procName = "a"
+TRUE
+5000
+21 - Check if procedure a uses variable ab
+procedure p;
+Select BOOLEAN such that Uses(p, "ab") with p.procName = "a"
+FALSE
+5000
+22 - Check if procedure j uses variable bc
+procedure p;
+Select BOOLEAN such that Uses(p, "bc") with p.procName = "j"
+TRUE
+5000
+23 - Check if procedure j uses variable bc and de
+procedure p;
+Select BOOLEAN such that Uses(p, "bc") and Uses(p, "de") with p.procName = "j"
+TRUE
+5000
+24 - Check if procedure j uses variable bc, de and c
+procedure p;
+Select BOOLEAN such that Uses(p, "bc") such that Uses(p, "de") such that Uses(p, "c") with p.procName = "j"
+TRUE
+5000
+25 - Check if procedure j uses variable bc, de, c, and modifies ab
+procedure p;
+Select BOOLEAN such that Uses(p, "bc") such that Uses(p, "de") such that Uses(p, "c") such that Modifies(p, "ab") with p.procName = "j"
+TRUE
+5000
+26 - Check if procedure j uses variable bc, de, c, and modifies ab change position of clauses
+procedure p;
+Select BOOLEAN such that Uses(p, "bc") such that Uses(p, "de") such that Uses(p, "c") with p.procName = "j" such that Modifies(p, "ab") 
+TRUE
+5000
+27 - Select procedure that uses bc, de, c, and modifies ab
+procedure p;
+Select p such that Uses(p, "bc") such that Uses(p, "de") such that Uses(p, "c") such that Modifies(p, "ab") 
+j, cake, colors, calls, cL0th3s, birds
+5000
+28 - Select procedure that uses bc, de, c, and modifes ab, a, b
+procedure p;
+Select p such that Uses(p, "bc") such that Uses(p, "de") such that Uses(p, "c") such that Modifies(p, "ab") such that Modifies(p, "a") such that Modifies(p, "b")
+j, cake, colors, calls, cL0th3s, birds
+5000
+29 - Select a tuple for procedure and a variable that is both used and modified the variable a
+variable v; procedure p;
+Select <p, v> such that Uses(p, v) such that Modifies(p, v)
+ABC a,ABC c,ABC x,CountriesIWantToVisit Argentina,CountriesIWantToVisit Bhutan,CountriesIWantToVisit Colombia,CountriesIWantToVisit Mongolia,CountriesIWantToVisit Norway,a a,a b,a c,a d,a g,a h,b a,b j,b k,b l,birds F,birds a,birds appleSlices,birds b,birds c,birds cornCup,birds d,birds dress,birds e,birds f,birds flamingo,birds g,birds h,birds hen,birds i,birds j,birds j34nj3ggings,birds jeggings,birds k,birds l,birds m,birds mcNuggets,birds n,birds o,birds ostrich,birds p,birds rooster,birds shirt,birds shoes,birds sparrow,birds swan,birds t,birds x,c a,c b,c c,c d,c e,c f,c g,c h,c i,c j,c k,c l,c m,c n,c o,c t,cL0th3s a,cL0th3s b,cL0th3s c,cL0th3s d,cL0th3s dress,cL0th3s e,cL0th3s f,cL0th3s g,cL0th3s h,cL0th3s i,cL0th3s j,cL0th3s j34nj3ggings,cL0th3s jeggings,cL0th3s k,cL0th3s l,cL0th3s shirt,cL0th3s shoes,cL0th3s t,cL0th3s x,cake BLACKfore5t,cake a,cake b,cake banana,cake c,cake choco,cake d,cake e,cake f,cake g,cake h,cake i,cake j,cake k,cake l,cake strawberryShortcake,cake t,cake vanilla,cake x,calls F,calls a,calls b,calls c,calls d,calls e,calls f,calls g,calls h,calls i,calls j,calls k,calls l,calls m,calls n,calls o,calls p,calls t,calls x,colors F,colors a,colors ab,colors b,colors c,colors call,colors d,colors e,colors f,colors g,colors h,colors i,colors if,colors j,colors k,colors l,colors m,colors n,colors o,colors p,colors print,colors procedure,colors read,colors red,colors t,colors while,colors x,d a,d b,d c,d d,d e,d f,d g,d h,d i,d j,d k,d l,d t,e a,e b,e c,e d,e f,e g,e h,e i,e j,e k,e l,e t,f a,f b,f d,f f,food F,food a,food appleSlices,food b,food c,food cornCup,food d,food e,food f,food g,food h,food i,food j,food k,food l,food m,food mcNuggets,food n,food o,food p,food t,g a,g b,g c,g d,g e,g f,g g,g h,g i,g j,g k,g l,g m,g n,g o,g t,g x,h a,h b,h c,h d,h e,h f,h g,h h,h j,h k,h l,i F,i a,i b,i c,i d,i e,i f,i g,i h,i i,i j,i k,i l,i m,i n,i o,i p,i t,j a,j b,j c,j d,j e,j f,j g,j h,j i,j j,j k,j l,j t,j x,longAssignments a,longAssignments b,longAssignments c,longAssignments d,longAssignments e,longAssignments f,longCondExpr a,longCondExpr b,longCondExpr c,longCondExpr d,procedure if,procedure while,while a,while b,while c,while d,while else,while g,while h,while if,while then,while while
+5000
+30 - Select a tuple for procedure and a variable that is both used and modified the variable a
+variable v; procedure p;
+Select <p, v> such that Uses(p, v) such that Modifies(p, v) with v.varName = "a"
+ABC a,a a,b a,birds a,c a,cL0th3s a,cake a,calls a,colors a,d a,e a,f a,food a,g a,h a,i a,j a,longAssignments a,longCondExpr a,while a
+5000
+31 - Select assignments that uses variables
+assign a; variable v;
+Select a such that Uses (a, v) pattern a (v, _)
+109,116,117,124,125,126,127,135,137,138,140,17,186,187,19,194,196,208,209,212,217,218,229,241,242,248,265,272,273,28,46,53,58,90
+5000
+32 - Select assignments that uses variables that contains pattern 
+assign a; variable v;
+Select a such that Uses (a, v) pattern a (v, _"a+b"_)
+19,208,209,218,46
+5000
+33 - Select assignments that uses variables that contains pattern 
+assign a; variable v;
+Select a such that Uses (a, v) pattern a ("ab", _)
+112
+5000
+34 - Select assignments that uses variables that contains pattern 
+assign a; variable v;
+Select a such that Uses (a, v) pattern a (v, "bc + de")
+none
+5000
+35 - Select tuples for assignments that uses variables that contains pattern 
+assign a; variable v;
+Select <a, v> such that Uses (a, v) pattern a (v, _)
+109 c,116 while,117 if,124 then,125 else,126 if,127 if,135 choco,137 choco,138 choco,140 vanilla,17 l,186 Mongolia,187 Norway,19 a,194 Bhutan,196 Argentina,208 a,209 b,212 d,217 d,218 b,229 sparrow,241 hen,242 rooster,248 swan,265 x,272 c,273 x,28 b,46 a,53 h,58 g,90 b
+5000
+36 - Select tuples for assignments that uses variables that contains pattern 
+assign a; variable v;
+Select <a, v> such that Uses (a, v) pattern a (v, _"a+b"_)
+19 a,208 a,209 b,218 b,46 a
+5000
+37 - Select tuples for assignments that uses variables that contains pattern 
+assign a; variable v;
+Select <a, v> such that Uses (a, v) pattern a ("ab", _)
+112 bc,112 de
+5000
+38 - Select tuples for assignments that uses variables that contains pattern 
+assign a; variable v;
+Select <a, v> such that Uses (a, v) pattern a (v, "bc + de")
+none
+5000
+39 - invalid query
+assign a; variable v;
+Select <a, v> such that Uses (a, v) pattern a (v, _"bc + de")
+none
+5000
+40 - invalid query
+assign a; variable v;
+Select <a, v> such that Uses (a, v) pattern a (v, "bc + de"_)
+none
+5000
+41 - invalid query
+assign a; variable v;
+Select <a, v> such that Uses (a, v) pattern a (v, __)
+none
+5000
+43 - Select print statements that uses variable v
+print pr; variable v;
+Select pr such that Uses(pr, v)
+103,107,120,121,131,142,150,16,171,173,177,178,180,184,189,21,227,253,268,296,31,33,36,5,52,69,88
+5000
+44 - Select print statements that uses variable
+print pr;
+Select pr such that Uses(pr, _)
+103,107,120,121,131,142,150,16,171,173,177,178,180,184,189,21,227,253,268,296,31,33,36,5,52,69,88
+5000
+45 - Select variable inside a procedure that is used by procedure and print
+print pr; variable v; procedure p;
+Select v such that Uses(p, v) such that Uses(pr, v) 
+McChicken,Mongolia,Philippines,Romeo,b,burger,bye,c,cotton,denim,f,flipflops,if,kingfisher,l,n,o,r,read,shoes,u,vanilla,wearOCSsinglet,while,y
+5000
+46 - Select print statements inside a procedure that is used by procedure and print
+print pr; variable v; procedure p;
+Select pr such that Uses(p, v) such that Uses(pr, v) 
+103,107,120,121,131,142,150,16,171,173,177,178,180,184,189,21,227,253,268,296,31,33,36,5,52,69,88
+5000
+47 - Select procedure for variables that is used by procedure and print
+print pr; variable v; procedure p;
+Select p such that Uses(p, v) such that Uses(pr, v) 
+b,c,f,while,ABC,CountriesIWantToVisit,a,birds,cL0th3s,cake,calls,colors,d,e,food,g,h,i,j,longAssignments,longCondExpr,procedure
+5000
+48 - Select tuple for variables that is used by procedure and print
+print pr; variable v; procedure p;
+Select <p, v> such that Uses(p, v) such that Uses(pr, v) 
+ABC Romeo,ABC c,ABC l,CountriesIWantToVisit Mongolia,CountriesIWantToVisit Philippines,a b,a c,a f,b b,b c,b l,birds McChicken,birds b,birds burger,birds c,birds cotton,birds denim,birds f,birds flipflops,birds kingfisher,birds l,birds n,birds o,birds r,birds shoes,birds u,birds wearOCSsinglet,birds y,c b,c c,c f,c l,c n,c o,c r,c y,cL0th3s b,cL0th3s c,cL0th3s cotton,cL0th3s denim,cL0th3s f,cL0th3s flipflops,cL0th3s l,cL0th3s r,cL0th3s shoes,cL0th3s u,cL0th3s wearOCSsinglet,cL0th3s y,cake b,cake c,cake f,cake l,cake r,cake u,cake vanilla,cake y,calls b,calls c,calls f,calls l,calls n,calls o,calls r,calls u,calls y,colors Romeo,colors b,colors bye,colors c,colors f,colors if,colors l,colors n,colors o,colors r,colors read,colors u,colors while,colors y,d b,d c,d f,d l,d r,d y,e b,e c,e f,e l,e r,e y,f b,f f,f y,food McChicken,food b,food burger,food c,food f,food l,food n,food o,food r,food y,g b,g c,g f,g l,g n,g o,g r,g y,h b,h c,h f,h l,h y,i b,i c,i f,i l,i n,i o,i r,i y,j b,j c,j f,j l,j r,j u,j y,longAssignments b,longAssignments bye,longAssignments c,longAssignments f,longAssignments y,longCondExpr b,longCondExpr bye,longCondExpr c,longCondExpr f,longCondExpr y,procedure if,procedure while,while b,while c,while f,while if,while while
+5000
+49 - Select while statements that uses a variable
+while w; variable v;
+Select w such that Uses(w, v)
+100,108,115,12,13,133,143,145,169,18,192,198,219,222,223,228,238,240,245,249,252,260,262,264,267,271,278,291,292,293,38,39,40,55,59,64,70,72,84
+5000
+50 - Select while statements that uses a variable
+while w; variable v;
+Select w such that Uses(w, _)
+100,108,115,12,13,133,143,145,169,18,192,198,219,222,223,228,238,240,245,249,252,260,262,264,267,271,278,291,292,293,38,39,40,55,59,64,70,72,84
+5000
+51 - Select if statements that uses a variable
+if ifs; variable v;
+Select ifs such that Uses(ifs, v)
+111,123,134,14,151,157,172,185,191,199,216,230,234,243,247,259,26,266,281,3,41,50,77,86,97
+5000
+52 - Select if statements that uses a variable
+if ifs; variable v;
+Select ifs such that Uses(ifs, _)
+111,123,134,14,151,157,172,185,191,199,216,230,234,243,247,259,26,266,281,3,41,50,77,86,97
+5000
+53 - Select variables used by while statements
+while w; variable v;
+Select v such that Uses(w, v)
+Argentina,B,Bhutan,C,Cambodia,D,F,G,I,J,KLM,McChicken,Norway,OOS,OOT,Romeo,a,abcdefg,absolutelynot,ad,alba,appleSlices,b,banana,bananapie,bc,beta,blue,bluebird,burger,bye,c,call,chArlie,chicken,chicks,choco,chocopie,cornCup,cotton,courtShoes,d,de,delta,denim,doubleMcSpicy,dress,duck,ducklings,e,else,f,fg,filetOfish,flamingo,flats,flipflops,fri35,g,gh,great,h,happyMeal,heels,hen,i,if,intrend,j,j1k,j34nj3ggings,jane,jeggings,k,kingfisher,l,left,m,mcNuggets,mcmuffin,mcspicy,n,o,ondehondehPI3,ostrich,p,pink,print,q,r,read,red,right,rog,rooster,s34w33D,salt,shirt,shoes,sneakers,socks,sparrow,swan,t,then,tmp,u,vanilla,wearOCSsinglet,while,width,worthwhile,x,xo,y,yes
+5000
+54 - Select variablres used by if statements
+if ifs; variable v;
+Select v such that Uses(ifs, v)
+Argentina,B,Bhutan,C,Cambodia,Colombia,D,Ethiopia,F,G,I,J,KLM,McChicken,Mongolia,Norway,OOS,OOT,Philippines,Romeo,Uruguay,a,ab,abcdefg,absolutelynot,ad,alba,appleSlices,b,banana,bananapie,bc,beta,bluebird,burger,bye,c,chArlie,chicken,chicks,choco,chocopie,colors,cornCup,cotton,courtShoes,d,de,delta,denim,doubleMcSpicy,dress,duck,ducklings,e,else,f,fg,filetOfish,flamingo,flats,flipflops,fri35,g,gh,great,h,happyMeal,heels,hen,i,if,intrend,j,j1k,j34nj3ggings,jane,jeggings,k,kingfisher,l,left,m,mcNuggets,mcmuffin,mcspicy,n,o,ondehondehPI3,ostrich,p,procedure,q,r,right,rog,rooster,s34w33D,salt,shirt,shoes,sneakers,socks,sparrow,swan,t,then,tmp,u,vanilla,wearOCSsinglet,while,width,worthwhile,x,xo,y,yes
+5000
+55 - Select variables used by modified by read and used by print
+read rd; print pr; variable v;
+Select v such that Modifies(rd, v) such that Uses(pr, v)
+b,c,f,o,while
+5000
+56 - Select variables used by used by read and modified by print
+read rd; print pr; variable v;
+Select v such that Modifies(pr, v) such that Uses(rd, v)
+none
+5000
+57 - Select variables used by used by read and used by print
+read rd; print pr; variable v;
+Select v such that Uses(rd, v) such that Uses(pr, v)
+none
+5000
+58 - invalid query
+stmt s;
+Select s such that Uses(_,_)
+none
+5000

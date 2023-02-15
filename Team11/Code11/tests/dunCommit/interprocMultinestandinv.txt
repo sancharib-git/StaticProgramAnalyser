@@ -1,0 +1,120 @@
+1 - Such that and with
+assign a; while w;
+Select a such that Follows(a, w) and a.stmt# = 31
+none
+5000
+2 - Such that and with
+assign a; while w;
+Select a such that Follows(a, w) and with a.stmt# = 31
+none
+5000
+3 - Such that and pattern
+assign a; while w;
+Select a such that Follows(a, w) and a(_,_)
+none
+5000
+4 - Such that and pattern
+assign a; while w;
+Select a such that Follows(a, w) and pattern a(_,_)
+none
+5000
+5 - With and such that
+assign a; while w;
+Select a with a.stmt# = 31 and Follows(a, w)
+none
+5000
+6 - With and such that
+assign a; while w;
+Select a with a.stmt# = 31 and such that Follows(a, w)
+none
+5000
+7 - Pattern and such that
+assign a; while w;
+Select a pattern a(_, _) and Follows(a, w)
+none
+5000
+8 - Pattern and such that
+assign a; while w;
+Select a pattern a(_, _) and such that Follows(a, w)
+none
+5000
+9 - With and pattern
+assign a; while w;
+Select a with a.stmt# = 31 and pattern a(_,_)
+none
+5000
+10 - With and pattern
+assign a; while w;
+Select a with a.stmt# = 31 and a(_,_)
+none
+5000
+11 - Pattern and with
+assign a; while w;
+Select a pattern a(_,_) and with a.stmt# = 31
+none
+5000
+12 - Pattern and with
+assign a; while w;
+Select a pattern a(_,_) and a.stmt# = 31
+none
+5000
+13 - Such that, with, pattern
+assign a; while w;
+Select a such that Follows(a, w) and a.stmt# = 31 pattern a(_,_)
+none
+5000
+14 - Such that, with, pattern
+assign a; while w;
+Select a such that Follows(a, w) with a.stmt# = 31 and pattern a(_,_)
+none
+5000
+15 - Such that, with, pattern
+assign a; while w;
+Select a such that Follows(a, w) and with a.stmt# = 31 and pattern a(_,_)
+none
+5000
+16 - Such that, with, pattern
+assign a; while w;
+Select a such that Follows(a, w) and with a.stmt# = 31 pattern a(_,_)
+none
+5000
+17 - Such that, with, pattern
+assign a; while w;
+Select a pattern a(_, _) and Follows(a, w) with a.stmt# = 31
+none
+5000
+18 - Such that, with, pattern
+assign a; while w;
+Select a pattern a(_, _) and Follows(a, w) and a.stmt# = 31
+none
+5000
+19 - Such that, with, pattern
+assign a; while w;
+Select a pattern a(_, _) and such that Follows(a, w) and a.stmt# = 31
+none
+5000
+20 - Such that, with, pattern
+assign a; while w;
+Select a pattern a(_, _) such that Follows(a, w) and with a.stmt# = 31
+none
+5000
+21 - Such that, with, pattern
+assign a; while w;
+Select a pattern a(_, _) such that Follows(a, w) and a.stmt# = 31
+none
+5000
+22 - Such that, such that
+assign a; while w;
+Select a such that Follows(a, w) and such that Follows(a, w)
+none
+5000
+23 - With, with
+assign a; while w;
+Select a with a.stmt# = 31 and with a.stmt# = 31
+none
+5000
+24 - Pattern, pattern
+assign a; while w;
+Select a pattern a(_, _) and pattern a(_, _)
+none
+5000

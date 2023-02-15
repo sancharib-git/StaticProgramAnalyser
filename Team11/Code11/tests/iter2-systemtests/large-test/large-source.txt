@@ -1,0 +1,484 @@
+procedure a {
+    a = 10;
+    c = (a + b-20)%30 / 70+90*(40-30);
+    if ((a > b) && (b <= (90+67%(a-b+(c/45))))) then {
+        e = 80 + 90;
+        print f;
+        read g;
+    } else {
+        h = a + b + c - d%g;
+         read d;
+    }
+    i = h - f +d * a / b % (90+40);
+    b = 20;
+}
+
+procedure b {
+    j = a + b -c;
+    while (!(((a-c+50 != a+b)&&(j == b - c+50))||(b >= (50+45)%33-a)))
+    {
+        while (!(a <= b)) {
+            if (a-b <= g) then {
+                read k;
+                print l;
+                l = k + l - 10 / (a %b);
+            }
+         else {
+                while ((a-b < 0)&&(a+b>10)) {
+                    a = a + b - 10 / 20;
+                    read f;
+                    print c;
+                }
+        }
+    }
+}
+}
+
+
+
+procedure c {
+    m = 20;
+    n = m + 20 - 100;
+    o = n + m + 10;
+    call d;
+    if ((a + b  <= g  ) || (!(a <= b-g))) then {
+        a = 10;
+        b = a - b + (c%(c-90/(d+100))) - 70;
+        call e;
+    } else {
+        read m;
+        print n;
+        read o;
+        print o;
+    }
+    call f;
+}
+
+
+
+procedure d {
+read p;
+print r;
+call b;
+while ((d > 0) && (b-e+d <= 10)) {
+    while (d+e+f+g-c*b-(a+c) >= 3) {
+        while (a + b == 0) {
+            if (a-c*b != 90) then{
+                 call a;
+            } else {
+                call b;
+            }
+            call e;
+        }
+        call f;
+    }
+}
+    a = a+ b -c -10;
+    b = 60;
+}
+
+
+procedure e
+{
+call a;
+call b;
+if (d >0) then {
+call a;
+print r;
+h = h+a+f;
+} else {
+call f;
+}
+while ((i>0)&&(i < 200+20)) {
+call f;
+read t;
+g = g-(r+t)%23;
+}
+
+}
+
+
+procedure f {
+    while (a >b) {
+        read d;
+        a = 200;
+        b = a-f;
+        f = 200;
+    } while (d+g <= f) {a=b; b=20; e = 20+10; read x;}
+    print y;
+ }
+
+
+    procedure g {
+        while (a >x+800) {
+            call a;
+            while (b <= 850) {
+                call a;
+                call b;
+                a = 200 -20;
+                h = a+ g-100;
+                if(b+c==c+d) then {
+                    call f;
+                    call c;
+                } else {
+                    call d;
+                    call e;
+                }
+            }
+            call a;
+        }
+    }
+
+
+ procedure h {
+    call f;
+    while (f < h+90%d) {
+        call a;
+        if ( a < b) then {
+            call b;
+            print b;
+            read b;
+            b = 200- 70 + 10 - a + b;
+        } else {
+            call a;
+            f = a + b -c *d %e;
+        }
+    }
+ }
+
+
+
+
+
+ procedure i {
+    call a;
+    call b;
+    call c;
+    call d;
+    if (m < l+p) then {
+        A = B+C-D;
+    } else {
+        F =G +J - KLM;
+    }
+    while (F >= c%10) {
+        call f;
+    }
+    read x;
+    print y;
+
+
+
+
+ }
+
+ procedure j {
+    a = 200 - b;
+    b = 400 + c;
+    read d;
+    print u;
+    while ( x > c) {
+        c = c+c;
+        call d;
+        if (y -400+60 == 300) then {
+            ab = bc + de;
+        } else {
+            call a;
+        }
+    }
+
+ }
+
+procedure while {
+    call a;
+    while(while < if + then - else) {
+        while = while + if;
+        if = if - if + else;
+        else = if;
+        read while;
+    }
+    print while;
+    print if;
+    read else;
+    if((if <= else)&&(else >= while)) then {
+        then = then*2;
+        else = else -2;
+        if = while -if*else%then-1;
+    } else {
+        if = if *2 * 2* 2* 2*2*2;
+    }
+}
+
+
+
+procedure cake {
+    choco = 1;
+    banana = 3;
+    read strawberryShortcake;
+    print vanilla;
+    call j;
+    while( !( choco+banana-(banana%3+(choco*3)) < banana/3 ) ) {
+        if (choco < banana) then {
+            choco = choco + banana + vanilla *3;
+            strawberryShortcake = banana * vanilla - 1 % 3;
+        } else {
+            choco = choco - vanilla%3;
+            choco = choco *3*3%3-3+3;
+        }
+    }
+    BLACKfore5t = 50 + choco - banana;
+    vanilla = choco + banana - strawberryShortcake * vanilla / BLACKfore5t;
+}
+
+procedure food {
+    read fries;
+    print burger;
+    while(filetOfish <= mcspicy + mcmuffin*2) {
+        SHAKERfries = fri35 + s34w33D - salt;
+        while (mcspicy <= doubleMcSpicy) {
+            call i;
+            applePie = bananapie + ondehondehPI3 % (chocopie*3);
+        }
+    }
+    quarterpounder = McChicken*10;
+    read quarterpounder;
+    print McChicken;
+    if((happyMeal *3 <= appleSlices)||(cornCup == mcNuggets)) then {
+        mcNuggets = 20;
+        cornCup = 1;
+    } else {
+        appleSlices = 0;
+    }
+}
+
+procedure calls {
+    call a;
+    call b;
+    if (b < a) then {
+        call c;
+        call d;
+    } else {
+        call d;
+        call i;
+        call j;
+    }
+    call h;
+    call f;
+    call d;
+}
+
+procedure cL0th3s {
+    dress = 10;
+    shirt = 2005;
+    jeggings = dress + shirt - 1995 * (2004%1996);
+    while (jeggings == intrend) {
+        read jorts;
+        print flipflops;
+        if (j34nj3ggings <= 7+56-(25%6)) then {
+            print wearOCSsinglet;
+            call j;
+        } else {
+            j34nj3ggings = OOT;
+            jeggings = OOS;
+            print denim;
+            print cotton;
+        }
+    }
+    shoes = heels*sneakers+(flats-(courtShoes%flipflops)/socks);
+    print shoes;
+}
+
+                procedure CountriesIWantToVisit {
+                    read Bhutan;
+                    read Iceland;
+                    read Norway;
+                    print Mongolia;
+                    if (Mongolia > Ethiopia) then {
+                        Mongolia = Ethiopia - Mongolia + Ethiopia;
+                        Norway = Norway + 200 - Bhutan * 700 - 1990;
+                    } else {
+                        read Colombia;
+                        print Philippines;
+                        Argentina = Colombia + Philippines*2 - (Uruguay-200+50*(100/100));
+                        if(Argentina < 100) then {
+                            while (Argentina != 100) {
+                                Argentina = Norway + Bhutan - 100;
+                                Bhutan = Bhutan*2;
+                                Laos = Cambodia;
+                            }
+                        } else {
+                            Argentina = Argentina*100;
+                            Mongolia = Argentina - 80;
+                        }
+                    }
+                }
+
+procedure procedure {
+    while(1==1) {
+        if(90<56+32-100) then {
+            procedure = if+100;
+            if = while;
+            while = worthwhile + if;
+            iffy = worthwhile;
+        } else {
+            if(1!=1) then {
+                then = 100;
+                and = 10;
+            } else {
+                while = 2;
+            }
+        }
+    }
+}
+
+procedure longAssignments {
+    a = a+b-c/d*e%f-(34%67+32-(a*b/d+e)+(99+45/32-65))+(45%fg+gh-ad*bc)-100*(bc%tv+adbc-(df*2)+33);
+    b = ((a+b-20)%30/70+90*(40-30)*40%(20+60-(30+50))) +    (alba-jane+xo)/(67*89-90)%rog- (a*b/d+e)+(99+45/32-65);
+    assign = (insidebrac)+((doublebrac1))-33098/67*445/890*2320%8989%673*(34/56)/32+67*87/23+(99*567)-((789/98));
+    c = ((a+b-20)%30/70+90*(40-30)*40%(20+60-(30+50))) + (45%fg+gh-ad*bc)-100 / (a*b/d+e);
+    d = (45%fg+gh-ad*bc)-100 / (a*b/d+e)- a+b-c/d*e%f+ab;
+    e = 33098/67*445/890*2320%8989%673-(((((alba-jane+xo)/(67*89-90)%rog))))+87/23+(99*567)-((789/98));
+    f = (45%fg+gh-ad*bc)-100 /40%20+60-(30+50)%890*2320%8989%673-(45%fg+gh-ad*bc)-100 / (a*b/d+e)+10000-(100%abcde+(50000*re)/(dfg+230)+(dfg));
+    call longCondExpr;
+}
+
+procedure longCondExpr {
+    if (!(((a-c+50%f*g-h!=(a+b+c-d*e+(g/h)))&&(j==b-c+50))||(b>=(50+45)%33-a))) then {
+        d = (45%fg+gh-ad*bc)-100 / (a*b/d+e)- a+b-c/d*e%f+ab;
+    } else {
+        b = ((a+b-20)%30/70+90*(40-30)*40%(20+60-(30+50)));
+    }
+    while (((a+b-(c%d)*(e/f)<=g+h-i)&&(x+3>=y-5))||((!(a+b+c-90<=b-g+10))||((a+b-20<=45%63)&&(q==90-23+670*7)))) {
+        a=(45%fg+gh-ad*bc)-100;
+        a =
+        (45%fg+gh-ad*bc);
+    }
+    while((!(((7777777-abcdefg)>(526445731))&&(2320%8989%673==a+b-c/d*e%f)))&&((!(500+400-300%200-100<=(a*b/d+e)))||(!(45%fg+gh-ad*bc>=((((((alba-jane+xo)/(67*89-90)%rog)))))))))
+    {
+                    while(11111>(2222%3333+4444-555*6666)-777) {
+                        a = absolutelynot;
+                        b = yes;
+                        read c;
+                        print bye;
+                    }
+    }
+}
+
+    procedure birds
+    {
+        while(sparrow < ostrich) {
+            sparrow = sparrow * 2+ostrich%sparrow-1000;
+            if(sparrow - ostrich <= sparrow+ostrich) then {
+                sparrow = 1000;
+                ostrich = 1000;
+                call food;
+            } else {
+                if(hen == rooster) then{
+                    eat = chicken;
+                    rooster = 10009;
+                    call cL0th3s;
+                    while (rooster != 200000) {
+                        rooster = hen;
+                        while (hen < rooster) {
+                            hen = hen + chicks;
+                            rooster = rooster +hen;
+                            if (rooster == rooster + duck) then{
+                                rooster = ducklings*100;
+                            } else {
+                                while((flamingo == 100)&& (swan ==100)) {
+                                    birds = great;
+                                    if(flamingo <= swan) then {
+                                        swan = swan + 10;
+                                        while (kingfisher < bluebird) {
+                                            swan = 10;
+                                            read flamingo;
+                                            while (kingfisher + bluebird == 10) {
+                                                print kingfisher;
+                                            }
+                                        }
+                                    } else {
+                                        flamingo = 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    nests = 0;
+                }
+            }
+        }
+
+
+
+    }
+
+procedure ABC
+{
+  i=1;
+ read b ;
+    c= a   ;
+if (a <  beta) then{
+   while (beta > 0) {
+        oSCar  = 1 * beta + tmp;
+        while (tmp >0) {
+          oSCar = I - (k + j1k * chArlie); }}
+    while (x!=1) {
+        x = x + 1;
+        if (left==0) then {
+          while (right== 5){
+            print Romeo;
+            b = 0;
+            c = delta    + l  * width + Romeo; }}
+        else {
+            while (c>1) {
+              c = c -1;}
+            x = x+ 1; }}}
+else{
+    a= 2;}
+}
+
+procedure colors        {
+    black = 0; white = 1;
+    red = 1000 + blue - pink;
+    while (pink == 10) {
+    call ABC;
+    call procedure;
+    }
+    if(procedure == colors) then {
+    call longCondExpr;
+    read orange;
+    } else {
+    read red;
+    }
+    read = print;
+    print = read+ 1;
+    call = read + print -1;
+    call=10;
+    read=11;
+    print=12;
+    while(read==blue) {
+    while(call==red) {
+    while(print==10) {
+    black =1;
+    read print;
+    print read;
+    call calls;
+    }
+    }
+    }
+    magenta = blue+purple*cyan-aquamarine/teal;
+    if(500-200<=666) then {
+    brown = 0;
+    } else {
+        while (100-200+300==100) {
+        read yellow;
+        }
+    }
+}
+
+
+
+
+
+
+

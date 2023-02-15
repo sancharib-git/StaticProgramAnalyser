@@ -1,0 +1,129 @@
+procedure NextControlFlow {
+  y = x;
+  if (x == 2) then {
+    if (x == 2) then {
+      if (x == 2) then {
+        if (x == 2) then {
+          if (x == 2) then {
+            y = x;  
+          } else {
+            y = x;
+          }
+        } else {
+          if (x == 2) then {
+            y = x;
+          } else {
+            y = x;
+          }
+        }
+      } else {
+        if (x == 2) then {
+          if (x == 2) then {
+            y = x;
+          } else {
+            y = x;
+          }
+        } else {
+          if (x == 2) then {
+            y = x;
+          } else {
+            y = x;
+          }
+        }
+      }
+    } else {
+      if (x == 2) then {
+        if (x == 2) then {
+          if (x == 2) then {
+            y = x;
+          } else {
+            y = x;
+          }
+        } else {
+          if (x == 2) then {
+            y = x;
+          } else {
+            y = x;
+          }
+        }
+      } else {
+        if (x == 2) then {
+          if (x == 2) then {
+            y = x;
+          } else {
+            y = x;
+          }
+        } else {
+          if (x == 2) then {
+            y = x;
+          } else {
+            y = x;
+          }
+        }
+      } 
+    }
+  } else {
+    if (x == 2) then {
+      if (x == 2) then {
+        if (x == 2) then {
+          if (x == 2) then {
+            y = x;
+          } else {
+            y = x;
+          }
+        } else {
+          if (x == 2) then {
+            y = x;
+          } else {
+            y = x;
+          }
+        }
+      } else {
+        if (x == 2) then {
+          if (x == 2) then {
+            y = x;
+          } else {
+            y = x;
+          }
+        } else {
+          if (x == 2) then {
+            y = x;
+          } else {
+            y = x;
+          }
+        }
+      }
+    } else {
+      if (x == 2) then {
+        if (x == 2) then {
+          if (x == 2) then {
+            y = x;
+          } else {
+            y = x;
+          }
+        } else {
+          if (x == 2) then {
+            y = x;
+          } else {
+            y = x;
+          }
+        }
+      } else {
+        if (x == 2) then {
+          if (x == 2) then {
+            y = x;
+          } else {
+            y = x;
+          }
+        } else {
+          if (x == 2) then {
+            y = x;
+          } else {
+            y = x;
+          }
+        }
+      }
+    }
+  }
+  z = y;
+}

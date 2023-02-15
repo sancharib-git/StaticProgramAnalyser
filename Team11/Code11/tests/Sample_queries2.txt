@@ -1,0 +1,45 @@
+1 - comment
+while a1;
+Select a1
+4
+5000
+2 - comment
+variable a2;
+Select a2
+x, a, b, z, i
+5000
+3 - comment
+constant c;
+Select c
+3, 5, 10, 6
+5000
+4 - comment
+stmt s, s1;
+Select s1 such that Uses(s, 5)
+1, 2, 3, 4, 5, 6
+5000
+5 - comment
+read a;
+Select a such that Modifies (a, "x")
+6
+5000
+6 - comment
+stmt s, s1;
+Select s such that Follows*(s, 5)
+none
+5000
+7 - comment
+stmt s, s1;
+Select s such that Follows*(s, 4)
+1, 2, 3
+5000
+8 - comment
+while w;
+Select w such that Parent*(w, _)
+4
+5000
+9 - comment
+while w; variable v; assign a;
+Select w such that Uses(_,"x")
+none
+5000

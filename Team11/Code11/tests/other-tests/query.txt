@@ -1,0 +1,9 @@
+53 - valid query
+while w; print p; read r; assign a; if ifs; prog_line n;
+Select n such that Affects(46, n)
+42
+1 - query
+stmt s; variable v; assign a; print pn; read r; if ifs;
+Select ifs such that Next*(a,pn) and Next*(a,ifs)
+1
+5000

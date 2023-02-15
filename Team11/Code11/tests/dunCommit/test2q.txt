@@ -1,0 +1,25 @@
+1 - Question Three
+stmt s, s1; assign a, a1; while w; if ifs; variable v; procedure p, q; constant c; call cl; print pn; read re; prog_line n;
+Select <pn, a, ifs> such that Follows* (a, _) and Parent (w, a) and Next*(w, ifs) and Next* (cl, pn) with cl.procName = "procB"
+none
+5000
+2 - Question Five
+stmt s, s1; assign a, a1; while w; if ifs; variable v; procedure p, q; constant c; call cl; print pn; read re; prog_line n;
+Select <a,v> pattern a (_, _"a*b"_) such that Uses (q,v) and Calls (p,q)
+none
+5000
+3 - Question Six
+stmt s, s1; assign a, a1; while w; if ifs; variable v; procedure p, q; constant c; call cl; print pn; read re; prog_line n;
+Select s such that Modifies(s, "a") and Parent* (s, ifs) with s.stmt# = c.value
+none
+5000
+4 - Question Seven
+stmt s, s1; assign a, a1; while w; if ifs; variable v; procedure p, q; constant c; call cl; print pn; read re; prog_line n;
+Select cl such that Next* (ifs, cl) and Uses (ifs, "idx") and Parent* (w, cl) pattern ifs ("c", _, _)
+none
+5000
+5 - Question Eight
+variable v, v2; assign a, a2; while w; print pn; if ifs;
+Select a such that Uses(a, v) and Modifies("main", v) and Parent*(w, a2) and Affects(a, a2) and Next*(pn, a2) with pn.stmt# = 5 pattern w(v2,_) pattern ifs(v2, _, _)
+none
+5000

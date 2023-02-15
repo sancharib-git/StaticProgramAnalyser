@@ -1,0 +1,135 @@
+51 - valid query
+variable v;
+Select v such that Uses (13, v)
+goats, count
+5000
+52 - Invalid query
+variable v;
+Select v such that Uses(_, v)
+none
+5000
+53 - invalid query
+stmt s;
+Select s such that Uses(_, "count")
+none
+5000
+54 - invalid query
+assign a;
+Select a such that Uses(_, _)
+none
+5000
+55 - valid query
+stmt s;
+Select s such that Uses (s, "sleep")
+9, 30, 33
+5000
+56 - valid query
+print p;
+Select p such that Uses(p, _)
+22, 28, 33, 34, 36
+5000
+57 - valid query with no results
+while w;
+Select w such that Uses(w, _"pigs"_)
+none
+5000
+58 - invalid query
+variable v;
+Select v such that Uses(v, _)
+none
+5000
+59 - valid query
+variable v;
+Select v such that Uses (7, v)
+pigs, chickens, goats
+5000
+60 - invalid query
+stmt s;
+Select s such that Uses (s, _)
+none
+5000
+61 - valid query
+assign a; variable v;
+Select v pattern a(v, _"money"_)
+money
+5000
+62 - valid query
+assign a; variable v;
+Select v pattern a("goats", v)
+goats, sell
+5000
+63 - invalid query
+assign a; variable v;
+Select v such that pattern a("goats", v)
+none
+5000
+64 - valid query
+assign a;
+Select a such that pattern a(_, _"sell"_)
+10, 11, 16, 17, 23, 24, 35
+5000
+65 - valid query
+read r; assign a;
+Select r such that pattern a(_, _)
+14
+5000
+66 - invalid query
+assign a; stmt s;
+Select s pattern a(6, _)
+none
+5000
+67 - invalid query
+stmt s;
+Select s pattern s(_, _)
+none
+5000
+68 - invalid query
+while w; assign a;
+Select a pattern a("money", 6)
+none
+5000
+69 - valid query
+variable v; assign a;
+Select v pattern a(v, _"20"_)
+sell, goats, money
+5000
+70 - invalid query
+variable v; assign a;
+Select v pattern a (v, "_")
+none
+5000
+71 - valid query - double clauses
+stmt s; assign a;
+Select s such that Follows* (s, 8) pattern a( _, _"20"_)
+4
+5000
+72 - valid query
+assign a; variable v;
+Select a such that Modiﬁes (a, v) pattern a(_, _"sell"_)
+10, 11, 16, 17, 23, 24
+5000
+73 - valid query
+assign a; variable v;
+Select v such that Modiﬁes (a, v) pattern a(_,v)
+chickens, money, goats, pigs, sell
+5000
+74 - valid query
+assign a; variable v;
+Select v pattern a(v, _) such that Uses(a, v)
+chickens, money, goats, pigs, sell
+5000
+75 - valid query with no results
+stmt s; assign a;
+Select s such that Follows* (12, s) pattern a ("money",_)
+none
+5000
+76 - valid query
+assign a, a1; variable v, v1;
+Select a such that Uses (a, v) pattern a1 (v1, _"sell"_)
+1, 2, 3, 4, 5, 6, 7, 10, 11, 16, 17, 18, 19, 20, 21, 23, 24, 26, 29, 31, 32, 35
+5000
+77 - valid query
+assign a; variable v;
+Select a such that Uses (a, v) pattern a (v, "sell")
+chickens, money, goats, pigs
+5000
