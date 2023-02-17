@@ -10,9 +10,7 @@ C++ Standard | C++17
 
 ### Additional Build Instructions
 
-Import project into CLion
-
-Build and run
+Find readme.txt in Team11/Code11
 
 
 # Team Members
