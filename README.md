@@ -10,9 +10,12 @@ C++ Standard | C++17
 
 ### Additional Build Instructions
 
-No additional instructions required.
+Import project into CLion
+
+Build and run
+
 
 # Team Members
-
+-
 
 # StaticProgramAnalyser
